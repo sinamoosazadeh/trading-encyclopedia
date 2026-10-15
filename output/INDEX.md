@@ -1,0 +1,56 @@
+# Trading & Financial Markets Encyclopedia
+
+> Generated: 2026-10-15 15:03 | Total: 236619
+
+---
+
+- [Optimization & Calibration](categories/A01_Optimization.md) — **11903** items
+- [Simulation & Synthetic Data](categories/A02_Simulation.md) — **8218** items
+- [Prediction & Forecasting](categories/A03_Prediction_Forecasting.md) — **17303** items
+- [Backtesting & Strategy Validation](categories/A04_Backtesting_Validation.md) — **7801** items
+- [Probability Statistics & Econometrics](categories/A05_Probability_Statistics_Econometrics.md) — **16167** items
+- [Machine Learning in Finance](categories/B01_Machine_Learning_Finance.md) — **10406** items
+- [Deep Learning & Neural Networks](categories/B02_Deep_Learning_Neural_Networks.md) — **6180** items
+- [Reinforcement Learning & Control](categories/B03_Reinforcement_Learning_Control.md) — **5013** items
+- [NLP Sentiment & Alternative Data](categories/B04_NLP_Sentiment_Alternative_Data.md) — **6482** items
+- [Market Microstructure & Order Book](categories/C01_Market_Microstructure_LOB.md) — **5650** items
+- [Liquidity Order Flow & Informed Trading](categories/C02_Liquidity_OrderFlow_Informed.md) — **6270** items
+- [Market Impact & Execution](categories/C03_Market_Impact_Execution.md) — **4311** items
+- [HFT & Market Making](categories/C04_HFT_MarketMaking.md) — **4733** items
+- [Algorithmic & Systematic Trading](categories/C05_Algorithmic_Systematic_Trading.md) — **4348** items
+- [Trade Lifecycle Clearing & Settlement](categories/C06_Trade_Lifecycle_Clearing.md) — **4666** items
+- [Market Participation Modes & Accounts](categories/C07_Market_Participation_Modes.md) — **4545** items
+- [Portfolio Construction & Optimization](categories/D01_Portfolio_Construction_Optimization.md) — **4628** items
+- [Covariance Estimation & Factor Models](categories/D02_Covariance_Factor_Models.md) — **4790** items
+- [Risk Management Tail Risk & Stress](categories/D03_Risk_Management_Tail_Stress.md) — **5411** items
+- [Position Sizing Kelly & Capital Allocation](categories/D04_Position_Sizing_Kelly_Capital.md) — **3862** items
+- [Factor Investing Alpha & Anomalies](categories/D05_Factor_Investing_Alpha_Anomalies.md) — **5550** items
+- [Performance Measurement & Attribution](categories/D06_Performance_Measurement_Attribution.md) — **3220** items
+- [Trading Journal & Trader Development](categories/D07_Trading_Journal_Development.md) — **3072** items
+- [Derivatives Options & Volatility](categories/E01_Derivatives_Options_Volatility.md) — **3956** items
+- [Fixed Income Rates & Credit](categories/E02_Fixed_Income_Rates_Credit.md) — **4784** items
+- [Forex Commodities & Cross-Asset](categories/E03_Forex_Commodities_CrossAsset.md) — **4670** items
+- [Stochastic Calculus & Mathematical Finance](categories/E04_Stochastic_Calculus_MathFinance.md) — **3413** items
+- [Statistical Arbitrage & Relative Value](categories/E05_Statistical_Arbitrage_RelativeValue.md) — **3257** items
+- [Market Profile & Auction Theory](categories/F01_MarketProfile_AuctionTheory.md) — **3227** items
+- [Order Flow Footprint & Tape Reading](categories/F02_OrderFlow_Footprint_Tape.md) — **2793** items
+- [Wyckoff Method & VSA](categories/F03_Wyckoff_VSA.md) — **4900** items
+- [Smart Money Concepts & ICT](categories/F04_SmartMoney_ICT.md) — **2791** items
+- [Technical Analysis & Chart Patterns](categories/F05_Technical_Analysis_ChartPatterns.md) — **3003** items
+- [Harmonic Patterns & Elliott Wave](categories/F06_Harmonic_ElliottWave.md) — **2085** items
+- [Specialized Trading Schools](categories/F07_Specialized_Trading_Schools.md) — **2186** items
+- [Event-Driven & News-Based Trading](categories/F08_EventDriven_News_Trading.md) — **2773** items
+- [Trading Styles & Timeframes](categories/F09_Trading_Styles_Timeframes.md) — **2454** items
+- [Chart Types & Price Visualization](categories/F10_Chart_Types_Visualization.md) — **2159** items
+- [Market Scanning & Signal Discovery](categories/F11_Market_Scanning_Screening.md) — **2352** items
+- [Fundamental Analysis & Valuation](categories/G01_Fundamental_Analysis_Valuation.md) — **3274** items
+- [Macroeconomics Intermarket & Central Banking](categories/G02_Macro_Intermarket_CentralBanking.md) — **3413** items
+- [Behavioral Finance & Decision Theory](categories/G03_Behavioral_Finance_Decision.md) — **2615** items
+- [Cryptocurrency DeFi & On-Chain](categories/H01_Crypto_DeFi_OnChain.md) — **3861** items
+- [Trading Systems Engineering](categories/H02_TradingSystems_Engineering.md) — **2946** items
+- [Regulation Compliance & Market Integrity](categories/H03_Regulation_Compliance_Integrity.md) — **3952** items
+- [Prop-Firm Retail & Grid Trading](categories/H04_PropFirm_Retail_Grid.md) — **1979** items
+- [Market Data Levels Feeds & Architecture](categories/H05_MarketData_Feeds_Architecture.md) — **2371** items
+- [Exchange Connectivity APIs & OMS](categories/H06_Exchange_Connectivity_API_OMS.md) — **2703** items
+- [Network Infrastructure & Data Centers](categories/H07_Network_Infrastructure_DataCenters.md) — **2708** items
+- [Trading Platforms & Tools](categories/H08_Trading_Platforms_Tools.md) — **1465** items
