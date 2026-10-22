@@ -51,11 +51,11 @@ def ensure_runtime_dirs():
 # ACCESS LEVEL LABELS
 # -------------------------------------------------------------
 ACCESS = {
-    "open":    "OPEN - Full text free",
-    "partial": "PARTIAL - Abstract free, full text may require subscription",
-    "gated":   "GATED - Free registration required",
-    "paywall": "PAYWALL - Subscription required",
-    "unknown": "UNKNOWN",
+    "open":    "OPEN - Resource is declared or recognized as publicly available",
+    "partial": "PARTIAL - Metadata or abstract is available; full access may require a subscription",
+    "gated":   "GATED - Account, registration, or other access conditions may apply",
+    "paywall": "PAYWALL - Subscription or payment is reported as required",
+    "unknown": "UNKNOWN - Access has not been verified",
 }
 
 OPEN_DOMAINS = [
