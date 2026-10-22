@@ -21,7 +21,9 @@ The generated Markdown remains useful for browsing, but it should be treated as 
 
 Each entry has a stable local identifier, a source URL, a resource type, lifecycle-stage tags, search tags, a description, and a review status. The registry is not a list of every page at each provider; entries point to useful starting locations. URL health checking and review dates are not yet automated.
 
-The local CLI provides registry search and can search generated category tables without network requests. Its result ordering is a lightweight textual relevance heuristic, not a trained ranking model or a calibrated probability.
+The local CLI searches the curated registry, collected resource JSONL records, and generated category tables without network requests. Its result ordering is a lightweight textual relevance heuristic, not a trained ranking model or a calibrated probability.
+
+`web_resource_collector.py` provides bounded, explicit public metadata searches for GitHub repositories, Hugging Face models and datasets, and Zenodo records. `resources/discovery_queries.json` keeps the search plan versioned, tagged by lifecycle stage, and independently reviewable. The `plan` and `validate-queries` commands are offline. Only the explicit `collect` command performs network requests. Collected metadata is written to local ignored JSONL files with query and provider provenance; it is not automatically merged into the curated registry.
 
 ## 3. Configuration and Runtime Paths
 
@@ -52,4 +54,5 @@ SQLite is a suitable initial canonical store for single-device and mobile workfl
 - Query state is represented in JSON caches and does not yet provide a complete state machine distinguishing every success, empty result, failure, retry exhaustion, and interrupted run.
 - Existing static category files are historical generated output. They have not been rebuilt automatically by a code change and must be regenerated and reviewed before being treated as corrected.
 - Search ranks local text matches. It does not query the live Internet or execute a semantic search model.
+- The metadata collector currently covers four public provider endpoints. It is not a general web crawler and cannot claim comprehensive Internet coverage.
 - Scheduled source health checks, registry link monitoring, release snapshots, and calibrated category metrics remain future work.
