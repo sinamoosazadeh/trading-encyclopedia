@@ -59,6 +59,15 @@ def sync() -> int:
         print("Unable to inspect staged changes; refusing to commit.", file=sys.stderr)
         return diff_result.returncode
 
+    unrelated_result = run_cmd(["git", "diff", "--cached", "--quiet", "--", ".", ":(exclude)output"])
+    if unrelated_result.returncode == 1:
+        print("Unrelated staged changes exist outside output/. Refusing to include them in the generated-output commit.", file=sys.stderr)
+        print("Review or unstage those changes before running this script again.", file=sys.stderr)
+        return 2
+    if unrelated_result.returncode != 0:
+        print("Unable to check staged changes outside output/; refusing to commit.", file=sys.stderr)
+        return unrelated_result.returncode
+
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     commit_result = run_cmd(["git", "commit", "-m", f"Update generated catalogue: {timestamp}"])
     if commit_result.returncode != 0:
