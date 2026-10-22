@@ -4,7 +4,12 @@ Trading Encyclopedia — Markdown Builder
 Builds all output files from classified data.
 """
 import os, time, shutil
+from datetime import datetime, timezone
 from config import OUTPUT_DIR, CATS_DIR, SDCARD_DIR, CATEGORIES, ACCESS
+
+def _utc_now():
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
 
 CAT_LABELS = {
     "A01_Optimization":                   "Optimization & Calibration",
@@ -133,7 +138,7 @@ def _write(path, content):
 def build_category_file(cat_id, label, items):
     block = cat_id[0]
     block_label = BLOCK_LABELS.get(block, "")
-    now = time.strftime("%Y-%m-%d %H:%M")
+    now = _utc_now()
     lines = []
     lines.append("# " + label)
     lines.append("")
@@ -171,7 +176,7 @@ def build_index(categorized, stats):
     lines.append("# Trading & Financial Markets Encyclopedia")
     lines.append("## Comprehensive Knowledge Base for Quantitative Finance & Trading")
     lines.append("")
-    lines.append("> **Generated:** " + now + "  ")
+    lines.append("> **Generated (UTC):** " + now + "  ")
     lines.append("> **Unique Documents:** " + str(unique_records) + "  ")
     lines.append("> **Category Assignments:** " + str(category_assignments) + "  ")
     lines.append("> **Unclassified Documents:** " + str(unclassified_records) + "  ")
@@ -220,7 +225,7 @@ def build_statistics(categorized, stats):
     lines = []
     lines.append("# Statistics")
     lines.append("")
-    lines.append("> Generated: " + now + " UTC")
+    lines.append("> Generated: " + now)
     lines.append("")
     lines.append("## Collection Counts")
     lines.append("")
@@ -428,9 +433,10 @@ def build_all(categorized, stats):
     _write(os.path.join(OUTPUT_DIR, "README.md"), build_readme())
     print("  Index files: 6 written")
 
-    # Copy to sdcard
+    # Copy to the optional external export directory, if it is available.
     try:
         import shutil
+        os.makedirs(SDCARD_DIR, exist_ok=True)
         for fname in os.listdir(OUTPUT_DIR):
             src = os.path.join(OUTPUT_DIR, fname)
             if os.path.isfile(src):
