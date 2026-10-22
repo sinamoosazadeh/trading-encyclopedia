@@ -31,7 +31,10 @@ The catalogue is a discovery layer, not a substitute for checking the original s
 | `merge.py` | Main merge, deduplication, classification, metric calculation, and export orchestration |
 | `merge_light.py` | Lower-overhead merge entry point using the same canonical renderer |
 | `md_builder.py` | Markdown category pages, indexes, and statistics |
-| `resource_catalog.py` | Local search and validation for curated resources and generated publication tables |
+| `resource_catalog.py` | Local search and validation across curated resources, collected resource metadata, and generated publication tables |
+| `web_resource_collector.py` | Bounded, explicit collection of public metadata from GitHub, Hugging Face, and Zenodo |
+| `resources/discovery_queries.json` | Versioned query plan for repository, model, dataset, and research-artifact discovery |
+| `scripts/check_english_only.py` | Checks tracked text and readable ZIP members for Arabic-script characters, including Persian characters |
 | `resources/catalog.json` | Curated starter registry spanning research, market data, trading frameworks, engineering tools, standards, and operations |
 | `preflight.py` | Local readiness checks and optional bounded public-endpoint probes |
 
@@ -65,6 +68,8 @@ Requires Python 3.10 or newer.
    ```bash
    python preflight.py
    python resource_catalog.py validate
+   python web_resource_collector.py validate-queries
+   python scripts/check_english_only.py
    ```
 
 6. Search the local catalogue:
@@ -75,6 +80,22 @@ Requires Python 3.10 or newer.
    python resource_catalog.py list --stage exchange-integration
    python resource_catalog.py export --output output/RESOURCE_INDEX.md
    ```
+
+8. Preview the bounded public resource-discovery plan without making any network requests:
+
+   ```bash
+   python web_resource_collector.py plan --provider github --max-queries 2
+   python web_resource_collector.py plan --provider huggingface_models --max-queries 2
+   ```
+
+9. When online collection is intended, explicitly run a small bounded collection:
+
+   ```bash
+   python web_resource_collector.py collect --provider github --max-queries 2 --results-per-query 5
+   python resource_catalog.py search "market data" --collected-only
+   ```
+
+   The collector performs only metadata requests. It does not download full source repositories, model weights, datasets, or article full texts. Provider quotas, query semantics, and terms apply; results remain marked `unreviewed` until reviewed.
 
 7. Run a scholarly provider and rebuild the generated output when configured:
 
