@@ -27,7 +27,6 @@ data/
 *.sqlite
 *.sqlite3
 *.db
-*.jsonl
 *.tmp
 *.log
 run.log
