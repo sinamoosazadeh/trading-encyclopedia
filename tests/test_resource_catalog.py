@@ -7,6 +7,7 @@ from resource_catalog import (
     export_markdown,
     load_catalog,
     search_articles,
+    search_collected_records,
     search_registry,
     validate_catalog,
 )
@@ -64,6 +65,29 @@ class ResourceCatalogTests(unittest.TestCase):
             self.assertIn("# Curated Resource Index", content)
             self.assertIn("https://docs.python.org/3/", content)
             self.assertTrue(target.exists())
+
+
+    def test_collected_resource_search_reads_jsonl(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "resource_records.jsonl"
+            record = {
+                "id": "github:example/trading",
+                "name": "Trading Engine",
+                "title": "Trading Engine",
+                "url": "https://github.com/example/trading",
+                "type": "open-source-framework",
+                "provider": "github",
+                "description": "A market data and execution engine.",
+                "tags": ["market-data", "execution"],
+                "lifecycle_stages": ["exchange-integration"],
+                "review_status": "unreviewed",
+                "metadata": {"language": "Python"},
+            }
+            path.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            results = search_collected_records("execution engine", path, limit=5)
+            self.assertEqual(1, len(results))
+            self.assertEqual("github:example/trading", results[0]["id"])
+            self.assertEqual("collected-resource", results[0]["result_kind"])
 
 
 if __name__ == "__main__":
