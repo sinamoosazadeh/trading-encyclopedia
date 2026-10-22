@@ -538,8 +538,8 @@ _DIRECT_CATEGORY_PATTERNS = {
         r"balanced price range|order block|break of structure|change of character|"
         r"liquidity sweep|interbank price delivery algorithm|judas swing|killzone|"
         r"inner circle trader)\b|"
-        r"\b(?:ict|smc)\b(?=.*\b(?:trading|trader|forex|futures|liquidity|"
-        r"order block|fair value gap|fvg|market structure|killzone)\b)",
+        r"\b(?:ict|smc)\b(?=.*\b(?:liquidity|order block|fair value gap|fvg|market structure|"
+        r"killzone|inner circle trader|judas swing|break of structure|change of character)\b)",
         re.IGNORECASE),
     "F05_Technical_Analysis_ChartPatterns": re.compile(
         r"\b(?:technical analysis|head and shoulders pattern|double top pattern|"
@@ -589,6 +589,12 @@ def classify_with_evidence(title, source_category=None, context_text=None):
 
         direct_pattern = _DIRECT_CATEGORY_PATTERNS.get(category)
         direct_evidence = bool(direct_pattern and direct_pattern.search(searchable))
+        if category == "F04_SmartMoney_ICT":
+            ambiguous_acronym_only = bool(matched) and all(
+                item.casefold() in {"ict", "smc"} for item in matched
+            )
+            if ambiguous_acronym_only and not direct_evidence:
+                continue
         if not has_finance_context and not direct_evidence:
             continue
 
