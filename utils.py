@@ -100,15 +100,28 @@ def parse_pages(item):
     return "-"
 
 def get_access_level(item):
+    """Return a conservative access label based on explicit evidence and exact hosts."""
+    from urllib.parse import urlsplit
     from config import OPEN_DOMAINS, PAYWALL_DOMAINS
-    url = str(item.get("url","")).lower()
-    oa  = item.get("open_access", False)
-    if oa: return "OPEN"
-    for d in OPEN_DOMAINS:
-        if d in url: return "OPEN"
-    for d in PAYWALL_DOMAINS:
-        if d in url: return "PARTIAL"
-    if item.get("unpaywall_pdf"): return "OPEN"
+    url = str(item.get("url", "") or "").strip()
+    if item.get("open_access") is True or item.get("unpaywall_pdf"):
+        return "OPEN"
+    try:
+        host = (urlsplit(url).hostname or "").lower().rstrip(".")
+    except (TypeError, ValueError):
+        host = ""
+    if not host:
+        return "UNKNOWN"
+    def matches_domain(domain):
+        domain = domain.lower().strip(".")
+        if host == domain or host.endswith("." + domain):
+            return True
+        # A few registries use a provider name without a full registrable domain.
+        return domain == "onlinelibrary" and host.startswith("onlinelibrary.")
+    if any(matches_domain(d) for d in OPEN_DOMAINS):
+        return "OPEN"
+    if any(matches_domain(d) for d in PAYWALL_DOMAINS):
+        return "PARTIAL"
     return "UNKNOWN"
 
 def _normalise_doi(value):
