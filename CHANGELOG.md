@@ -6,7 +6,10 @@ Changes are recorded by release or under the unreleased development section. His
 
 - Added a product vision for a lifecycle-oriented discovery index spanning research, implementation, validation, and operations.
 - Added a curated registry of 67 resource entry points across scholarly discovery, exchange APIs, trading frameworks, data tools, ML tooling, testing, observability, standards, and security.
-- Added a local CLI to search the registry and generated publication tables, validate registry metadata, and export a Markdown resource index.
+- Added a local CLI to search the curated registry, collected resource metadata, and generated publication tables, validate registry metadata, and export a Markdown resource index.
+- Added a finite query plan and a bounded, explicit collector for public GitHub, Hugging Face model/dataset, and Zenodo metadata APIs.
+- Added offline tests for query-plan validation, normalization, provenance merging, rate-limit termination, and collected-record search.
+- Added a repository-wide English-only text check and CI enforcement.
 - Removed embedded API credentials from the current configuration and switched provider keys to environment-backed settings.
 - Made runtime directory creation explicit.
 - Made URL validation stricter and source-domain matching exact.
