@@ -19,6 +19,10 @@ class ClassificationTests(unittest.TestCase):
         )
         self.assertNotIn("F04_SmartMoney_ICT", categories)
 
+    def test_ict_alone_with_generic_trading_context_is_not_enough(self):
+        categories = classify("ICT technology for algorithmic trading systems")
+        self.assertNotIn("F04_SmartMoney_ICT", categories)
+
     def test_smart_money_concepts_have_direct_domain_evidence(self):
         categories = classify("Smart Money Concepts: Fair Value Gaps and Order Blocks")
         self.assertIn("F04_SmartMoney_ICT", categories)
