@@ -97,7 +97,7 @@ def _normalise(value: Any) -> str:
 def _matches(record: dict[str, Any], query: str) -> tuple[int, bool]:
     searchable_fields = (
         "name", "url", "description", "type", "tags", "lifecycle_stages",
-        "topics", "categories", "source", "category",
+        "topics", "categories", "source", "category", "row_text",
     )
     haystack = _normalise(" ".join(str(record.get(field, "")) for field in searchable_fields))
     terms = _normalise(query).split()
@@ -114,6 +114,7 @@ def _push_top_k(heap: list[tuple[int, int, dict[str, Any]]],
     score, matched = _matches(record, query)
     if not matched:
         return serial
+    record["_search_score"] = score
     entry = (score, serial, record)
     serial += 1
     if len(heap) < limit:
@@ -322,12 +323,22 @@ def main(argv: list[str] | None = None) -> int:
     if not args.articles_only:
         results.extend(search_registry(catalog, query, limit=args.limit))
     if not args.registry_only:
-        remaining = max(args.limit - len(results), 0)
-        # Always scan article files when requested, but keep memory bounded to the top results.
-        if remaining:
-            results.extend(search_articles(query, args.category_dir, limit=remaining))
-    print_results(results[:args.limit])
-    print(f"\nDisplayed {min(len(results), args.limit)} results.")
+        # Keep the best candidates from each corpus, then rank the combined result set.
+        results.extend(search_articles(query, args.category_dir, limit=args.limit))
+    results.sort(key=lambda item: (-int(item.get("_search_score", 0)), item.get("result_kind", ""), item.get("name", "")))
+    deduplicated: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    for item in results:
+        url = str(item.get("url", ""))
+        if url and url in seen_urls:
+            continue
+        if url:
+            seen_urls.add(url)
+        deduplicated.append(item)
+        if len(deduplicated) >= args.limit:
+            break
+    print_results(deduplicated)
+    print(f"\nDisplayed {len(deduplicated)} results.")
     return 0
 
 
