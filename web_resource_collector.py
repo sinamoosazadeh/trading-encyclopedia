@@ -16,6 +16,7 @@ import re
 import sys
 import tempfile
 import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -157,17 +158,17 @@ def _retry_after_seconds(response: requests.Response, attempt: int) -> float:
     raw = response.headers.get("Retry-After", "").strip()
     if raw:
         try:
-            return min(max(float(raw), 1.0), 120.0)
+            return min(max(float(raw), 1.0), 60.0)
         except ValueError:
             try:
                 parsed = email.utils.parsedate_to_datetime(raw)
                 if parsed.tzinfo is None:
                     parsed = parsed.replace(tzinfo=timezone.utc)
                 seconds = (parsed - datetime.now(timezone.utc)).total_seconds()
-                return min(max(seconds, 1.0), 120.0)
+                return min(max(seconds, 1.0), 60.0)
             except (TypeError, ValueError, OverflowError):
                 pass
-    return min(5.0 * (2 ** attempt), 120.0)
+    return min(5.0 * (2 ** attempt), 60.0)
 
 
 def fetch_json(provider: str, url: str, params: dict[str, Any],
@@ -335,20 +336,24 @@ def provider_search(provider: str, query: dict[str, Any], limit: int,
         data = fetch_json(provider, "https://api.github.com/search/repositories", {
             "q": phrase, "sort": "stars", "order": "desc", "per_page": limit,
         }, timeout=timeout)
-        items = data.get("items", []) if isinstance(data, dict) else []
-        normalized = [normalize_github(item, query) for item in items if isinstance(item, dict)]
+        if not isinstance(data, dict) or not isinstance(data.get("items"), list):
+            raise ProviderError("github: response did not contain an items array")
+        normalized = [normalize_github(item, query) for item in data["items"] if isinstance(item, dict)]
     elif provider in ("huggingface_models", "huggingface_datasets"):
         endpoint = "models" if provider == "huggingface_models" else "datasets"
         data = fetch_json(provider, f"https://huggingface.co/api/{endpoint}", {
             "search": phrase, "limit": limit, "sort": "downloads", "direction": -1,
         }, timeout=timeout)
-        normalized = [normalize_huggingface(item, query) for item in data if isinstance(item, dict)] if isinstance(data, list) else []
+        if not isinstance(data, list):
+            raise ProviderError(f"{provider}: response was not a JSON array")
+        normalized = [normalize_huggingface(item, query) for item in data if isinstance(item, dict)]
     elif provider == "zenodo":
         data = fetch_json(provider, "https://zenodo.org/api/records", {
             "q": phrase, "size": limit,
         }, timeout=timeout)
-        hits = data.get("hits", {}).get("hits", []) if isinstance(data, dict) else []
-        normalized = [normalize_zenodo(item, query) for item in hits if isinstance(item, dict)]
+        if not isinstance(data, dict) or not isinstance(data.get("hits"), dict) or not isinstance(data["hits"].get("hits"), list):
+            raise ProviderError("zenodo: response did not contain hits.hits")
+        normalized = [normalize_zenodo(item, query) for item in data["hits"]["hits"] if isinstance(item, dict)]
     else:
         raise ValueError(f"Unsupported provider: {provider}")
     return [item for item in normalized if item is not None]
@@ -398,20 +403,20 @@ def merge_records(existing: list[dict[str, Any]], incoming: list[dict[str, Any]]
             new_count += 1
             continue
         previous = merged[record_id]
-        # Prefer newly observed provider metadata; preserve prior lifecycle and source provenance.
+        # Preserve historical query provenance before replacing mutable display fields.
         previous_metadata = previous.get("metadata") if isinstance(previous.get("metadata"), dict) else {}
         incoming_metadata = record.get("metadata") if isinstance(record.get("metadata"), dict) else {}
+        old_query_id = previous.get("search_query_id")
+        old_queries = previous.get("query_provenance", [])
+        if not isinstance(old_queries, list):
+            old_queries = []
         previous.update(record)
         previous["metadata"] = {**previous_metadata, **incoming_metadata}
-        queries = previous.setdefault("query_provenance", [])
-        for query_id in (
-            previous.get("search_query_id"),
-            record.get("search_query_id"),
-        ):
-            if query_id and query_id not in queries:
-                queries.append(query_id)
-        if record.get("search_query_id") and record.get("search_query_id") not in queries:
-            queries.append(record["search_query_id"])
+        queries = list(dict.fromkeys(
+            [item for item in old_queries if isinstance(item, str) and item]
+            + [item for item in (old_query_id, record.get("search_query_id")) if isinstance(item, str) and item]
+        ))
+        previous["query_provenance"] = queries
     return sorted(merged.values(), key=lambda item: item["id"]), new_count
 
 
@@ -421,13 +426,15 @@ def run_collection(provider: str, queries: list[dict[str, Any]], result_limit: i
     records_path = data_dir / "resource_records.jsonl"
     runs_path = data_dir / "resource_collection_runs.jsonl"
     existing = read_jsonl(records_path)
+    old_runs = read_jsonl(runs_path)
+    run_id = uuid.uuid4().hex
     incoming: list[dict[str, Any]] = []
     run_events: list[dict[str, Any]] = []
     provider_paused = False
 
     for index, query in enumerate(queries):
         event = {
-            "run_id": utc_now(),
+            "run_id": run_id,
             "provider": provider,
             "query_id": query["id"],
             "query": query["query"],
@@ -459,7 +466,6 @@ def run_collection(provider: str, queries: list[dict[str, Any]], result_limit: i
 
     merged, new_count = merge_records(existing, incoming)
     write_jsonl_atomic(records_path, merged)
-    old_runs = read_jsonl(runs_path)
     write_jsonl_atomic(runs_path, (old_runs + run_events)[-10000:])
     successes = sum(event["status"] == "success" for event in run_events)
     empties = sum(event["status"] == "empty" for event in run_events)
