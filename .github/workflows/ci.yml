@@ -47,8 +47,16 @@ jobs:
       - name: Validate curated resource registry
         run: python resource_catalog.py validate
 
+      - name: Validate bounded discovery query plan
+        run: python web_resource_collector.py validate-queries
+
+      - name: Verify English-only text policy
+        run: python scripts/check_english_only.py
+
       - name: Smoke-test local resource search
-        run: python resource_catalog.py search "machine learning" --registry-only --limit 5
+        run: |
+          python resource_catalog.py search "machine learning" --registry-only --limit 5
+          python web_resource_collector.py plan --provider github --max-queries 2
 
       - name: Run local preflight checks
         run: python preflight.py
