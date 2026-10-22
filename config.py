@@ -28,7 +28,7 @@ API_KEYS = {
     "repec": os.getenv("REPEC_API_KEY", "").strip(),
 }
 
-CONTACT_EMAIL = os.getenv("TRADING_ENCYCLOPEDIA_CONTACT_EMAIL", "sinamoosazadeh@github.com").strip()
+CONTACT_EMAIL = (os.getenv("TRADING_ENCYCLOPEDIA_CONTACT_EMAIL") or "sinamoosazadeh@github.com").strip()
 
 # Execution settings. Individual providers may override limits when required by
 # the provider's documented API contract.
@@ -40,13 +40,13 @@ MAX_WORKERS = int(os.getenv("TE_MAX_WORKERS", "2"))
 
 # Paths are configurable and have no filesystem side effects at import time.
 BASE_DIR = os.path.abspath(os.path.expanduser(
-    os.getenv("TRADING_ENCYCLOPEDIA_HOME", "~/encyclopedia")
+    (os.getenv("TRADING_ENCYCLOPEDIA_HOME") or "~/encyclopedia")
 ))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 CATS_DIR = os.path.join(OUTPUT_DIR, "categories")
 SDCARD_DIR = os.path.abspath(os.path.expanduser(
-    os.getenv("TRADING_ENCYCLOPEDIA_EXPORT_DIR", "/sdcard/Download/trading-encyclopedia")
+    (os.getenv("TRADING_ENCYCLOPEDIA_EXPORT_DIR") or "/sdcard/Download/trading-encyclopedia")
 ))
 
 def ensure_runtime_dirs():
