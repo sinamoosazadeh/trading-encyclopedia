@@ -15,9 +15,12 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from typing import Any
 
+from config import DATA_DIR
+
 ROOT = Path(__file__).resolve().parent
 DEFAULT_CATALOG = ROOT / "resources" / "catalog.json"
 DEFAULT_ARTICLE_DIR = ROOT / "output" / "categories"
+DEFAULT_COLLECTED_RECORDS = Path(DATA_DIR) / "resource_records.jsonl"
 URL_PATTERN = re.compile(r"\[LINK\]\((https?://[^)\s]+)\)")
 
 
@@ -97,7 +100,7 @@ def _normalise(value: Any) -> str:
 def _matches(record: dict[str, Any], query: str) -> tuple[int, bool]:
     searchable_fields = (
         "name", "url", "description", "type", "tags", "lifecycle_stages",
-        "topics", "categories", "source", "category", "row_text",
+        "topics", "categories", "source", "category", "row_text", "metadata", "provider", "search_query", "provider_id",
     )
     haystack = _normalise(" ".join(str(record.get(field, "")) for field in searchable_fields))
     terms = _normalise(query).split()
@@ -191,6 +194,36 @@ def search_articles(query: str, category_dir: Path = DEFAULT_ARTICLE_DIR,
     return [entry[2] for entry in sorted(heap, key=lambda entry: (-entry[0], entry[1]))]
 
 
+
+def search_collected_records(query: str, records_path: Path = DEFAULT_COLLECTED_RECORDS,
+                             limit: int = 25) -> list[dict[str, Any]]:
+    """Search collected resource metadata without loading the whole JSONL corpus into RAM."""
+    if limit < 1:
+        raise ValueError("limit must be at least 1")
+    if not records_path.is_file():
+        return []
+
+    heap: list[tuple[int, int, dict[str, Any]]] = []
+    serial = 0
+    with records_path.open("r", encoding="utf-8", errors="replace") as handle:
+        for line_number, line in enumerate(handle, 1):
+            if not line.strip():
+                continue
+            try:
+                value = json.loads(line)
+            except json.JSONDecodeError:
+                raise ValueError(f"Invalid JSONL in {records_path} at line {line_number}")
+            if not isinstance(value, dict):
+                continue
+            record = dict(value)
+            record["result_kind"] = "collected-resource"
+            record["row_text"] = json.dumps(value, ensure_ascii=False, sort_keys=True)
+            if not record.get("name") and record.get("title"):
+                record["name"] = record["title"]
+            serial = _push_top_k(heap, record, query, limit, serial)
+    return [entry[2] for entry in sorted(heap, key=lambda entry: (-entry[0], entry[1]))]
+
+
 def _markdown_escape(value: Any) -> str:
     return str(value or "").replace("|", "\\|").replace("\n", " ").strip()
 
@@ -231,6 +264,10 @@ def print_results(results: list[dict[str, Any]]) -> None:
         label = item.get("name") or item.get("title") or item.get("id") or "Untitled"
         print(f"{number}. {label}")
         print(f"   Type: {item.get('type', 'unknown')}")
+        if item.get("provider"):
+            print(f"   Provider: {item['provider']}")
+        if item.get("review_status"):
+            print(f"   Review status: {item['review_status']}")
         if item.get("category"):
             print(f"   Category: {item['category']}")
         if item.get("lifecycle_stages"):
@@ -245,13 +282,15 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    search_parser = subparsers.add_parser("search", help="Search the local registry and/or generated publication index")
+    search_parser = subparsers.add_parser("search", help="Search curated resources, collected metadata, and generated publication records")
     search_parser.add_argument("query", nargs="+", help="Search terms")
     search_parser.add_argument("--limit", type=int, default=25)
     mode = search_parser.add_mutually_exclusive_group()
-    mode.add_argument("--registry-only", action="store_true")
-    mode.add_argument("--articles-only", action="store_true")
+    mode.add_argument("--registry-only", action="store_true", help="Search only the curated static registry")
+    mode.add_argument("--articles-only", action="store_true", help="Search only generated scholarly publication tables")
+    mode.add_argument("--collected-only", action="store_true", help="Search only locally collected public resource metadata")
     search_parser.add_argument("--category-dir", type=Path, default=DEFAULT_ARTICLE_DIR)
+    search_parser.add_argument("--collected-path", type=Path, default=DEFAULT_COLLECTED_RECORDS)
 
     list_parser = subparsers.add_parser("list", help="List curated resources with optional filters")
     list_parser.add_argument("--type", dest="resource_type")
@@ -320,11 +359,16 @@ def main(argv: list[str] | None = None) -> int:
     if args.limit < 1:
         parser.error("--limit must be at least 1")
     results: list[dict[str, Any]] = []
-    if not args.articles_only:
-        results.extend(search_registry(catalog, query, limit=args.limit))
-    if not args.registry_only:
-        # Keep the best candidates from each corpus, then rank the combined result set.
-        results.extend(search_articles(query, args.category_dir, limit=args.limit))
+    try:
+        if not args.articles_only and not args.collected_only:
+            results.extend(search_registry(catalog, query, limit=args.limit))
+        if not args.registry_only and not args.collected_only:
+            results.extend(search_articles(query, args.category_dir, limit=args.limit))
+        if not args.registry_only and not args.articles_only:
+            results.extend(search_collected_records(query, args.collected_path, limit=args.limit))
+    except (OSError, ValueError) as exc:
+        print(f"Local search failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+        return 2
     results.sort(key=lambda item: (-int(item.get("_search_score", 0)), item.get("result_kind", ""), item.get("name", "")))
     deduplicated: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
