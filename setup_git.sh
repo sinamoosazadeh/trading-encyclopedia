@@ -25,11 +25,12 @@ elif [[ "$CURRENT_REMOTE" != "$EXPECTED_REMOTE" ]]; then
     echo "  git remote set-url origin <your-repository-url>"
 fi
 
-if ! git config user.name >/dev/null; then
-    git config user.name "Trading Encyclopedia Contributor"
-fi
-if ! git config user.email >/dev/null; then
-    git config user.email "contributor@example.invalid"
+if ! git config user.name >/dev/null || ! git config user.email >/dev/null; then
+    echo "Git author identity is not configured. Set it explicitly before committing:"
+    echo "  git config user.name \"Your Name\""
+    echo "  git config user.email \"you@example.com\""
+    echo "The script will not invent a commit identity."
+    exit 1
 fi
 
 echo "Git repository is ready."
