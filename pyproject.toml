@@ -34,5 +34,6 @@ py-modules = [
   "merge_light",
   "preflight",
   "resource_catalog",
+  "web_resource_collector",
   "utils",
 ]
