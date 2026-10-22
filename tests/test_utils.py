@@ -12,6 +12,7 @@ class UtilityTests(unittest.TestCase):
         self.assertFalse(is_valid_url("ftp://example.com/docs"))
         self.assertFalse(is_valid_url("https://user:password@example.com/docs"))
         self.assertFalse(is_valid_url("https:///missing-host"))
+        self.assertFalse(is_valid_url("https://example.com:bad/path"))
 
     def test_host_matching_does_not_accept_a_lookalike_domain(self):
         access = get_access_level({"url": "https://github.com.evil.invalid/path"})
