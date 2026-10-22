@@ -6,6 +6,13 @@
 import os
 from pathlib import Path
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # Export environment variables directly when python-dotenv is unavailable.
+    pass
+
 # API credentials are optional and must be supplied through the environment.
 # Never commit real credentials to this repository.
 API_KEYS = {
