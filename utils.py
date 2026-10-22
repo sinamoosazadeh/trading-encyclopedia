@@ -46,6 +46,7 @@ def is_valid_url(url):
         return False
     try:
         parsed = urlsplit(url.strip())
+        _ = parsed.port  # Reject malformed numeric ports.
         return (
             parsed.scheme.lower() in ("http", "https")
             and bool(parsed.hostname)
