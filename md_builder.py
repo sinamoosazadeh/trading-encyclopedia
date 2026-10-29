@@ -380,6 +380,7 @@ def build_readme():
         "2. Each category file contains a searchable table of items",
         "3. Check [STATISTICS.md](STATISTICS.md) for top-cited papers",
         "4. Check [DOMAINS_GUIDE.md](DOMAINS_GUIDE.md) for access info",
+        "5. Open [RESOURCE_INDEX.md](RESOURCE_INDEX.md) for curated research, API, data, framework, testing, and operations resources",
         "",
         "## Column Guide",
         "",
@@ -429,7 +430,14 @@ def build_all(categorized, stats):
     _write(os.path.join(OUTPUT_DIR, "VENUES_INDEX.md"), build_venues_index(categorized))
     _write(os.path.join(OUTPUT_DIR, "DOMAINS_GUIDE.md"), build_domains_guide())
     _write(os.path.join(OUTPUT_DIR, "README.md"), build_readme())
-    print("  Index files: 6 written")
+
+    # Rebuild the curated resource index on every export so the generated README
+    # never points to a stale or manually maintained copy.
+    from resource_catalog import load_catalog, export_markdown
+    from pathlib import Path
+    catalog = load_catalog()
+    export_markdown(catalog, Path(OUTPUT_DIR) / "RESOURCE_INDEX.md")
+    print("  Index files: 7 written (including RESOURCE_INDEX.md)")
 
     # Copy to the optional external export directory, if it is available.
     try:
