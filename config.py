@@ -1,58 +1,68 @@
 # =============================================================
-# config.py - Trading Encyclopedia v2.0
-# Central configuration: API keys, categories, keywords
+# config.py - Trading Encyclopedia
+# Environment-backed runtime configuration and search taxonomy.
 # =============================================================
 
 import os
+from pathlib import Path
 
-# -------------------------------------------------------------
-# API KEYS
-# -------------------------------------------------------------
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # Export environment variables directly when python-dotenv is unavailable.
+    pass
+
+# API credentials are optional and must be supplied through the environment.
+# Never commit real credentials to this repository.
 API_KEYS = {
-    "openalex":       "piwCvXWBWaoWEFT8s8S5CC",
-    "springer_meta":  "61fd7a8b7327ad2cd1d209e0a3b7ce0c",
-    "springer_oa":    "477aa151e4107f7bb9bdc5f5042acaab",
-    "core":           "qXfgGOk4Yh5zAMZLVeo0FmTRlnr8KCH9",
-    "semantic_scholar": "",
-    "crossref":       "",
-    "arxiv":          "",
-    "europepmc":      "",
-    "doaj":           "",
-    "repec":          "",
+    "openalex": os.getenv("OPENALEX_API_KEY", "").strip(),
+    "springer_meta": os.getenv("SPRINGER_META_API_KEY", "").strip(),
+    "springer_oa": os.getenv("SPRINGER_OA_API_KEY", "").strip(),
+    "core": os.getenv("CORE_API_KEY", "").strip(),
+    "semantic_scholar": os.getenv("SEMANTIC_SCHOLAR_API_KEY", "").strip(),
+    "crossref": os.getenv("CROSSREF_API_KEY", "").strip(),
+    "arxiv": os.getenv("ARXIV_API_KEY", "").strip(),
+    "europepmc": os.getenv("EUROPEPMC_API_KEY", "").strip(),
+    "doaj": os.getenv("DOAJ_API_KEY", "").strip(),
+    "repec": os.getenv("REPEC_API_KEY", "").strip(),
 }
 
-CONTACT_EMAIL = "sinamoosazadeh@github.com"
+CONTACT_EMAIL = os.getenv("TRADING_ENCYCLOPEDIA_CONTACT_EMAIL", "").strip()
 
-# -------------------------------------------------------------
-# EXECUTION SETTINGS
-# -------------------------------------------------------------
-RESULTS_PER_QUERY = 50
-REQUEST_DELAY     = 1.5
-MAX_RETRIES       = 4
-TIMEOUT           = 35
-MAX_WORKERS       = 2
+# Execution settings. Individual providers may override limits when required by
+# the provider's documented API contract.
+RESULTS_PER_QUERY = int(os.getenv("TE_RESULTS_PER_QUERY", "50"))
+REQUEST_DELAY = float(os.getenv("TE_REQUEST_DELAY", "1.5"))
+MAX_RETRIES = int(os.getenv("TE_MAX_RETRIES", "4"))
+TIMEOUT = float(os.getenv("TE_TIMEOUT_SECONDS", "35"))
+MAX_WORKERS = int(os.getenv("TE_MAX_WORKERS", "2"))
 
-# -------------------------------------------------------------
-# OUTPUT PATHS
-# -------------------------------------------------------------
-BASE_DIR      = os.path.expanduser("~/encyclopedia")
-DATA_DIR      = os.path.join(BASE_DIR, "data")
-OUTPUT_DIR    = os.path.join(BASE_DIR, "output")
-CATS_DIR      = os.path.join(OUTPUT_DIR, "categories")
-SDCARD_DIR    = "/sdcard/Download/trading-encyclopedia"
+# Paths are configurable and have no filesystem side effects at import time.
+BASE_DIR = os.path.abspath(os.path.expanduser(
+    (os.getenv("TRADING_ENCYCLOPEDIA_HOME") or "~/encyclopedia")
+))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+CATS_DIR = os.path.join(OUTPUT_DIR, "categories")
+SDCARD_DIR = os.path.abspath(os.path.expanduser(
+    (os.getenv("TRADING_ENCYCLOPEDIA_EXPORT_DIR") or "/sdcard/Download/trading-encyclopedia")
+))
 
-for d in [DATA_DIR, OUTPUT_DIR, CATS_DIR, SDCARD_DIR]:
-    os.makedirs(d, exist_ok=True)
+def ensure_runtime_dirs():
+    """Create runtime directories only when a command explicitly needs them."""
+    for directory in (DATA_DIR, OUTPUT_DIR, CATS_DIR):
+        Path(directory).mkdir(parents=True, exist_ok=True)
 
 # -------------------------------------------------------------
 # ACCESS LEVEL LABELS
 # -------------------------------------------------------------
 ACCESS = {
-    "open":    "OPEN - Full text free",
-    "partial": "PARTIAL - Abstract free, full text may require subscription",
-    "gated":   "GATED - Free registration required",
-    "paywall": "PAYWALL - Subscription required",
-    "unknown": "UNKNOWN",
+    "open":    "OPEN - Resource is declared or recognized as publicly available",
+    "partial": "PARTIAL - Metadata or abstract is available; full access may require a subscription",
+    "gated":   "GATED - Account, registration, or other access conditions may apply",
+    "paywall": "PAYWALL - Subscription or payment is reported as required",
+    "unknown": "UNKNOWN - Access has not been verified",
 }
 
 OPEN_DOMAINS = [

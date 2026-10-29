@@ -1,6 +1,6 @@
 # Market Impact & Execution
 
-> Category: `C03_Market_Impact_Execution` | Items: **4311** | Generated: 2026-10-15 15:03
+> Category: `C03_Market_Impact_Execution` | Items: **4309** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -2978,7 +2978,6 @@
 | Cross Hedging with Single Stock Futures | Sang Soo Kim; Chris Brooks; Ryan J. Davies | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6560808.pdf) |
 | Corporate Cash Flow and Stock Price Exposures to Foreign Exchange Rate Risk | Bartram, Söhnke M. | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/7301528.pdf) |
 | Price Pooling and the Gains from Hedging: Application to a Swedish Grain Coopera | Johnson, D. Demcey; Andersson, Hans; Nilsson, Tomas K.H. | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6813928.pdf) |
-| Investigation of Natural Effective Gamma Dose Rates case study: Ardabil Province | زیوری, سحر; صادقی, هادی; Sahar Zivari; Soheila Rahimzadeh; ح | 1391 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/11685580.pdf) |
 | The foreign exchange exposure of UK non-financial firms: a comparison of market- | Agyei-Ampomah, S; Mazouz, Khelifa; Yin, Shuxing; Agyei-Ampom | 2012 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/19965684.pdf) |
 | The Impact of Chernobyl on Health and Labour Market Performance | Hartmut Lehmann; Jonathan Wadsworth | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6363407.pdf) |
 | The impact of HIV exposure and maternal Mycobacterium tuberculosis infection on  | Kampmann, B; Martin Kidd; Wilkinson, Robert J; Robert J. Wil | 2015 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/29469483.pdf) |
@@ -3877,7 +3876,6 @@
 | Standard Best Practices for System Safety Program Development and Execution | G-48 System Safety | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.4271/geiastd0010a) |
 | Best Execution in Mortgage Secondary Markets | Chung-Jui Wang; Stanislav P. Uryasev | 2005 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.797126) |
 | On the main purpose of the kinds of the security of the obligation execution | Ірина Пучковська | 2020 | 9 | Problems of Legality | 0 | Cros | ? | [LINK](https://doi.org/10.21564/2414-990x.148.195125) |
-| Effect of Forced Execution Procedures on the Obligation to Bank Secrecy | YASSER AL-SABAWEE; Seebil Haji Omar | 2021 | 43 | الرافدین للحقوق | 0 | Cros | ? | [LINK](https://doi.org/10.33899/alaw.2021.130124.1152) |
 | Execution—Best Practice Use of Strategic Resources | - | 2012 | 2 | Strategy and Business Process Management | 0 | Cros | ? | [LINK](https://doi.org/10.1201/b11781-8) |
 | Upper Extremity Surgery - Evidence to Execution [Working Title] | - | 2026 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.5772/intechopen.1012122) |
 | What Does Best Execution Look Like? | Thomas Ernst; Andrey Malenko; Chester S. Spatt; Jian Sun | 2026 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.6635238) |

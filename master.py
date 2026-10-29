@@ -15,7 +15,7 @@ Usage:
 """
 import os, sys, time, json, signal, argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from config import CATEGORIES, DATA_DIR, MAX_WORKERS, REQUEST_DELAY
+from config import CATEGORIES, DATA_DIR, MAX_WORKERS, REQUEST_DELAY, ensure_runtime_dirs
 from utils import deduplicate, save_json, load_json, log, cache_lock, progress_bar
 
 import api_crossref, api_openalex, api_semanticscholar
@@ -64,6 +64,7 @@ def search_one(api_name, func, category, kw):
 
 def run(api_name):
     global _cache, _done, _total
+    ensure_runtime_dirs()
 
     func = API_MAP.get(api_name)
     if not func:

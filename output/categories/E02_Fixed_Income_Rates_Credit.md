@@ -1,6 +1,6 @@
 # Fixed Income Rates & Credit
 
-> Category: `E02_Fixed_Income_Rates_Credit` | Items: **4784** | Generated: 2026-10-15 15:03
+> Category: `E02_Fixed_Income_Rates_Credit` | Items: **4783** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -3480,7 +3480,6 @@
 | Pricing Variance Swaps Under Heston Stochastic Volatility Model with Stochastic  | Habakuk Djiké | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.4451757) |
 | Convertible Bond Pricing Based on Variance Gamma Model | Min Cheng; Yubo Li | 2020 | 6 | Saudi Journal of Economics and Finance | 0 | Cros | ? | [LINK](https://doi.org/10.36348/sjef.2020.v04i06.015) |
 | MCMC Estimation of Credit Risk Measures | - | 2015 | 38 | Model Risk in Financial Markets | 0 | Cros | ? | [LINK](https://doi.org/10.1142/9789814663410_0013) |
-| The Bayesian Design Of Kaplan Meier Estimation Using Gibbs Sampling:, Applicatio | Ahmed Hamimes; Rachid Benamirouche | 2020 | 150 | مجلة اقتصاديات المال والأعمال | 0 | Cros | ? | [LINK](https://doi.org/10.37170/1986-004-004-007) |
 | A SC Financial Credit Risk Assessment Model Based on Particle Filter and SVM wit | Songwei Fan | 2024 | 10 | Journal of Electrical Systems | 0 | Cros | ? | [LINK](https://doi.org/10.52783/jes.3268) |
 | Portfolio Credit Risk Analysis Involving CDO Tranches | Menghui Cao; W.J. Morokoff | - | 4 | Proceedings of the 2004 Winter Simulation Conferen | 0 | Cros | ? | [LINK](https://doi.org/10.1109/wsc.2004.1371509) |
 | Chapter 31. Portfolio Credit Risk and Macroeconomic Shocks: Applications to Stre | Miguel Segoviano | 2014 | - | A Guide to IMF Stress Testing | 0 | Cros | ? | [LINK](https://doi.org/10.5089/9781484368589.071.ch031) |

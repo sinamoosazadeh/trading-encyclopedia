@@ -2831,7 +2831,7 @@
 | Monitoring immunological COVID-19 vaccine clinical testing across the CEPI Centr | Lauren M Schwartz; Jose Vila-Belda; Jerome Carless; Sadish D | 2025 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3389/fimmu.2025.1569251) |
 | A Wireless Wearable Ecosystem for Social Network Analysis in Free-living Animals | Matt Gaidica; Mengxiao Zhang; Ben Dantzer | 2024 | - | - | 0 | Euro | ? | [LINK](https://doi.org/10.1109/lsens.2024.3406328) |
 | FragTracer: Real-Time Fragmentation Monitoring Tool for F2FS File System. | Minseon Cho; Donghyun Kang | 2023 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3390/s23094488) |
-| ﻿Jakob Emanuel Lange: The man and his mushrooms. | Ronald H Petersen; Henning Knudsen | 2022 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3897/mycokeys.89.79064) |
+| Jakob Emanuel Lange: The man and his mushrooms. | Ronald H Petersen; Henning Knudsen | 2022 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3897/mycokeys.89.79064) |
 | Indigenous Shared Governance, International Law, and Preserving Rainforest in a  | Adam Sulkowski | 2020 | - | - | 0 | Euro | ? | [LINK](https://doi.org/10.2139/ssrn.3684021) |
 | Abstracts of papers presented at the 1995 Pittsburgh Conference. | - | 1995 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.1155/s1463924695000228) |
 | Formal modeling and verification of GRANDPA finalization safety in polkadot. | Muhammad Rashid; Nazir Ahmad Zafar; Lal Khan; Mohammad Zubai | 2026 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.1038/s41598-026-51047-3) |

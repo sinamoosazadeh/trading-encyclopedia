@@ -1,6 +1,6 @@
 # Simulation & Synthetic Data
 
-> Category: `A02_Simulation` | Items: **8218** | Generated: 2026-10-15 15:03
+> Category: `A02_Simulation` | Items: **8216** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -6601,7 +6601,6 @@
 | Gibbs sampling for ordinary, robust and logistic regression with Laplace priors | Robert B Gramacy | 2013 | 17 | Bayesian Theory and Applications | 0 | Cros | ? | [LINK](https://doi.org/10.1093/acprof:oso/9780199695607.003.0023) |
 | sams: Merge-Split Samplers for Conjugate Bayesian Nonparametric Models | Spencer Newcomb | 2020 | - | CRAN: Contributed Packages | 0 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.sams) |
 | Using WinBUGS for Bayesian Estimation | Eric A. Suess; Bruce E. Trumbo | 2010 | 26 | Introduction to Probability Simulation and Gibbs S | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-0-387-68765-0_10) |
-| The Bayesian Design Of Kaplan Meier Estimation Using Gibbs Sampling:, Applicatio | Ahmed Hamimes; Rachid Benamirouche | 2020 | 150 | مجلة اقتصاديات المال والأعمال | 0 | Cros | ? | [LINK](https://doi.org/10.37170/1986-004-004-007) |
 | Derivation of Linear Models for Quantitative Traits by Bayesian Estimation with  | Akihiro Nakaya; Sachiko Isobe | 2017 | 31 | Genomic Selection for Crop Improvement | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-319-63170-7_3) |
 | EBMAforecast: Estimate Ensemble Bayesian Model Averaging Forecasts using Gibbs S | Florian M. Hollenbach; Jacob M. Montgomery; Michael D. Ward | 2012 | - | CRAN: Contributed Packages | 0 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.ebmaforecast) |
 | Mean Reversion Tests of Put-Call Parity for Equity Index Options with Randomizat | Anthony Tu; Doris Chin | 2004 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.499604) |
@@ -7960,7 +7959,6 @@
 | Importance of disclosure of additional information related to inflation to finan | Rokia Ouadi; Salah Merazka | 2017 | 23 | Economic Studies | 0 | Open | ? | [LINK](https://openalex.org/W2737026323) |
 | The importance of financial control technology in the banking business environme | Meriem Makhloufi | 2026 | - | The International tax journal | 0 | Open | OPEN | [LINK](https://internationaltaxjournal.online/index.php/itj/article/download/695/785) |
 | An Exploration of the Importance of Financial System in Promoting Green Global V | Nguyen Hong Yen; Nguyen Thi Cam Thuy | 2025 | 16 | Operations and Supply Chain Management An Internat | 0 | Open | OPEN | [LINK](https://journal.oscm-forum.org/journal/journal/download/20250805143844_oscm-2025-importance-of-financial-system-in-green-value-chain-global-sample.pdf) |
-| Importance of achieving the financial equilibrium in the economic corporation An | Boubekeur amirouche | 2022 | - | مجلة البحوث في العلوم المالية و المحاسبة | 0 | Open | OPEN | [LINK](https://journals.univ-msila.dz/index.php/jorfa/article/download/3406/2746) |
 | The importance of accounting information in determining the impact of changes in | Shuker Mahmoud Mustafa Mahmoud Mustafa | 2019 | 14 | - | 0 | Open | ? | [LINK](https://openalex.org/W2946792782) |
 | The Effect of the Items off Balance Sheet (Assurances) on the Financial Crisis a | Ibrahim Abed Mousa Alsabary; Ali Hadi | 2012 | 51 | AL-Qadisiyah Journal For Administrative and Econom | 0 | Open | ? | [LINK](https://openalex.org/W3084961352) |
 | Importance of Financial Literacy Training among School Teachers to Empower the N | Dr. Gilbi John; Prof. Radhakrushna Thange | 2026 | - | Zenodo (CERN European Organization for Nuclear Res | 0 | Open | OPEN | [LINK](https://doi.org/10.5281/zenodo.18638971) |

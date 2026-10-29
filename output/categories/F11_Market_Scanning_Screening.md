@@ -2340,7 +2340,7 @@
 | : The Dealer: Buying and Selling Marijuana | - | 2017 | 19 | Marijuana | 0 | Cros | ? | [LINK](https://doi.org/10.4324/9780203786321-5) |
 | Effectiveness of the Relative Strength Index Signals in Timing the Cryptocurrenc | Marek Zatwarnicki; Krzysztof Zatwarnicki; Piotr Stolarski | 2023 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3390/s23031664) |
 | Stock Trading Optimization through Model-based Reinforcement Learning with Resis | Huifang Huang; Ting Gao; Yi Gui; Jin Guo; Peng Zhang | 2022 | - | - | 0 | Euro | OPEN | [LINK](https://europepmc.org/article/PPR/PPR517072) |
-| ﻿Vascular plants of east-central Baffin Island, Nunavut, Canada: an annotated ch | Lynn J Gillespie; Paul C Sokoloff; Geoffrey A Levin | 2025 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3897/phytokeys.264.162520) |
+| Vascular plants of east-central Baffin Island, Nunavut, Canada: an annotated ch | Lynn J Gillespie; Paul C Sokoloff; Geoffrey A Levin | 2025 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3897/phytokeys.264.162520) |
 | The asymmetric relationship between Baltic Dry Index and commodity spot prices:  | Arunava Bandyopadhyay; Prabina Rajib | 2021 | - | - | 0 | Euro | OPEN | [LINK](https://europepmc.org/article/PMC/PMC8566970) |
 | Tackling the global plastic pollution crisis | - | 2026 | - | - | 0 | Euro | OPEN | [LINK](https://europepmc.org/article/PMC/PMC13637611) |
 | SSRIs-induced liver injury adverse events: a data-based retrospective study and  | Jianru Wu; Chufeng Ding; Yicong Ma; Qiaoying Huang; Qimin Wu | 2026 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3389/fphar.2026.1842778) |

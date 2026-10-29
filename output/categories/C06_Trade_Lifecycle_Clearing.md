@@ -1,6 +1,6 @@
 # Trade Lifecycle Clearing & Settlement
 
-> Category: `C06_Trade_Lifecycle_Clearing` | Items: **4666** | Generated: 2026-10-15 15:03
+> Category: `C06_Trade_Lifecycle_Clearing` | Items: **4665** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -4304,7 +4304,6 @@
 | PECULIARITIES OF GENERATION CYCLES IN THE SETTLEMENT DEVELOPMENT SEQUENCES | Maksym Filiak | 2023 | - | Global Prosperity | 0 | Open | OPEN | [LINK](https://gprosperity.org/index.php/journal/article/download/123/106) |
 | Strategic Pathways to T+1 and Beyond: Global Lessons, European Readiness, and th | Hoffström, Mira | 2025 | - | Theseus (Ammattikorkeakoulujen) | 0 | Open | OPEN | [LINK](http://www.theseus.fi/bitstream/10024/899240/2/Hoffstr%c3%b6m_Mira.pdf) |
 | Secondary markets, market intermediaries and settlement systems: IOSCO Principle | - | 2025 | 44 | ANU Press eBooks | 0 | Open | OPEN | [LINK](https://doi.org/10.22459/dscss.2025.08) |
-| The Impact of Financial Technology on Enhancing Investment Management Efficiency | Hamzeh AlKhamaiseh | 2026 | -6 | مجلة الشرق الأوسط للعلوم الإنسانية والثقافية | 0 | Open | OPEN | [LINK](https://meijournals.com/ara/index.php/mejhcs/article/download/1577/1489) |
 | Connecting Market Infrastructures in ASEAN+3 | Asian Development Bank | 2023 | - | - | 0 | Open | OPEN | [LINK](https://www.adb.org/sites/default/files/publication/887651/market-infrastructures-asean3-project-tridecagon.pdf) |
 | The Effect of Payment System Development on Open Market Operation | Fang Yiqian | 2009 | - | The Journal of Financial Research | 0 | Open | ? | [LINK](https://openalex.org/W2382554144) |
 | System, Method, and Cryptographic Wire Protocol for Zero-Knowledge Knowledge Obj | Abdul Shabazz; Trevin Rogers; Janice Words; Synaptics Lab | 2026 | - | Zenodo (CERN European Organization for Nuclear Res | 0 | Open | OPEN | [LINK](https://doi.org/10.5281/zenodo.23041136) |

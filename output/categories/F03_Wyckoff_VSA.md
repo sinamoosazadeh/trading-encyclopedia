@@ -1,6 +1,6 @@
 # Wyckoff Method & VSA
 
-> Category: `F03_Wyckoff_VSA` | Items: **4900** | Generated: 2026-10-15 15:03
+> Category: `F03_Wyckoff_VSA` | Items: **4898** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -1093,7 +1093,6 @@
 | Consistency factor for the MCD estimator at the Student-t distribution | Lucio Barabesi; Andrea Cerioli; Luis Ángel García-Escudero;  | 2023 | - | Statistics and Computing | 4 | Open | OPEN | [LINK](https://link.springer.com/content/pdf/10.1007/s11222-023-10296-2.pdf) |
 | Mathematical properties, application and simulation for the exponentiated genera | Thiago A. N. De Andrade; Frank S. Gomes-Silva; Luz Milena Ze | 2019 | 1 | Acta Scientiarum. Technology/Acta scientiarum. Tec | 4 | Open | OPEN | [LINK](http://periodicos.uem.br/ojs/index.php/ActaSciTechnol/article/download/39867/pdf) |
 | Reliability Study of Magnesium Oxychloride-Coated Reinforced Concrete Based on G | Yuanke Li; Hongxia Qiao; An Yang | 2023 | 1 | Materials | 4 | Open | OPEN | [LINK](https://www.mdpi.com/1996-1944/16/6/2521/pdf?version=1679468365) |
-| New Estimators for Weibull Distribution Parameters: Comprehensive Comparative St | Sahar Sadani; گلستان; Kamel Abdollahnezhad; Mahdi Teimouri;  | 2019 | 25 | Journal of Statistical Research of Iran | 4 | Open | OPEN | [LINK](http://jsri.srtc.ac.ir/files/site1/user_files_7b5cd7/adolati-A-10-73-16-1e9148e.pdf) |
 | Modelling Tail Behavior of Returns Using the Generalized Extreme Value Distribut | Monnye Rhoda Makhwiting; Caston Sigauke; Maseka Lesaoana | 2014 | - | Economics Management and Financial Markets | 4 | Open | ? | [LINK](https://openalex.org/W29675011) |
 | Implementing Basel II Loss Distribution Approach for Operational Risk | Pavel V. Shevchenko | 2009 | - | arXiv (Cornell University) | 4 | Open | OPEN | [LINK](https://arxiv.org/abs/0904.1805v1) |
 | A Novel Modified Lévy Flight Distribution Algorithm based on Nelder-Mead Method  | Ahmet DÜNDAR; Davut İZCİ; Serdar EKİNCİ; Erdal EKER | 2021 | 10 | DÜMF Mühendislik Dergisi | 3 | Cros | ? | [LINK](https://doi.org/10.24012/dumf.955645) |
@@ -4865,7 +4864,6 @@
 | The Gompertz Weibull Frechet Distribution: ´ Properties and Applications | Winai Bodhisuwan; Sirinapa Aryuyuen | 2021 | - | Thailand Statistician Thailand | 0 | Open | OPEN | [LINK](https://ph02.tci-thaijo.org/index.php/thaistat/article/download/245230/166268) |
 | The Marshall-Olkin Weibull-Lomax distribution: properties and applications | Amel ahmad talaat elghannam | 2025 | 22 | L Egypte Contemporaine | 0 | Open | OPEN | [LINK](https://espesl.journals.ekb.eg/article_451707_dc466491f9e00221f05d38fbce51b921.pdf) |
 | Robust Value-at-Risk estimation methods for Weibull distribution | Derya Karagöz; Uğur Karabey | 2022 | - | Research Square | 0 | Open | OPEN | [LINK](https://www.researchsquare.com/article/rs-1407497/latest.pdf) |
-| Generalized Weibull Distribution Revisited | Eman .M Sewilanl | 2008 | 18 | المجلة العلمية للبحوث التجارية (جامعة المنوفية) | 0 | Open | OPEN | [LINK](https://sjsc.journals.ekb.eg/article_118642_cf842b6b3789dd542a1f629cc5502dda.pdf) |
 | Bivariate Conditional Weibull-Lognormal Distribution Model and Its Application | Opeyemi Femi Ojo; Paul Olawole Otaru; Akano .o Rafiu; Benson | 2026 | 8 | FUDMA Journal of Sciences | 0 | Open | OPEN | [LINK](https://fjs.fudutsinma.edu.ng/index.php/fjs/article/download/5880/3891) |
 | ANALYZING TOP-20 INDEX RETURNS USING THE WEIBULL DISTRIBUTION | Sanaser Sodnomdorj; Khuslen Batbold; Ankhbayar Chuluunbaatar | 2026 | - | Journal of Business and Innovation | 0 | Open | OPEN | [LINK](https://journal.num.edu.mn/BusinessAndInnovation/article/download/11056/9567) |
 | Comparison of Estimation Methods for the Weibull Distribution in Indonesian Life | Terra Dei Alibazah; Agung Prabowo | 2025 | 18 | Indonesian Actuarial Journal | 0 | Open | OPEN | [LINK](https://iaj.aktuaris.or.id/index.php/iaj/article/download/44/16) |

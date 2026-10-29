@@ -1,0 +1,593 @@
+{
+  "schema_version": "1.0.0",
+  "description": "A bounded discovery query plan for public source metadata APIs. Query lists are versioned separately from scholarly publication queries.",
+  "execution_policy": {
+    "max_queries_per_invocation": 50,
+    "default_results_per_query": 10,
+    "maximum_results_per_query": 20,
+    "network_enabled_only_by_explicit_collect_command": true,
+    "default_inter_query_delay_seconds": 6,
+    "note": "Search API quotas and terms change. Respect response headers, stop on exhausted budgets, and never interpret ranking or popularity as quality proof."
+  },
+  "queries": [
+    {
+      "id": "gh-quant-finance-python",
+      "provider": "github",
+      "query": "quantitative finance trading Python",
+      "lifecycle_stages": [
+        "research",
+        "model-development"
+      ],
+      "tags": [
+        "quantitative-finance",
+        "python"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-algorithmic-backtesting",
+      "provider": "github",
+      "query": "algorithmic trading backtesting",
+      "lifecycle_stages": [
+        "signal-design",
+        "backtesting",
+        "validation"
+      ],
+      "tags": [
+        "algorithmic-trading",
+        "backtesting"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-event-driven-engine",
+      "provider": "github",
+      "query": "event driven trading engine",
+      "lifecycle_stages": [
+        "architecture",
+        "execution",
+        "testing"
+      ],
+      "tags": [
+        "event-driven",
+        "trading-engine"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-limit-order-book-sim",
+      "provider": "github",
+      "query": "limit order book simulator",
+      "lifecycle_stages": [
+        "research",
+        "market-making",
+        "backtesting"
+      ],
+      "tags": [
+        "market-microstructure",
+        "simulation"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-market-making",
+      "provider": "github",
+      "query": "market making trading bot",
+      "lifecycle_stages": [
+        "market-making",
+        "execution",
+        "risk-management"
+      ],
+      "tags": [
+        "market-making",
+        "execution"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-crypto-trading-bot",
+      "provider": "github",
+      "query": "crypto trading bot exchange connector",
+      "lifecycle_stages": [
+        "signal-design",
+        "exchange-integration",
+        "operations"
+      ],
+      "tags": [
+        "crypto",
+        "connectors"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-financial-forecasting",
+      "provider": "github",
+      "query": "financial time series forecasting",
+      "lifecycle_stages": [
+        "research",
+        "model-development",
+        "validation"
+      ],
+      "tags": [
+        "time-series",
+        "forecasting"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-portfolio-optimization",
+      "provider": "github",
+      "query": "portfolio optimization quantitative finance",
+      "lifecycle_stages": [
+        "optimization",
+        "risk-management"
+      ],
+      "tags": [
+        "portfolio",
+        "optimization"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-trading-risk",
+      "provider": "github",
+      "query": "trading system risk management",
+      "lifecycle_stages": [
+        "architecture",
+        "risk-management",
+        "testing"
+      ],
+      "tags": [
+        "risk-controls",
+        "architecture"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-market-data-pipeline",
+      "provider": "github",
+      "query": "historical market data pipeline",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering"
+      ],
+      "tags": [
+        "market-data",
+        "pipelines"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-exchange-websocket",
+      "provider": "github",
+      "query": "exchange websocket market data",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "exchange-integration"
+      ],
+      "tags": [
+        "websocket",
+        "market-data"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "gh-execution-algorithms",
+      "provider": "github",
+      "query": "order execution algorithms trading",
+      "lifecycle_stages": [
+        "execution",
+        "market-making",
+        "validation"
+      ],
+      "tags": [
+        "execution",
+        "microstructure"
+      ],
+      "resource_type": "open-source-framework"
+    },
+    {
+      "id": "hf-model-financial-sentiment",
+      "provider": "huggingface_models",
+      "query": "financial sentiment analysis",
+      "lifecycle_stages": [
+        "research",
+        "model-development"
+      ],
+      "tags": [
+        "financial-sentiment",
+        "nlp"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-model-time-series",
+      "provider": "huggingface_models",
+      "query": "financial time series forecasting",
+      "lifecycle_stages": [
+        "model-development",
+        "training",
+        "validation"
+      ],
+      "tags": [
+        "time-series",
+        "forecasting"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-model-stock-forecast",
+      "provider": "huggingface_models",
+      "query": "stock price forecasting",
+      "lifecycle_stages": [
+        "research",
+        "model-development"
+      ],
+      "tags": [
+        "stock-market",
+        "forecasting"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-model-regime",
+      "provider": "huggingface_models",
+      "query": "market regime classification",
+      "lifecycle_stages": [
+        "signal-design",
+        "model-development",
+        "validation"
+      ],
+      "tags": [
+        "regime-detection",
+        "classification"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-model-reinforcement-trading",
+      "provider": "huggingface_models",
+      "query": "reinforcement learning trading",
+      "lifecycle_stages": [
+        "model-development",
+        "training",
+        "execution"
+      ],
+      "tags": [
+        "reinforcement-learning",
+        "trading"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-model-portfolio",
+      "provider": "huggingface_models",
+      "query": "portfolio allocation optimization",
+      "lifecycle_stages": [
+        "optimization",
+        "risk-management"
+      ],
+      "tags": [
+        "portfolio",
+        "allocation"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-model-orderbook",
+      "provider": "huggingface_models",
+      "query": "limit order book market microstructure",
+      "lifecycle_stages": [
+        "research",
+        "model-development"
+      ],
+      "tags": [
+        "order-book",
+        "microstructure"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-model-volatility",
+      "provider": "huggingface_models",
+      "query": "financial volatility forecasting",
+      "lifecycle_stages": [
+        "research",
+        "model-development",
+        "risk-management"
+      ],
+      "tags": [
+        "volatility",
+        "forecasting"
+      ],
+      "resource_type": "model-artifact"
+    },
+    {
+      "id": "hf-data-financial-timeseries",
+      "provider": "huggingface_datasets",
+      "query": "financial time series",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering",
+        "research"
+      ],
+      "tags": [
+        "time-series",
+        "financial-data"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "hf-data-stock-market",
+      "provider": "huggingface_datasets",
+      "query": "stock market prices",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "validation"
+      ],
+      "tags": [
+        "stocks",
+        "prices"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "hf-data-crypto-market",
+      "provider": "huggingface_datasets",
+      "query": "cryptocurrency market data",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering"
+      ],
+      "tags": [
+        "crypto",
+        "market-data"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "hf-data-orderbook",
+      "provider": "huggingface_datasets",
+      "query": "limit order book",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "research",
+        "backtesting"
+      ],
+      "tags": [
+        "order-book",
+        "microstructure"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "hf-data-financial-sentiment",
+      "provider": "huggingface_datasets",
+      "query": "financial sentiment",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "model-development"
+      ],
+      "tags": [
+        "sentiment",
+        "nlp"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "hf-data-economic-indicators",
+      "provider": "huggingface_datasets",
+      "query": "economic indicators",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "research"
+      ],
+      "tags": [
+        "macro",
+        "economic-data"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "hf-data-market-microstructure",
+      "provider": "huggingface_datasets",
+      "query": "market microstructure",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "research",
+        "backtesting"
+      ],
+      "tags": [
+        "microstructure",
+        "market-data"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "hf-data-trading-validation",
+      "provider": "huggingface_datasets",
+      "query": "trading strategy backtesting",
+      "lifecycle_stages": [
+        "backtesting",
+        "validation"
+      ],
+      "tags": [
+        "backtesting",
+        "validation"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "zenodo-quant-finance",
+      "provider": "zenodo",
+      "query": "quantitative finance trading system",
+      "lifecycle_stages": [
+        "research",
+        "architecture"
+      ],
+      "tags": [
+        "quantitative-finance",
+        "trading-systems"
+      ],
+      "resource_type": "research-artifact"
+    },
+    {
+      "id": "zenodo-orderbook-data",
+      "provider": "zenodo",
+      "query": "limit order book dataset",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "research",
+        "backtesting"
+      ],
+      "tags": [
+        "order-book",
+        "dataset"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "zenodo-financial-timeseries",
+      "provider": "zenodo",
+      "query": "financial time series dataset",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "research"
+      ],
+      "tags": [
+        "time-series",
+        "dataset"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "zenodo-algorithmic-trading",
+      "provider": "zenodo",
+      "query": "algorithmic trading strategies",
+      "lifecycle_stages": [
+        "research",
+        "signal-design",
+        "backtesting"
+      ],
+      "tags": [
+        "algorithmic-trading",
+        "strategies"
+      ],
+      "resource_type": "research-artifact"
+    },
+    {
+      "id": "zenodo-market-microstructure",
+      "provider": "zenodo",
+      "query": "market microstructure",
+      "lifecycle_stages": [
+        "research",
+        "execution"
+      ],
+      "tags": [
+        "microstructure",
+        "execution"
+      ],
+      "resource_type": "research-artifact"
+    },
+    {
+      "id": "zenodo-portfolio-optimization",
+      "provider": "zenodo",
+      "query": "portfolio optimization finance",
+      "lifecycle_stages": [
+        "optimization",
+        "risk-management"
+      ],
+      "tags": [
+        "portfolio",
+        "optimization"
+      ],
+      "resource_type": "research-artifact"
+    },
+    {
+      "id": "zenodo-transaction-cost",
+      "provider": "zenodo",
+      "query": "transaction cost analysis execution",
+      "lifecycle_stages": [
+        "execution",
+        "validation"
+      ],
+      "tags": [
+        "transaction-cost",
+        "execution"
+      ],
+      "resource_type": "research-artifact"
+    },
+    {
+      "id": "zenodo-exchange-market-data",
+      "provider": "zenodo",
+      "query": "exchange market data",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering"
+      ],
+      "tags": [
+        "market-data",
+        "exchange"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "zenodo-crypto-market",
+      "provider": "zenodo",
+      "query": "cryptocurrency market dataset",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "research"
+      ],
+      "tags": [
+        "crypto",
+        "dataset"
+      ],
+      "resource_type": "dataset"
+    },
+    {
+      "id": "zenodo-rl-trading",
+      "provider": "zenodo",
+      "query": "reinforcement learning trading",
+      "lifecycle_stages": [
+        "model-development",
+        "training",
+        "validation"
+      ],
+      "tags": [
+        "reinforcement-learning",
+        "trading"
+      ],
+      "resource_type": "research-artifact"
+    },
+    {
+      "id": "zenodo-volatility-forecast",
+      "provider": "zenodo",
+      "query": "financial volatility forecasting",
+      "lifecycle_stages": [
+        "research",
+        "model-development",
+        "risk-management"
+      ],
+      "tags": [
+        "volatility",
+        "forecasting"
+      ],
+      "resource_type": "research-artifact"
+    },
+    {
+      "id": "zenodo-backtest-overfit",
+      "provider": "zenodo",
+      "query": "backtest overfitting strategy validation",
+      "lifecycle_stages": [
+        "backtesting",
+        "validation"
+      ],
+      "tags": [
+        "overfitting",
+        "validation"
+      ],
+      "resource_type": "research-artifact"
+    }
+  ]
+}

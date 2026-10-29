@@ -1,6 +1,6 @@
 # Market Data Levels Feeds & Architecture
 
-> Category: `H05_MarketData_Feeds_Architecture` | Items: **2371** | Generated: 2026-10-15 15:03
+> Category: `H05_MarketData_Feeds_Architecture` | Items: **2370** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -501,7 +501,7 @@
 | Which vintage of data to use when there are multiple vintages of data? | K.D. Patterson | 2000 | 7 | Economics Letters | 9 | Cros | ? | [LINK](https://doi.org/10.1016/s0165-1765(00)00295-0) |
 | The modified bitemporal flap for the treatment of bitemporal recessions | Dominic A. Brandy | 1989 | 5 | Aesthetic Plastic Surgery | 9 | Cros | ? | [LINK](https://doi.org/10.1007/bf01570219) |
 | Water Governance | - | 2013 | - | - | 9 | Cros | ? | [LINK](https://doi.org/10.4337/9781781006429) |
-| ﻿Flora of Cameroon - Annonaceae Vol 45. | Thomas L P Couvreur; Leo-Paul M J Dagallier; Francoise Crozi | 2022 | - | - | 9 | Euro | OPEN | [LINK](https://doi.org/10.3897/phytokeys.207.61432) |
+| Flora of Cameroon - Annonaceae Vol 45. | Thomas L P Couvreur; Leo-Paul M J Dagallier; Francoise Crozi | 2022 | - | - | 9 | Euro | OPEN | [LINK](https://doi.org/10.3897/phytokeys.207.61432) |
 | Food and water intake as functions of resource consumption costs in a closed eco | C E Mathis; D F Johnson; G Collier | 1996 | - | - | 9 | Euro | ? | [LINK](https://doi.org/10.1901/jeab.1996.65-527) |
 | The Zoltar forecast archive, a tool to standardize and store interdisciplinary p | Nicholas G Reich; Matthew Cornell; Evan L Ray; Katie House;  | 2021 | - | - | 9 | Euro | OPEN | [LINK](https://doi.org/10.1038/s41597-021-00839-5) |
 | Computer-Aided Depth Video Stream Masking Framework for Human Body Segmentation  | Karolis Ryselis; Tomas Blažauskas; Robertas Damaševičius; Ry | 2022 | 3531 | Sensors | 8 | Cros | ? | [LINK](https://doi.org/10.3390/s22093531) |
@@ -657,7 +657,6 @@
 | GDP Nowcasting Based on Daily Electricity Data and Financial Market Data | Wei Shang; Xun Zhang; Rui Tao; Xiuzhenzi Wang; Lili Zhang | 2023 | 8 | 2023 IEEE International Conference on Big Data (Bi | 2 | Cros | ? | [LINK](https://doi.org/10.1109/bigdata59044.2023.10386538) |
 | Reality Check: Combining Survey and Market Data to Estimate Choice Models | Eleanor McDonnell Feit; Mark A. Beltramo; Fred Feinberg | 2008 | - | SSRN Electronic Journal | 2 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.1154222) |
 | Stamp forming of partially consolidated CF/PEEK tape preforms produced in a high | J Weber; J Schlimbach | 2023 | - | Polymers and Polymer Composites | 2 | Cros | ? | [LINK](https://doi.org/10.1177/09673911231168046) |
-| Using Multivariate Dynamic Conditional Correlation GARCH model to analysis finan | Fatma Alshenawy; دعاء عاشور | 2023 | 1 | مجلة البحوث التجارية | 2 | Cros | ? | [LINK](https://doi.org/10.21608/zcom.2023.213791.1258) |
 | Digital Archaeology: From Interdisciplinarity to the ‘Fusion’ of Core Competence | Paola Moscati | 2021 | - | magazén | 2 | Cros | ? | [LINK](https://doi.org/10.30687/mag/2724-3923/2021/04/004) |
 | SEC adopts consolidated audit trail | James Brigagliano; Kevin Campion; David Katz; Andrew Blake | 2012 | 7 | Journal of Investment Compliance | 2 | Cros | ? | [LINK](https://doi.org/10.1108/15285811211284092) |
 | Stock Market Liquidity Measurement via the Bid-Ask Spread: Tunis Stockmarket | Hsini Mosbeh; Mohamed Nidhal MOSBAHI | 2016 | 65 | Business and Economic Research | 2 | Cros | ? | [LINK](https://doi.org/10.5296/ber.v6i2.9753) |

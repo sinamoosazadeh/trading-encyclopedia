@@ -1,6 +1,6 @@
 # Covariance Estimation & Factor Models
 
-> Category: `D02_Covariance_Factor_Models` | Items: **4790** | Generated: 2026-10-15 15:03
+> Category: `D02_Covariance_Factor_Models` | Items: **4783** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -1556,7 +1556,6 @@
 | Spectral distribution of the exponentially windowed sample covariance matrix | Ehsan Yazdian; Mohammad Hassan Bastani; Saeed Gazor | 2012 | 4 | 2012 IEEE International Conference on Acoustics, S | 2 | Cros | ? | [LINK](https://doi.org/10.1109/icassp.2012.6288678) |
 | Karhunen-Loeve expansion of stationary random signals with exponentially oscilla | Vitaly Kober; Josue Alvarez-Borrego | 2003 | 6 | Optical Engineering | 2 | Cros | ? | [LINK](https://doi.org/10.1117/1.1558089) |
 | A Comparison of Forecasting Accuracy between Two Dynamic Conditional Correlation | Metin İLBASMIŞ | 2024 | 11 | İktisadi İdari ve Siyasal Araştırmalar Dergisi | 2 | Cros | ? | [LINK](https://doi.org/10.25204/iktisad.1388428) |
-| Using Multivariate Dynamic Conditional Correlation GARCH model to analysis finan | Fatma Alshenawy; دعاء عاشور | 2023 | 1 | مجلة البحوث التجارية | 2 | Cros | ? | [LINK](https://doi.org/10.21608/zcom.2023.213791.1258) |
 | Inference and Testing on the Boundary in Extended Constant Conditional Correlati | Rasmus Pedersen | 2015 | - | - | 2 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.2664026) |
 | Robust Principal Component Analysis Based On Modified Minimum Covariance Determi | B. Baris ALKAN | 2016 | - | Alphanumeric Journal | 2 | Cros | ? | [LINK](https://doi.org/10.17093/aj.2016.4.2.5000189525) |
 | robqda: Robust Quadratic Discriminant Analysis | Michail Tsagris | 2024 | - | CRAN: Contributed Packages | 2 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.robqda) |
@@ -1951,7 +1950,6 @@
 | To Compare the Explanatory Power of the Five-Factor Fama French Model with Carha | Babalooyan Shahram; Mozafari Mehrdokht | 2016 | 16 | - | 1 | Open | ? | [LINK](https://openalex.org/W2546373702) |
 | A Comparison of New Factor Models: Evidence From Turkey | Nesrin Özkan | 2020 | 15 | Ege Akademik Bakis (Ege Academic Review) | 1 | Open | OPEN | [LINK](https://dergipark.org.tr/en/download/article-file/1294317) |
 | Is the Fama French model robust in the Chinese stock market? | Hongxi Chen | 2024 | 8 | Highlights in Business Economics and Management | 1 | Open | OPEN | [LINK](https://drpress.org/ojs/index.php/HBEM/article/download/24608/24106) |
-| Developing Fama and French Multi-Factor Pricing Model Using a Fundamental Factor | ساناز اعلمی فر; عبدالله خانی; هادی امیری | 2020 | 38 | پیشرفت‌های حسابداری | 1 | Open | ? | [LINK](https://doi.org/10.22099/jaa.2021.39285.2077) |
 | Arbitrage pricing theory (APT) e variáveis macroeconômicas | Adriana Schor; Marco Bonomo; Pedro L. Valls Pereira | 1998 | - | Econstor (Econstor) | 1 | Open | OPEN | [LINK](http://hdl.handle.net/10419/186635) |
 | An Augmented q-Factor Model with Expected Growth [Abnormal returns to a fundamen | Kewei Hou; Haitao Mo; Xue Chen; Lu Zhang | 2021 | 41 | Review of Finance | 1 | Open | ? | [LINK](https://openalex.org/W3216465038) |
 | Profitability, Investment and Asset Pricing: Reconciling the Valuation and the q | Kanis Saengchote | 2020 | - | RePEc: Research Papers in Economics | 1 | Open | ? | [LINK](https://www.pier.or.th/files/dp/pier_dp_124.pdf) |
@@ -3865,7 +3863,6 @@
 | DCC-GARCH Model for Market and Firm-Level Dynamic Correlation in S&amp;P 500 | Peimin Chen; Chunchi Wu; Ying Zhang | 2025 | 20 | Handbook of Financial Econometrics, Statistics, Te | 0 | Cros | ? | [LINK](https://doi.org/10.1142/9789819809950_0129) |
 | Apple, Microsoft, Amazon and Google - A Correlation Analysis: Evidence from a DC | Christoph Koser; Juergen Klaus | 2020 | - | SSRN Electronic Journal | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.3718788) |
 | Application of Bayesian methods in the analysis of dynamic conditional correlati | Dechassa Obsi Gudeta | 2025 | 31 | International Journal of Multivariate Data Analysi | 0 | Cros | ? | [LINK](https://doi.org/10.1504/ijmda.2025.10069869) |
-| Modeling Asymmetric Volatility Spillover between Exchange Rates and Stock Market | عبدالله سيد مسلم الشافعي | 2026 | 1 | مجلة البحوث التجارية | 0 | Cros | ? | [LINK](https://doi.org/10.21608/zcom.2026.443136.1525) |
 | Performance Comparison of Estimation Methods for Dynamic Conditional Correlation | Jiho Lee; Byeongchan Seong | 2015 | 12 | Korean Journal of Applied Statistics | 0 | Cros | ? | [LINK](https://doi.org/10.5351/kjas.2015.28.5.1013) |
 | The Study on Dynamic Conditional Correlation-GARCH Model and its Application | Ziyu Li; Atsuyuki Naka | 2015 | 7 | Communications in Computer and Information Science | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-662-49014-3_22) |
 | Robust Max-Half-MChart Based on the Cellwise Minimum Covariance Determinant | Syafi’ Bariq’ Syihabuddin Hidayatullah; Muhammad Ahsan; Wiba | 2026 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.20944/preprints202602.1681.v1) |
@@ -4448,7 +4445,6 @@
 | A study of covariance matrix estimators for Markowitz mean-variance portfolio op | Luo Yun | 2015 | - | DR-NTU (Nanyang Technological University) | 0 | Open | ? | [LINK](https://openalex.org/W2587971778) |
 | Nowcasting with Dynamic Factor Model and Real-Time Vintage Data: A financial mar | Filip Östlund; Marcel Attar | 2020 | - | Lund University Publications Student Papers (Lund  | 0 | Open | OPEN | [LINK](http://lup.lub.lu.se/student-papers/record/9023901) |
 | Can Alternative Data Improve the Accuracy of Dynamic Factor Model Nowcasts? | R. G. Cristea | 2020 | - | RePEc: Research Papers in Economics | 0 | Open | OPEN | [LINK](https://www.econ.cam.ac.uk/sites/default/files/publication-cwpe-pdfs/cwpe20108.pdf) |
-| Stock Price Prediction with Combination of XGBoost and Binary Gray Wolf Optimize | Hadi Esmaeili; Shahab جهانگیری; Ali Rezazadeh | 2024 | - | Financial Economics   فصلنامه اقتصاد مالی | 0 | Open | OPEN | [LINK](https://doi.org/10.71818/ecj.2025.1104492) |
 | Realized Volatility and Covariance | Massimo Guidolin; Manuela Pedio | 2018 | 17 | Elsevier eBooks | 0 | Open | ? | [LINK](https://doi.org/10.1016/b978-0-12-813409-2.00010-8) |
 | Forecasting the High‐Frequency Covariance Matrix Using the LSTM‐MF Model | Guangying Liu; Kewen Shi; Meng Yuan | 2025 | 18 | Journal of Forecasting | 0 | Open | OPEN | [LINK](https://doi.org/10.2139/ssrn.4495091) |
 | Portfolio Performance Analysis with Jensen's Alpha Using Single Index Model and  | Alim Jaizul Wahid; Jumadil Saputra | 2025 | 10 | International Journal of Quantitative Research and | 0 | Open | OPEN | [LINK](https://journal.rescollacomm.com/index.php/ijqrm/article/download/1013/767) |
@@ -4578,8 +4574,6 @@
 | The Efficacy of Advanced Covariance Estimators in Constrained Global Minimum Var | Yipeng Liu | 2025 | 11 | Advances in Economics Management and Political Sci | 0 | Open | OPEN | [LINK](https://www.ewadirect.com/proceedings/aemps/article/view/29590/pdf) |
 | Forecasting the South African rand 's variance and covariance using conditional  | Christopher Sumter | 2013 | - | Open University of Cape Town (University of Cape T | 0 | Open | OPEN | [LINK](https://open.uct.ac.za/bitstreams/f26948c0-a0a9-4cba-9bd1-e131c4852110/download) |
 | Covariance Estimation with Markov-Switching Generalized Autoregressive Condition | Tristan Gardner Wisner | 2017 | - | eScholarship (California Digital Library) | 0 | Open | OPEN | [LINK](https://escholarship.org/uc/item/8m94c90z) |
-| Using Multivariate GARCH Models CCC (Constant Conditional Correlation) and DCC(D | فارس طاهر حسن; لمياء طه عبد الله | 2018 | - | Journal of Economics and Administrative Sciences | 0 | Open | OPEN | [LINK](https://www.iasj.net/iasj/article/146620) |
-| Investigating Systematic Risk Spillover Between Capital Market and Money Market  | Soheila Lashgarara; Seyede Zahra Mirashrafi; Freshte Saadatb | 2026 | - | Judgment and Decision Making in Accounting    فصلن | 0 | Open | OPEN | [LINK](https://doi.org/10.71960/jdaa.2026.1237119) |
 | Comparison of Correlation for Asian Shariah Indices Using DCC-GARCH and Rolling  | Hafizah Bahaludin; Nurul Najihah Mohamad; Muhammad Farhan Mo | 2021 | - | The International Islamic University Malaysia Repo | 0 | Open | OPEN | [LINK](http://irep.iium.edu.my/92241/8/SKSM28_CamReady_223.pdf) |
 | DCC-GARCH Model for Market and Firm-Level Dynamic Correlation in S&P 500 | Peimin Chen; Chunchi Wu; Ying Zhang | 2020 | 20 | WORLD SCIENTIFIC eBooks | 0 | Open | ? | [LINK](https://doi.org/10.1142/9789811202391_0129) |
 | DCC-HEAVY: A multivariate GARCH model based on realized variances and correlatio | Luc Bauwens; Yongdeng Xu | 2019 | - | RePEc: Research Papers in Economics | 0 | Open | ? | [LINK](https://openalex.org/W2931764779) |
@@ -4754,7 +4748,6 @@
 | Exploration of regularized covariance estimates with analytical shrinkage intens | Stephen J. Walsh; USDOE; Mark F. Tardiff | 2007 | - | - | 0 | Open | OPEN | [LINK](https://www.osti.gov/servlets/purl/1171912) |
 | Adaptive Shrinkage Estimation for Streaming Graphs | Nesreen K. Ahmed; Nick G. Duffield | 2019 | 12 | arXiv (Cornell University) | 0 | Open | OPEN | [LINK](https://arxiv.org/pdf/1908.01087) |
 | GLM Solutions via Shrinkage | Vali Asimit; O. Avramescu; Z. Chen; D. Rivas; C. Senatore | 2025 | - | City Research Online (City University London) | 0 | Open | OPEN | [LINK](https://openaccess.city.ac.uk/id/eprint/35099/8/GLM_Solutions_via_Shrinkage.pdf) |
-| The Evolution of Shrinkage Estimators between Statistical Theory and Modern Inte | Aisha Mohamed Abutartour | 2026 | 14 | مجلة البحوث الأكاديمية | 0 | Open | OPEN | [LINK](https://lam-journal.ly/index.php/jar/article/download/1402/1122) |
 | Shrinkage Estimation of Expression Fold Change As an Alternative to Testing Hypo | Zahra Montazeri; Corey M. Yanofsky; David R. Bickel | 2009 | - | Collection of Biostatistics Research Archive | 0 | Open | OPEN | [LINK](https://biostats.bepress.com/cobra/art60) |
 | The impact of linear covariance matrix shrinkage on mean-variance efficient fron | Joseph Gregory Clayton | 2026 | - | Open University of Cape Town (University of Cape T | 0 | Open | OPEN | [LINK](https://open.uct.ac.za/bitstreams/8f0dea12-3098-4304-8ca7-9e5a539c4d15/download) |
 | Covariance Matrix Estimation for Portfolio Selection: Linear and Non-Linear Shri | Nguyen Minh Nhat | 2025 | - | MONTENEGRIN JOURNAL OF ECONOMICS | 0 | Open | OPEN | [LINK](https://doi.org/10.14254/1800-5845/2025.21-4.17) |

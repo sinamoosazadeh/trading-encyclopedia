@@ -462,20 +462,160 @@ def _compile_informal():
 
 _INF_COMPILED = _compile_informal()
 
-def classify(title, source_category=None):
-    matched = set()
-    if source_category and source_category in CATEGORIES:
-        matched.add(source_category)
+# Classification is based on document evidence, never on the search bucket alone.
+# These terms establish a finance/trading context; "market" by itself is intentionally
+# excluded because it is common in unrelated disciplines.
+_FINANCE_CONTEXT = re.compile(
+    r"\b(?:finance|financial|trading|trader|stock market|stock returns|equity returns|"
+    r"investment|investing|portfolio|quantitative finance|systematic trading|"
+    r"algorithmic trading|financial market|market microstructure|market making|"
+    r"order book|market data|derivative|futures market|options market|forex|"
+    r"foreign exchange|cryptocurrency|bitcoin|ethereum|crypto assets?|risk management|"
+    r"asset pricing|asset allocation|capital market|financial econom\w*|"
+    r"transaction cost|execution cost|trade execution|trading strateg\w*|"
+    r"price discovery|financial time series|financial econometrics|volatility|"
+    r"stock price|asset returns?|financial data|electronic trading|trading system|"
+    r"fixed income|bond market|currency market|perpetual swap|funding rate)\b",
+    re.IGNORECASE,
+)
 
-    text = str(title).lower()
+# A few specialized concepts are sufficiently domain-specific to stand on their own.
+# Ambiguous abbreviations such as ICT, SMC, VAR, PIN, and DOM are not in this list.
+_DIRECT_CATEGORY_PATTERNS = {
+    "A01_Optimization": re.compile(
+        r"\b(?:trading strategy optimization|portfolio optimization|kelly criterion|"
+        r"optimal f position sizing|walk.forward optimization|parameter optimization trading)\b",
+        re.IGNORECASE),
+    "A02_Simulation": re.compile(
+        r"\b(?:market microstructure simulation|order book simulation|trading simulation|"
+        r"synthetic market data)\b", re.IGNORECASE),
+    "A03_Prediction_Forecasting": re.compile(
+        r"\b(?:stock price prediction|financial time series forecasting|"
+        r"volatility forecasting|financial forecasting)\b", re.IGNORECASE),
+    "A04_Backtesting_Validation": re.compile(
+        r"\b(?:backtesting trading strateg\w*|walk.forward optimization|"
+        r"deflated sharpe|probability of backtest overfitting|combinatorial purged cross.validation)\b",
+        re.IGNORECASE),
+    "A05_Probability_Statistics_Econometrics": re.compile(
+        r"\b(?:financial econometrics|asset pricing|value at risk|expected shortfall|"
+        r"deflated sharpe|financial time series)\b", re.IGNORECASE),
+    "B01_Machine_Learning_Finance": re.compile(
+        r"\b(?:machine learning in finance|financial machine learning|"
+        r"ml in trading|machine learning trading strateg\w*)\b", re.IGNORECASE),
+    "B02_Deep_Learning_Neural_Networks": re.compile(
+        r"\b(?:deeplob|deep learning in finance|deep learning for trading|"
+        r"financial time series transformer)\b", re.IGNORECASE),
+    "B03_Reinforcement_Learning_Control": re.compile(
+        r"\b(?:reinforcement learning for trading|reinforcement learning market making|"
+        r"rl optimal execution|rl portfolio allocation)\b", re.IGNORECASE),
+    "B04_NLP_Sentiment_Alternative_Data": re.compile(
+        r"\b(?:financial sentiment analysis|finbert|financial news sentiment|"
+        r"sentiment analysis stock market)\b", re.IGNORECASE),
+    "C01_Market_Microstructure_LOB": re.compile(
+        r"\b(?:limit order book|market microstructure|order book reconstruction|"
+        r"order book imbalance|price discovery)\b", re.IGNORECASE),
+    "C02_Liquidity_OrderFlow_Informed": re.compile(
+        r"\b(?:order flow|liquidity sweep|probability of informed trading|"
+        r"volume.synchronized probability of informed trading|kyle.?s lambda)\b",
+        re.IGNORECASE),
+    "C03_Market_Impact_Execution": re.compile(
+        r"\b(?:market impact|implementation shortfall|vwap|twap|transaction cost analysis)\b",
+        re.IGNORECASE),
+    "C04_HFT_MarketMaking": re.compile(
+        r"\b(?:high.frequency trading|market making|avellaneda.stoikov|"
+        r"low.latency trading)\b", re.IGNORECASE),
+    "F01_MarketProfile_AuctionTheory": re.compile(
+        r"\b(?:market profile|volume profile|time price opportunity|point of control)\b",
+        re.IGNORECASE),
+    "F02_OrderFlow_Footprint_Tape": re.compile(
+        r"\b(?:order flow footprint|cumulative volume delta|tape reading|"
+        r"depth of market|stacked imbalance)\b", re.IGNORECASE),
+    "F03_Wyckoff_VSA": re.compile(
+        r"\b(?:wyckoff|volume spread analysis|vsa trading|selling climax|"
+        r"sign of strength wyckoff)\b", re.IGNORECASE),
+    "F04_SmartMoney_ICT": re.compile(
+        r"\b(?:smart money concepts?|fair value gap|inversion fair value gap|"
+        r"balanced price range|order block|break of structure|change of character|"
+        r"liquidity sweep|interbank price delivery algorithm|judas swing|killzone|"
+        r"inner circle trader)\b|"
+        r"\b(?:ict|smc)\b(?=.*\b(?:liquidity|order block|fair value gap|fvg|market structure|"
+        r"killzone|inner circle trader|judas swing|break of structure|change of character)\b)",
+        re.IGNORECASE),
+    "F05_Technical_Analysis_ChartPatterns": re.compile(
+        r"\b(?:technical analysis|head and shoulders pattern|double top pattern|"
+        r"double bottom pattern|candlestick pattern|price action trading)\b",
+        re.IGNORECASE),
+    "F06_Harmonic_ElliottWave": re.compile(
+        r"\b(?:elliott wave|harmonic pattern|gartley pattern|bat pattern trading|"
+        r"neowave|elliott corrective wave)\b", re.IGNORECASE),
+    "F07_Specialized_Trading_Schools": re.compile(
+        r"\b(?:ichimoku|gann trading|read the market rtm|bill williams trading|"
+        r"joe ross trading)\b", re.IGNORECASE),
+    "H01_Crypto_DeFi_OnChain": re.compile(
+        r"\b(?:cryptocurrency|crypto trading|decentralized finance|uniswap|"
+        r"on.chain trading|perpetual swap)\b", re.IGNORECASE),
+    "H02_TradingSystems_Engineering": re.compile(
+        r"\b(?:trading system architecture|trading systems engineering|"
+        r"electronic trading system|exchange connectivity|order management system|"
+        r"matching engine)\b", re.IGNORECASE),
+}
 
-    # Match using informal/comprehensive patterns
-    for cat, pats in _INF_COMPILED.items():
-        for pat in pats:
-            if pat.search(text):
-                matched.add(cat)
-                break
 
-    return sorted(matched) if matched else (
-        [source_category] if source_category else []
-    )
+def classify_with_evidence(title, source_category=None, context_text=None):
+    """Return evidence-backed category assignments.
+
+    source_category is retained for compatibility and diagnostics only. It never
+    forces an assignment. The returned matched patterns are audit clues, not
+    calibrated probabilities or claims of scientific validity.
+    """
+    title_text = str(title or "").strip()
+    context = str(context_text or "").strip()
+    searchable = (title_text + " " + context).strip()
+    if not searchable:
+        return []
+
+    has_finance_context = bool(_FINANCE_CONTEXT.search(searchable))
+    assignments = []
+    for category, patterns in _INF_COMPILED.items():
+        matched = []
+        for pattern in patterns:
+            match = pattern.search(searchable)
+            if match:
+                snippet = match.group(0).strip()
+                if snippet and snippet.casefold() not in {x.casefold() for x in matched}:
+                    matched.append(snippet)
+        if not matched:
+            continue
+
+        direct_pattern = _DIRECT_CATEGORY_PATTERNS.get(category)
+        direct_evidence = bool(direct_pattern and direct_pattern.search(searchable))
+        if category == "F04_SmartMoney_ICT":
+            ambiguous_acronym_only = bool(matched) and all(
+                item.casefold() in {"ict", "smc"} for item in matched
+            )
+            if ambiguous_acronym_only and not direct_evidence:
+                continue
+        if not has_finance_context and not direct_evidence:
+            continue
+
+        assignments.append({
+            "category": category,
+            "matched_patterns": matched[:12],
+            "finance_context_found": has_finance_context,
+            "direct_domain_evidence": direct_evidence,
+            "source_query_category": source_category if source_category in CATEGORIES else None,
+        })
+
+    return sorted(assignments, key=lambda row: row["category"])
+
+
+def classify(title, source_category=None, context_text=None):
+    """Return category IDs supported by document evidence.
+
+    Search-bucket metadata is deliberately not a fallback classification rule.
+    Documents without adequate evidence remain unclassified for later review.
+    """
+    return [
+        row["category"]
+        for row in classify_with_evidence(title, source_category, context_text)
+    ]

@@ -6,12 +6,13 @@ classifies into 50 categories, builds output.
 Usage: python merge.py
 """
 import os, json, time
-from config import CATEGORIES, DATA_DIR, OUTPUT_DIR, CATS_DIR, SDCARD_DIR
+from config import CATEGORIES, DATA_DIR, OUTPUT_DIR, CATS_DIR, SDCARD_DIR, ensure_runtime_dirs
 from utils import deduplicate, load_json, save_json, log, is_english
 from classifier import classify
 import md_builder
 
 def run():
+    ensure_runtime_dirs()
     print("\n" + "="*55)
     print("  TRADING ENCYCLOPEDIA — MERGE & BUILD")
     print("="*55)
@@ -50,8 +51,12 @@ def run():
     categorized = {cat: [] for cat in CATEGORIES}
     source_stats = {}
 
+    unclassified_count = 0
     for item in unique:
-        cats = classify(item.get("title",""), item.get("_src_cat",""))
+        context_text = " ".join(str(item.get(k) or "") for k in ("abstract", "keywords"))
+        cats = classify(item.get("title", ""), item.get("_src_cat", ""), context_text=context_text)
+        if not cats:
+            unclassified_count += 1
         for cat in cats:
             if cat in categorized:
                 categorized[cat].append(item)
@@ -71,7 +76,7 @@ def run():
 
     # ── Save master JSON ──────────────────────────────────
     master_path = os.path.join(DATA_DIR, "master_classified.json")
-    stats_obj = {"source_stats": source_stats, "per_category": {k: len(v) for k,v in categorized.items()}, "total": total_unique}
+    stats_obj = {"source_stats": source_stats, "per_category": {k: len(v) for k,v in categorized.items()}, "unique_records": len(unique), "category_assignments": total_unique, "unclassified_records": unclassified_count, "total": total_unique}
     save_json({"categorized": categorized, "stats": stats_obj}, master_path)
     print("  Master JSON: " + master_path)
 

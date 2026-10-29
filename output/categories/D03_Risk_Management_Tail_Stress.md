@@ -1,6 +1,6 @@
 # Risk Management Tail Risk & Stress
 
-> Category: `D03_Risk_Management_Tail_Stress` | Items: **5411** | Generated: 2026-10-15 15:03
+> Category: `D03_Risk_Management_Tail_Stress` | Items: **5410** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -3470,7 +3470,6 @@
 | The Liquidity Effect in Bank-Based and Market-Based Financial Systems | Johann Scharler | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/7210263.pdf) |
 | VaR and Liquidity Risk.Impact on Market Behaviour and Measurement Issues. | Luca Erzegovesi | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6381891.pdf) |
 | Does global liquidity matter for monetary policy in the Euro area? | Harjes, Thomas; Berger, Helge | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6547861.pdf) |
-| Liquidity-adjusted Value-at-Risk (L-VAR) estimation: a case study of the Externa | أيمن, فريد; باهي, نوال | 2022 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/710643954.pdf) |
 | Nominal Rigidities and The Real Effects of Monetary Policy in a Structural VAR M | Pham The Anh | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6598685.pdf) |
 | What is global excess liquidity, and does it matter? | Stracca, Livio; Rüffer, Rasmus | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6956567.pdf) |
 | Market liquidity and its incorporation into risk management. | Bervas, A. | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6612255.pdf) |

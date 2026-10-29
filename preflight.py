@@ -1,121 +1,152 @@
 #!/usr/bin/env python3
-import sys, os, time, json, shutil, importlib, requests
+"""Local readiness checks for the Trading Encyclopedia research index.
 
-res = {"pass": 0, "fail": 0, "warn": 0}
+Network checks are opt-in. This script never embeds, prints, or transmits API keys
+unless the user explicitly configures a provider's normal runtime environment.
+"""
+from __future__ import annotations
 
-def chk(n, p, m="", w=False):
-    tag = "PASS" if p else ("WARN" if w else "FAIL")
-    print("  [" + tag + "]  " + n + (" - " + m if m else ""))
-    k = "pass" if p else ("warn" if w else "fail")
-    res[k] += 1
+import argparse
+import importlib.util
+import json
+import os
+import shutil
+import sys
+import tempfile
+from datetime import datetime, timezone
+from pathlib import Path
 
-print("\n" + "="*55)
-print("  PREFLIGHT CHECK - Trading Encyclopedia v2.0")
-print("="*55 + "\n")
+RESULTS = {"pass": 0, "warn": 0, "fail": 0}
+CHECKS = []
 
-# --- 1: Python & Packages ---
-print("[1/6] Python and Packages")
-chk("Python >= 3.8 (have " + str(sys.version_info.major) + "." + str(sys.version_info.minor) + ")", sys.version_info >= (3, 8))
-pkgs = ["requests","urllib3","colorama","dateutil","langdetect","lxml","json","xml.etree.ElementTree","concurrent.futures","threading","hashlib","re"]
-for p in pkgs:
-    try: importlib.import_module(p); chk("Package: " + p, True)
-    except: chk("Package: " + p, False, "pip install " + p)
 
-# --- 2: Storage ---
-print("\n[2/6] Storage and Permissions")
-t, u, fr = shutil.disk_usage(os.path.expanduser("~"))
-fm = fr // (1024*1024)
-chk("Free storage: " + str(fm) + " MB (need 700+)", fm > 700, "have " + str(fm) + " MB", w=(400 < fm <= 700))
-try:
-    td = os.path.expanduser("~/encyclopedia/test_wr")
-    os.makedirs(td, exist_ok=True)
-    with open(td + "/t.txt", "w") as f: f.write("t")
-    os.remove(td + "/t.txt"); os.rmdir(td)
-    chk("Write: ~/encyclopedia/", True)
-except Exception as e: chk("Write: ~/encyclopedia/", False, str(e))
-sd = "/sdcard/Download"
-try:
-    if os.path.isdir(sd):
-        with open(sd + "/.et", "w") as f: f.write("t")
-        os.remove(sd + "/.et"); chk("Write: /sdcard/Download", True)
-    else: chk("Write: /sdcard/Download", False, "run: termux-setup-storage", w=True)
-except Exception as e: chk("Write: /sdcard/Download", False, str(e), w=True)
+def check(name: str, status: str, detail: str = "") -> None:
+    status = status.upper()
+    if status not in {"PASS", "WARN", "FAIL", "SKIP"}:
+        raise ValueError("Unsupported check status")
+    if status in {"PASS", "WARN", "FAIL"}:
+        RESULTS[status.lower()] += 1
+    CHECKS.append({"name": name, "status": status, "detail": detail})
+    suffix = f" - {detail}" if detail else ""
+    print(f"  [{status}] {name}{suffix}")
 
-# --- 3: Network ---
-print("\n[3/6] Network Connectivity")
-def turl(n, u):
+
+def check_import(module_name: str, package_name: str | None = None) -> None:
+    package_name = package_name or module_name
+    found = importlib.util.find_spec(module_name) is not None
+    check(
+        f"Python dependency: {package_name}",
+        "PASS" if found else "FAIL",
+        "" if found else f"Install with: python -m pip install {package_name}",
+    )
+
+
+def check_local_paths() -> None:
     try:
-        r = requests.get(u, timeout=15, headers={"User-Agent": "TradingEnc/2.0"})
-        chk("Net: " + n + " (HTTP " + str(r.status_code) + ")", r.status_code in (200,301,302,403))
-    except Exception as e: chk("Net: " + n, False, str(e)[:50])
-turl("Google", "https://www.google.com")
-turl("GitHub", "https://api.github.com")
-turl("DOI", "https://doi.org/10.1016/j.jfineco.2020.01.001")
+        from config import BASE_DIR, DATA_DIR, OUTPUT_DIR, CATS_DIR
+    except Exception as exc:
+        check("Load runtime configuration", "FAIL", type(exc).__name__)
+        return
 
-# --- 4: APIs ---
-print("\n[4/6] API Tests")
-def api(name, url, params=None, hdrs=None):
-    time.sleep(1.5)
+    base = Path(BASE_DIR).expanduser()
+    ancestor = base
+    while not ancestor.exists() and ancestor != ancestor.parent:
+        ancestor = ancestor.parent
+    if ancestor.exists() and os.access(ancestor, os.W_OK | os.X_OK):
+        check("Runtime home parent is writable", "PASS", str(ancestor))
+    else:
+        check("Runtime home parent is writable", "FAIL", "Choose a writable TRADING_ENCYCLOPEDIA_HOME")
+
+    for label, path in (("Data path", DATA_DIR), ("Output path", OUTPUT_DIR), ("Category output path", CATS_DIR)):
+        if Path(path).exists():
+            check(label, "PASS", "exists")
+        else:
+            check(label, "WARN", "will be created by a runtime command")
+
     try:
-        h = {"User-Agent": "TradingEnc/2.0 (mailto:test@test.com)"}
-        if hdrs: h.update(hdrs)
-        r = requests.get(url, params=params, headers=h, timeout=25)
-        if r.status_code == 429:
-            chk(name + " - rate limited (429 - normal)", True); return
-        try: d = r.json()
-        except: d = {}
-        for key in ["items","results","data","records"]:
-            if key in d:
-                cnt = len(d[key] if isinstance(d[key], list) else d.get("message", {}).get(key, []))
-                chk(name + " - HTTP " + str(r.status_code) + ", " + str(cnt) + " result(s)", r.status_code == 200); return
-        chk(name + " - HTTP " + str(r.status_code), r.status_code == 200)
-    except Exception as e: chk(name, False, str(e)[:60])
+        from config import API_KEYS
+        configured = [name for name, value in API_KEYS.items() if value]
+        missing_optional = [name for name, value in API_KEYS.items() if not value]
+        check("Provider credentials", "PASS" if configured else "WARN",
+              f"{len(configured)} configured; {len(missing_optional)} optional providers have no key")
+    except Exception as exc:
+        check("Provider credentials", "FAIL", type(exc).__name__)
 
-api("CrossRef (no key)", "https://api.crossref.org/works", {"query":"backtest trading","rows":1})
-api("OpenAlex (with key)", "https://api.openalex.org/works", {"search":"backtest trading","per_page":1,"api_key":"piwCvXWBWaoWEFT8s8S5CC"})
-api("SemanticScholar (no key)", "https://api.semanticscholar.org/graph/v1/paper/search", {"query":"backtest trading","fields":"title","limit":1})
-api("Springer Meta (with key)", "https://api.springernature.com/meta/v2/json", {"q":"backtest trading","api_key":"61fd7a8b7327ad2cd1d209e0a3b7ce0c","p":1})
-api("Springer OA (with key)", "https://api.springernature.com/openaccess/json", {"q":"trading strategy","api_key":"477aa151e4107f7bb9bdc5f5042acaab","p":1})
-api("CORE (with key)", "https://api.core.ac.uk/v3/search/works", {"q":"backtest trading","limit":1}, {"Authorization":"Bearer qXfgGOk4Yh5zAMZLVeo0FmTRlnr8KCH9"})
 
-time.sleep(1.5)
-try:
-    r = requests.get("http://export.arxiv.org/api/query", params={"search_query":"ti:backtest+trading","max_results":1}, timeout=30)
-    found = "found" if "<entry>" in r.text else "empty"
-    chk("arXiv (no key) - HTTP " + str(r.status_code) + ", " + found, r.status_code == 200)
-except Exception as e: chk("arXiv", False, str(e)[:60])
+def check_network() -> None:
+    try:
+        import requests
+    except ImportError:
+        check("Optional network checks", "SKIP", "Install requests to enable --network")
+        return
 
-time.sleep(1.5)
-api("EuropePMC (no key)", "https://www.ebi.ac.uk/europepmc/webservices/rest/search", {"query":"trading financial","format":"json","pageSize":1})
-api("DOAJ (no key)", "https://doaj.org/api/search/articles/trading%20financial", {"pageSize":1})
+    probes = [
+        ("Crossref query endpoint", "https://api.crossref.org/works?query.title=trading&rows=1"),
+        ("GitHub REST API", "https://api.github.com/rate_limit"),
+        ("arXiv API", "https://export.arxiv.org/api/query?search_query=ti%3Atrading&max_results=1"),
+    ]
+    for name, url in probes:
+        try:
+            response = requests.get(
+                url,
+                timeout=15,
+                headers={"User-Agent": "TradingEncyclopedia-Preflight/3.0"},
+            )
+            if response.status_code == 200:
+                check(name, "PASS", "HTTP 200")
+            elif response.status_code == 429:
+                check(name, "WARN", "HTTP 429; the endpoint is rate-limiting this client")
+            elif response.status_code in (401, 403):
+                check(name, "WARN", f"HTTP {response.status_code}; public probe was not authorized")
+            else:
+                check(name, "FAIL", f"HTTP {response.status_code}")
+        except Exception as exc:
+            # Deliberately avoid printing exception text, which may contain request URLs.
+            check(name, "FAIL", type(exc).__name__)
 
-# --- 5: Language ---
-print("\n[5/6] Language Detection")
-try:
-    from langdetect import detect
-    for txt, exp in [("English paper about trading strategies", "en"), ("Optimizacion de estrategias", "es")]:
-        det = detect(txt)
-        chk("langdetect: " + txt[:30] + " => " + det, (det=="en") == (exp=="en"))
-except: chk("langdetect", False, "pip install langdetect")
 
-# --- 6: Git ---
-print("\n[6/6] Git")
-chk("Git installed", os.system("git --version > /dev/null 2>&1") == 0, "pkg install git")
-import subprocess
-v = subprocess.run(["git","--version"], capture_output=True, text=True)
-print("    => " + v.stdout.strip())
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--network", action="store_true", help="Run bounded unauthenticated connectivity probes")
+    parser.add_argument("--write-report", action="store_true", help="Write JSON report to the configured data directory")
+    args = parser.parse_args()
 
-# --- Summary ---
-print("\n" + "="*55)
-print("  SUMMARY")
-print("="*55)
-print("  PASS : " + str(res["pass"]))
-print("  WARN : " + str(res["warn"]))
-print("  FAIL : " + str(res["fail"]))
-if res["fail"] == 0: print("\n  >>> ALL CHECKS PASSED - Ready to start!\n")
-elif res["fail"] <= 2: print("\n  >>> MOSTLY OK - fix " + str(res["fail"]) + " issue(s) first\n")
-else: print("\n  >>> " + str(res["fail"]) + " FAILURES - fix before proceeding\n")
+    print("\n" + "=" * 64)
+    print("TRADING ENCYCLOPEDIA - PREFLIGHT")
+    print("=" * 64)
+    check("Python version", "PASS" if sys.version_info >= (3, 10) else "FAIL",
+          sys.version.split()[0])
+    check_import("requests")
+    check_import("langdetect")
+    check("Git executable", "PASS" if shutil.which("git") else "WARN",
+          shutil.which("git") or "Git is optional for local catalogue generation")
+    check_local_paths()
 
-rpt = {"timestamp": time.strftime("%Y-%m-%d %H:%M:%S"), "python": sys.version, "results": res, "storage_free_mb": fm}
-with open(os.path.expanduser("~/encyclopedia/preflight_report.json"), "w") as f: json.dump(rpt, f, indent=2)
-print("  Report saved: ~/encyclopedia/preflight_report.json\n")
+    if args.network:
+        check_network()
+    else:
+        check("Network probes", "SKIP", "Run with --network to opt in")
+
+    print("\n" + "=" * 64)
+    print(f"PASS: {RESULTS['pass']} | WARN: {RESULTS['warn']} | FAIL: {RESULTS['fail']}")
+    print("=" * 64)
+
+    report = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "python": sys.version,
+        "results": RESULTS,
+        "checks": CHECKS,
+        "network_checks_requested": args.network,
+    }
+    if args.write_report:
+        from config import DATA_DIR, ensure_runtime_dirs
+        ensure_runtime_dirs()
+        report_path = Path(DATA_DIR) / "preflight_report.json"
+        report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+        print(f"Report written: {report_path}")
+
+    return 1 if RESULTS["fail"] else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
