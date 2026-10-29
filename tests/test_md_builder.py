@@ -1,6 +1,10 @@
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
-from md_builder import TABLE_HEADER, _item_line, _utc_now, build_category_file
+import md_builder
+from md_builder import CAT_LABELS, TABLE_HEADER, _item_line, _utc_now, build_all, build_category_file, build_readme
 
 
 class MarkdownBuilderTests(unittest.TestCase):
@@ -43,6 +47,36 @@ class MarkdownBuilderTests(unittest.TestCase):
         self.assertIn("Items: **1**", output)
         self.assertIn("Generated: ", output)
         self.assertIn(" UTC", output)
+
+
+    def test_generated_readme_always_links_to_curated_resource_index(self):
+        self.assertIn("[RESOURCE_INDEX.md](RESOURCE_INDEX.md)", build_readme())
+
+    def test_build_all_regenerates_curated_resource_index(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_dir = root / "output"
+            category_dir = output_dir / "categories"
+            export_dir = root / "external-export"
+            categorized = {category: [] for category in CAT_LABELS}
+            stats = {
+                "unique_records": 0,
+                "category_assignments": 0,
+                "unclassified_records": 0,
+                "source_stats": {},
+                "per_category": {category: 0 for category in CAT_LABELS},
+                "total": 0,
+            }
+            with patch.object(md_builder, "OUTPUT_DIR", str(output_dir)), \
+                 patch.object(md_builder, "CATS_DIR", str(category_dir)), \
+                 patch.object(md_builder, "SDCARD_DIR", str(export_dir)):
+                build_all(categorized, stats)
+
+            readme = (output_dir / "README.md").read_text(encoding="utf-8")
+            resource_index = (output_dir / "RESOURCE_INDEX.md").read_text(encoding="utf-8")
+            self.assertIn("[RESOURCE_INDEX.md](RESOURCE_INDEX.md)", readme)
+            self.assertIn("# Curated Resource Index", resource_index)
+            self.assertIn("https://docs.python.org/3/", resource_index)
 
 
 if __name__ == "__main__":
