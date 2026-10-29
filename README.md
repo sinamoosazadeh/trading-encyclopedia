@@ -89,23 +89,27 @@ Requires Python 3.10 or newer.
    trading-encyclopedia search "market microstructure"
    ```
 
-8. Preview the bounded public resource-discovery plan without making any network requests:
+7. Preview the bounded public resource-discovery plan without making any network requests:
 
    ```bash
    python web_resource_collector.py plan --provider github --max-queries 2
    python web_resource_collector.py plan --provider huggingface_models --max-queries 2
    ```
 
-9. When online collection is intended, explicitly run a small bounded collection:
+8. When online collection is intended, explicitly run a small bounded collection:
 
    ```bash
    python web_resource_collector.py collect --provider github --max-queries 2 --results-per-query 5
    python resource_catalog.py search "market data" --collected-only
+
+   # When installed with: python -m pip install -e .
+   trading-encyclopedia-collect collect --provider github --max-queries 2 --results-per-query 5
+   trading-encyclopedia search "market data" --collected-only
    ```
 
    The collector performs only metadata requests. It does not download full source repositories, model weights, datasets, or article full texts. Provider quotas, query semantics, and terms apply; results remain marked `unreviewed` until reviewed.
 
-7. Run a scholarly provider and rebuild the generated output when configured:
+9. Run a scholarly provider and rebuild the generated output when configured:
 
    ```bash
    python master.py --api crossref
