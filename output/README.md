@@ -27,3 +27,8 @@ H: Infrastructure & Regulation (H01-H08)
 - PART: Abstract free, full text may need subscription
 - PAY: Subscription required
 - ?: Unknown
+
+
+## Curated Resource Discovery
+
+The [Curated Resource Index](RESOURCE_INDEX.md) links to selected official documentation, research portals, datasets, trading frameworks, development tools, standards, and operations resources. It complements the publication category tables; it does not claim exhaustive Internet coverage or replace checking the original source.

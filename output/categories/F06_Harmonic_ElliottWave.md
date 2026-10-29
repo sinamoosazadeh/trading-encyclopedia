@@ -621,7 +621,7 @@
 | A near-continuous archaeological record of Pleistocene human occupation at Leang | Basran Burhan; Budianto Hakim; Iwan Sumantri; Suryatman; And | 2025 | - | - | 2 | Euro | OPEN | [LINK](https://doi.org/10.1371/journal.pone.0337993) |
 | The venom and telopodal defence systems of the centipede Lithobius forficatus ar | Vanessa Schendel; Carsten H G Müller; Matthes Kenning; Micha | 2024 | - | - | 2 | Euro | OPEN | [LINK](https://doi.org/10.1186/s12915-024-01925-x) |
 | Purification, conformational analysis and cytotoxic activities of host-defense p | J Michael Conlon; Laure Guilhaudis; Samir Attoub; Laurent Co | 2023 | - | - | 2 | Euro | OPEN | [LINK](https://doi.org/10.1007/s00726-023-03312-2) |
-| ﻿A review of Eupholidoptera (Orthoptera, Tettigoniidae) from Crete, Gavdos, Gavd | Luc Willemse; Jos Tilmans; Nefeli Kotitsa; Apostolos Trichas | 2023 | - | - | 2 | Euro | OPEN | [LINK](https://doi.org/10.3897/zookeys.1151.97514) |
+| A review of Eupholidoptera (Orthoptera, Tettigoniidae) from Crete, Gavdos, Gavd | Luc Willemse; Jos Tilmans; Nefeli Kotitsa; Apostolos Trichas | 2023 | - | - | 2 | Euro | OPEN | [LINK](https://doi.org/10.3897/zookeys.1151.97514) |
 | Bioactive structures for inhibitors of &lt;i&gt;Candida auris&lt;/i&gt; polymera | Francisco Das Chagas Lima Pinto; Sadrack Queque Cabongo; Ped | 2025 | - | - | 2 | Euro | ? | [LINK](https://doi.org/10.1080/17568919.2025.2491301) |
 | Principles of Dataset Versioning: Exploring the Recreation/Storage Tradeoff. | Souvik Bhattacherjee; Amit Chavan; Silu Huang; Amol Deshpand | 2015 | - | - | 2 | Euro | OPEN | [LINK](https://doi.org/10.14778/2824032.2824035) |
 | A framework for the comparative study of language. | Juan Uriagereka; James A Reggia; Gerald S Wilkinson | 2013 | - | - | 2 | Euro | OPEN | [LINK](https://europepmc.org/article/MED/23864291) |
@@ -1580,16 +1580,16 @@
 | Review for "Time to Move: Brain Dynamics Underlying Natural Action and Cognition | - | 2021 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.1111/ejn.15562/v2/review1) |
 | We Move Because We Cannot Stay: A Veto Theory of Human Action | Songtao Zhao | 2026 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.6988538) |
 | Decision letter for "Time to Move: Brain Dynamics Underlying Natural Action and  | - | 2021 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.1111/ejn.15562/v1/decision1) |
-| ﻿Glory﻿ | Frederick V. Engram | 2023 | 14 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-107) |
-| ﻿R.E.S.P.E.C.T﻿ | Frederick V. Engram | 2023 | 14 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-81) |
-| ﻿Stand Up﻿ | Frederick V. Engram | 2023 | 24 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-1) |
+| Glory | Frederick V. Engram | 2023 | 14 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-107) |
+| R.E.S.P.E.C.T | Frederick V. Engram | 2023 | 14 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-81) |
+| Stand Up | Frederick V. Engram | 2023 | 24 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-1) |
 | A Change is Gonna Come | - | 2023 | 18 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5040/9780761878131.ch-3) |
 | Power, paternalism and children on the move | Kyle Vella | 2016 | - | Journal of International Humanitarian Action | 0 | Cros | ? | [LINK](https://doi.org/10.1186/s41018-016-0003-y) |
-| ﻿For Us All﻿ | Frederick V. Engram | 2023 | 2 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-137) |
+| For Us All | Frederick V. Engram | 2023 | 2 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-137) |
 | BAMM in the balance | - | 2010 | c3292 | BMJ | 0 | Cros | ? | [LINK](https://doi.org/10.1136/bmj.c3292) |
 | Reflect, Dissect, Choose, Use and Move On | Amy Mathews-Perez | 2026 | 39 | Legacy: Transformation in Action | 0 | Cros | ? | [LINK](https://doi.org/10.67428/2026summer06) |
 | How does the Naiyāyika move many fingers at once: A Nyāya theory of Action | Joshua Fernandes | 2024 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.34055/osf.io/kv3n6) |
-| ﻿Fight the Power!﻿ | Frederick V. Engram | 2023 | 14 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-67) |
+| Fight the Power! | Frederick V. Engram | 2023 | 14 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-67) |
 | Review for "Gender disparities in SGLT2 inhibitor prescriptions for CKD: Time to | - | 2025 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.1111/dom.70137/v1/review1) |
 | Taking Action | - | 2022 | 9 | Schools on the Move: Leading Coherence for Equitab | 0 | Cros | ? | [LINK](https://doi.org/10.4135/9781071822388.n7) |
 | Professional Ethos in Action: Rhetorical Move Variation in Turkish C2c Vehicle L | Ferdi BOZKURT; Fatih Doğru | 2025 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.5348691) |
@@ -1597,7 +1597,7 @@
 | How a game can move people from climate apathy to action | Juliette Rooney-Varga | 2018 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.64628/aai.54xkupj6p) |
 | Bamako Convention: Time for Africa to move from decisions to action on hazardous | - | - | - | Climate Change and Law Collection | 0 | Cros | ? | [LINK](https://doi.org/10.1163/9789004322714_cclc_2020-0252-0972) |
 | Payloads Used in First Three Data-Gathering BAMM Flights, | Alvin H. Howell | 1980 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.21236/ada086839) |
-| ﻿By Any Mean’s Necessary﻿ | Frederick V. Engram | 2023 | 24 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-25) |
+| By Any Mean’s Necessary | Frederick V. Engram | 2023 | 24 | Black Liberation through Action and Resistance | 0 | Cros | ? | [LINK](https://doi.org/10.5771/9780761874171-25) |
 | Pumpsets move into action on mine site | - | 1996 | 24 | World Pumps | 0 | Cros | ? | [LINK](https://doi.org/10.1016/s0262-1762(99)81237-1) |
 | south-africa-on-the-move-a-tool-kit-for-education-and-action-undated-138-pp | - | - | - | Human Rights Documents online | 0 | Cros | ? | [LINK](https://doi.org/10.1163/2210-7975_hrd-0247-0209) |
 | Measure of Processes of Care for Adults | Elena L. Bamm; Peter Rosenbaum; Paul Stratford | 2010 | - | PsycTESTS Dataset | 0 | Cros | ? | [LINK](https://doi.org/10.1037/t77464-000) |
@@ -1999,7 +1999,7 @@
 | Kinematics Analysis of Two Degree-of-freedom Nine-link Leg Mechanism of Legged R | zeng zeng; chen chen; huang huang; yang yang; lan lan | 2022 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.22541/au.164933850.00314305/v1) |
 | ChemInform Abstract: New Symmetrical Tetrathiafulvalene π Donors Containing Nine | J. D. SINGH; H. B. SINGH | 1993 | - | ChemInform | 0 | Cros | ? | [LINK](https://doi.org/10.1002/chin.199311232) |
 | Comparison of Various Modulation Techniques for a Symmetrical Nine-Level Cascade | Chaithanya Sukumaran; Vineeth K; Ismayil Chathoth; Jayapraka | 2019 | - | SSRN Electronic Journal | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.3438140) |
-| ﻿The Formation of High-Legged Screen Couches in the Northern Dynasties | Zheng Wei | 2016 | 18 | Chinese Cultural Relics | 0 | Cros | ? | [LINK](https://doi.org/10.21557/ccr.48032338) |
+| The Formation of High-Legged Screen Couches in the Northern Dynasties | Zheng Wei | 2016 | 18 | Chinese Cultural Relics | 0 | Cros | ? | [LINK](https://doi.org/10.21557/ccr.48032338) |
 | Chapter Nine. Reason and Unreason: A Problematic Distinction | - | 2015 | 25 | Ethical Formation | 0 | Cros | ? | [LINK](https://doi.org/10.4159/9780674040342-010) |
 | Figure 8—figure supplement 2. Formation of symmetrical heteroduplex upon D-loop  | - | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.7554/elife.21900.019) |
 | Symmetrical | - | 2018 | - | Symmetrical | 0 | Cros | ? | [LINK](https://doi.org/10.5040/9781350975187) |

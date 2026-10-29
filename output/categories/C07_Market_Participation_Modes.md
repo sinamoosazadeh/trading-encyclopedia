@@ -593,7 +593,7 @@
 | Shirt sponsorship by gambling companies in the English and Scottish Premier Leag | Christopher Bunn; Robin Ireland; Jonathan Minton; Daniel Hol | 2019 | - | - | 20 | Euro | OPEN | [LINK](https://doi.org/10.1080/14660970.2018.1425682) |
 | Public health obesity-related TV advertising: lessons learned from tobacco. | Sherry L Emery; Glen Szczypka; Lisa M Powell; Frank J Chalou | 2007 | - | - | 20 | Euro | ? | [LINK](https://doi.org/10.1016/j.amepre.2007.07.003) |
 | The Risk of Being a Fallen Angel and the Corporate Dash for Cash in the Midst of | Viral V Acharya; Sascha Steffen | 2020 | - | - | 20 | Euro | ? | [LINK](https://doi.org/10.1093/rcfs/cfaa013) |
-| ﻿Advances in Legume Systematics 14. Classification of Caesalpinioideae. Part 2:  | Anne Bruneau; Luciano Paganucci de Queiroz; Jens J Ringelber | 2024 | - | - | 20 | Euro | OPEN | [LINK](https://doi.org/10.3897/phytokeys.240.101716) |
+| Advances in Legume Systematics 14. Classification of Caesalpinioideae. Part 2:  | Anne Bruneau; Luciano Paganucci de Queiroz; Jens J Ringelber | 2024 | - | - | 20 | Euro | OPEN | [LINK](https://doi.org/10.3897/phytokeys.240.101716) |
 | Family matters inside the order Agaricales: systematic reorganization and classi | A Vizzini; P Alvarado; G Consiglio; M Marchetti; J Xu | 2024 | - | - | 20 | Euro | ? | [LINK](https://doi.org/10.3114/sim.2024.107.02) |
 | Physical stimuli-responsive DNA hydrogels: design, fabrication strategies, and b | Rumi Acharya; Sayan Deb Dutta; Hemadri Mallik; Tejal V Patil | 2025 | - | - | 20 | Euro | OPEN | [LINK](https://doi.org/10.1186/s12951-025-03237-w) |
 | Sharing Data to Build a Medical Information Commons: From Bermuda to the Global  | Robert Cook-Deegan; Rachel A Ankeny; Kathryn Maxson Jones | 2017 | - | - | 20 | Euro | ? | [LINK](https://doi.org/10.1146/annurev-genom-083115-022515) |
@@ -3556,7 +3556,7 @@
 | theoretical margin | - | - | - | SpringerReference | 0 | Cros | ? | [LINK](https://doi.org/10.1007/springerreference_26898) |
 | top margin | - | - | - | SpringerReference | 0 | Cros | ? | [LINK](https://doi.org/10.1007/springerreference_27157) |
 | right margin | - | - | - | SpringerReference | 0 | Cros | ? | [LINK](https://doi.org/10.1007/springerreference_23800) |
-| Figure 13 from: Murniati DC, Asakura A, Davie PJF (2023) ﻿Two new species of Tme | Dewi Citra Murniati; Akira Asakura; Peter J. F. Davie | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.3897/zookeys.1156.98930.figure13) |
+| Figure 13 from: Murniati DC, Asakura A, Davie PJF (2023) Two new species of Tme | Dewi Citra Murniati; Akira Asakura; Peter J. F. Davie | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.3897/zookeys.1156.98930.figure13) |
 | Clearing Margin | - | - | - | SpringerReference | 0 | Cros | ? | [LINK](https://doi.org/10.1007/springerreference_1008) |
 | The Margin of Appreciation Revisited | George Letsas | 2018 | - | Oxford Scholarship Online | 0 | Cros | ? | [LINK](https://doi.org/10.1093/oso/9780198713258.003.0018) |
 | Crypto Based P2P Lending: Batch Liquidation | Francis Liu; Wolfgang Karl Härdle | 2021 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.24818/ida-cl/2021.27) |

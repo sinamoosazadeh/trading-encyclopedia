@@ -1,6 +1,6 @@
 # Backtesting & Strategy Validation
 
-> Category: `A04_Backtesting_Validation` | Items: **7801** | Generated: 2026-10-15 15:03
+> Category: `A04_Backtesting_Validation` | Items: **7800** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -5607,7 +5607,6 @@
 | An Out-of-Sample Evaluation of Dynamic Portfolio Strategies | Chunhua Lan | 2008 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.1108775) |
 | Harvesting the Term Premium: International Out-of-Sample Evidence | Stefan Vincenz | 2025 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.5176661) |
 | PredictorSelect: Out-of-Sample Predictability in Predictive Regressions with Man | Rong Peng | 2024 | - | CRAN: Contributed Packages | 0 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.predictorselect) |
-| Forecasting Pharmaceutical Imports "Increase Or Decrease" In Algerian Between 19 | Djamel Ouared; Adda Mellah | 2025 | 310 | مجلة البشائر الاقتصادية | 0 | Cros | ? | [LINK](https://doi.org/10.33704/1748-011-002-034) |
 | Testing Futures Trading Strategy Assumptions | Mark C. Hutchinson; John O'Brien | 2018 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.3155083) |
 | Strategy Design and Testing | - | 2013 | 3 | Professional Automated Trading | 0 | Cros | ? | [LINK](https://doi.org/10.1002/9781118755846.part1) |
 | Understanding and Testing Iceberg Algorithmic Trading Strategy | Bhupinder Paul Singh Sahni | 2024 | 10 | Journal of Business and Strategic Management | 0 | Cros | ? | [LINK](https://doi.org/10.47941/jbsm.2190) |

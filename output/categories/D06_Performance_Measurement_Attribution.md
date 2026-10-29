@@ -1,6 +1,6 @@
 # Performance Measurement & Attribution
 
-> Category: `D06_Performance_Measurement_Attribution` | Items: **3220** | Generated: 2026-10-15 15:03
+> Category: `D06_Performance_Measurement_Attribution` | Items: **3219** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -2206,7 +2206,6 @@
 | Performance measurement | Maloney, Suzanne | 2014 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/works/314888790) |
 | Illness meanings and experiences for pre-ulcer and ulcer conditions of Buruli ul | Kwakye-Maclean Cynthia; Matilda Pappoe; Gyapong, M.; Ackumey | 2012 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/18261741.pdf) |
 | Development of new molecular genetic tools to study "Mycobacterium ulcerans" inf | Rondini, Simona | 2005 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/18233606.pdf) |
-| Epidemiology of Peptic Ulcer Disease: Endoscopic Results of a Systematic Investi | درخشان, محمدحسین; ملک زاده, رضا; قاجاریه سپانلو, صدف; برازند | 1391 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/11686124.pdf) |
 | Pressure ulcer related pain in community populations: a prevalence survey. | McGinnis, Elizabeth; Coleman, S; McGinnis, E; Wilson, L; Bri | 2014 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/29019171.pdf) |
 | THE CURRENT AND PROBLEM OF PERFORMANCE MEASUREMENT | HIRAOKA, Naoto; 平岡, 直人; WAKAYAMA, Hiroshi; ワカヤマ, ヒロシ; ヒラオカ,  | 1999 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/230280996.pdf) |
 | Laboratory Confirmation of Buruli Ulcer Disease in Togo, 2007-2010 | Fleischmann, Erna; Adolf Diefenhardt; Piten, Ebekalisai; Nit | 2011 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/12175837.pdf) |

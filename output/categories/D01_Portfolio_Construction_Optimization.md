@@ -1,6 +1,6 @@
 # Portfolio Construction & Optimization
 
-> Category: `D01_Portfolio_Construction_Optimization` | Items: **4628** | Generated: 2026-10-15 15:03
+> Category: `D01_Portfolio_Construction_Optimization` | Items: **4626** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -2006,7 +2006,6 @@
 | Data-Driven Uncertainty Set Construction with ARIMA–GARCH Modeling for Robust Po | Deva Putra Setyawan; Diah Chaerani; Sukono Sukono; Nurfadhli | 2026 | 1 | Mathematics | 1 | Open | OPEN | [LINK](https://doi.org/10.3390/math14173116) |
 | Portfolio Choice under Parameter Uncertainty: Bayesian Analysis and Robust Optim | António Alberto Santos; Ana Margarida Monteiro; Rui Pascoal | 2014 | - | RePEc: Research Papers in Economics | 1 | Open | ? | [LINK](http://www.uc.pt/feuc/gemf/working_papers/pdf/2014/gemf_2014-25) |
 | EFFECTIVE RESOURCE ALLOCATION FOR PLANNING AND CONTROL PROJECT PORTFOLIOS UNDER  | Carlos Raoni Mendes | 2017 | - | - | 1 | Open | OPEN | [LINK](https://www.maxwell.vrac.puc-rio.br/32733/32733.PDF) |
-| Presentation of a scenario-based optimization model for bank loan portfolio unde | Mohadese Kouchaki Tajani; Reza Fallah; Mehdi Maranjory; Razi | 2021 | 24 | نشریه چشم انداز مدیریت مالی | 1 | Open | OPEN | [LINK](https://jfmp.sbu.ac.ir/article_102125_21b4344791ed0751190872ce2e254cbc.pdf) |
 | Robust portfolio optimization with | Value-at-Risk-adjusted Sharpe; Geng Deng; Tim Dulaney; Craig | 2013 | - | - | 1 | Open | ? | [LINK](https://openalex.org/W2740944126) |
 | Hierarchical risk clustering versus traditional risk-based portfolios: an empiri | Carlos Trucíos | 2026 | - | Empirical Economics | 1 | Open | OPEN | [LINK](https://link.springer.com/content/pdf/10.1007/s00181-026-02900-x.pdf) |
 | Theoretical Evolution and Challenges of ESG Investment: A Review from a Global P | Mengqi Gao | 2025 | 9 | Advances in Economics Management and Political Sci | 1 | Open | OPEN | [LINK](https://www.ewadirect.com/proceedings/aemps/article/view/23260/pdf) |
@@ -2972,7 +2971,6 @@
 | Penalized wavelet monotone regression | Irène Gijbels; Gijbels, Irène; Anestis Antoniadis; Antoniadi | 2007 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/12044001.pdf) |
 | Using penalized spline, generalized additive model and mixed model regression te | Teuber, Timo | 2013 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/15979131.pdf) |
 | Application of penalized splines method in the credit market | Yao, Zhilin | 2008 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/15958050.pdf) |
-| Survival analysis of the patients with acute myocardial infarction by use of pen | حاجی زاده, ابراهیم; روشنی, دایم; کاظم نژاد, انوشیروان; امانی | 1390 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/11685537.pdf) |
 | Asset allocation by penalized least squares | Manganelli, Simone | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6956382.pdf) |
 | Relating Employee Satisfaction and Voluntary Turnover | Janika SILLAMAE | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6314765.pdf) |
 | How Teacher Turnover Harms Student Achievement | James Wyckoff; Matthew Ronfeldt; Hamilton Lankford; Susanna  | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6711029.pdf) |

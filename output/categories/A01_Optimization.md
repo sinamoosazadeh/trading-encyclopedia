@@ -1,6 +1,6 @@
 # Optimization & Calibration
 
-> Category: `A01_Optimization` | Items: **11903** | Generated: 2026-10-15 15:03
+> Category: `A01_Optimization` | Items: **11901** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -3266,7 +3266,7 @@
 | Fractional Calculus for Neutrosophic-Valued Functions and Its Application in an  | Rakibul Haque; Mostafijur Rahaman; Adel Fahad Alrasheedi; Di | 2025 | 1 | Fractal and Fractional | 8 | Open | OPEN | [LINK](https://www.mdpi.com/2504-3110/9/7/433/pdf?version=1751296887) |
 | Financing Information Technologies: Fairness and Function | Jonathan C. Lipson | 2001 | - | TUScholarShare (Temple University) | 8 | Open | OPEN | [LINK](http://hdl.handle.net/20.500.12613/6675) |
 | A hybrid automated trading system based on multi-objective grammatical evolution | Iván Contreras; José Ignacio Hidalgo; Laura Núñez‐Letamendia | 2017 | 15 | Journal of Intelligent & Fuzzy Systems | 8 | Open | ? | [LINK](https://doi.org/10.3233/jifs-16435) |
-| Restructuring institutional block trading: an overview of the OptiMark system | ﻿Eric K. Clemons; Bruce W. Weber | 2002 | 10 | Proceedings of the ... Annual Hawaii International | 8 | Open | ? | [LINK](https://doi.org/10.1109/hicss.1998.654787) |
+| Restructuring institutional block trading: an overview of the OptiMark system | Eric K. Clemons; Bruce W. Weber | 2002 | 10 | Proceedings of the ... Annual Hawaii International | 8 | Open | ? | [LINK](https://doi.org/10.1109/hicss.1998.654787) |
 | Comparison of optimization-based strategies for constrained control of auto-stee | Iris Ballesteros-Tolosana; Sorin Olaru; Pedro Rodríguez-Ayer | 2016 | 6 | European Control Conference (ECC) | 8 | Open | OPEN | [LINK](https://centralesupelec.hal.science/hal-01429244) |
 | The benefits and trade-offs of multi-variable calibration of the WaterGAP global | H. M. Mehedi Hasan; Petra Döll; Seyed‐Mohammad Hosseini‐Mogh | 2025 | 30 | Hydrology and earth system sciences | 8 | Open | OPEN | [LINK](https://hess.copernicus.org/articles/29/567/2025/hess-29-567-2025.pdf) |
 | A Parametric Starting Study of an Axial-Centrifugal Gas Turbine Engine Using a O | A. Karl Owen; Anne Daugherty; Doug Garrard; Howard C. Reynol | 1999 | 10 | Journal of Engineering for Gas Turbines and Power | 8 | Open | ? | [LINK](https://doi.org/10.1115/1.2818485) |
@@ -5326,7 +5326,6 @@
 | Data-Driven Uncertainty Set Construction with ARIMA–GARCH Modeling for Robust Po | Deva Putra Setyawan; Diah Chaerani; Sukono Sukono; Nurfadhli | 2026 | 1 | Mathematics | 1 | Open | OPEN | [LINK](https://doi.org/10.3390/math14173116) |
 | Portfolio Choice under Parameter Uncertainty: Bayesian Analysis and Robust Optim | António Alberto Santos; Ana Margarida Monteiro; Rui Pascoal | 2014 | - | RePEc: Research Papers in Economics | 1 | Open | ? | [LINK](http://www.uc.pt/feuc/gemf/working_papers/pdf/2014/gemf_2014-25) |
 | EFFECTIVE RESOURCE ALLOCATION FOR PLANNING AND CONTROL PROJECT PORTFOLIOS UNDER  | Carlos Raoni Mendes | 2017 | - | - | 1 | Open | OPEN | [LINK](https://www.maxwell.vrac.puc-rio.br/32733/32733.PDF) |
-| Presentation of a scenario-based optimization model for bank loan portfolio unde | Mohadese Kouchaki Tajani; Reza Fallah; Mehdi Maranjory; Razi | 2021 | 24 | نشریه چشم انداز مدیریت مالی | 1 | Open | OPEN | [LINK](https://jfmp.sbu.ac.ir/article_102125_21b4344791ed0751190872ce2e254cbc.pdf) |
 | Robust portfolio optimization with | Value-at-Risk-adjusted Sharpe; Geng Deng; Tim Dulaney; Craig | 2013 | - | - | 1 | Open | ? | [LINK](https://openalex.org/W2740944126) |
 | Risk parity: An alternative formulation for risk-averse stochastic optimization  | Nasrin Mohabbati-Kalejahi; Alexander Vinel | 2022 | 14 | Journal of the Operational Research Society | 1 | Open | ? | [LINK](https://doi.org/10.1080/01605682.2022.2096494) |
 | DynOpt: Incorporating dynamics into mean-variance portfolio optimization | Marco Signoretto; Johan A. K. Suykens | 2013 | 7 | IEEE Conference on Computational Intelligence for  | 1 | Open | OPEN | [LINK](https://lirias.kuleuven.be/retrieve/6f2abfd1-5c10-4595-bad3-469cc272a979) |
@@ -11499,7 +11498,6 @@
 | Hybrid Metaheuristic Optimization of Support Vector Regression and Prophet Model | Ahmed Shamar Yadgar | 2026 | - | Symmetria : Journal of Advanced Physics and Mathem | 0 | Open | OPEN | [LINK](https://researchvision.us/index.php/symmetria/article/view/189) |
 | Hyperparameter Tuning of the Prophet Model Using Particle Swarm Optimization: A  | Kwestan Ahmed Ismael; Heshu Othman Faqe; Mohammed Hussein Ab | 2026 | - | Academic Journal of International University of Er | 0 | Open | OPEN | [LINK](https://ojs.cihanrtv.com/index.php/public/article/download/158/112/2803) |
 | OPTIMIZING STOCK MARKET FORECASTING: A ROBUST PREDICTION SYSTEM USING XGBOOST | Ipseeta Nanda; Akankshya Swain; Stuti Porwal; Dhruv Singhal; | 2026 | 14 | Iterative International Publishers eBooks | 0 | Open | ? | [LINK](https://doi.org/10.58532/nbennurasitb2p2c1) |
-| Stock Price Prediction with Combination of XGBoost and Binary Gray Wolf Optimize | Hadi Esmaeili; Shahab جهانگیری; Ali Rezazadeh | 2024 | - | Financial Economics   فصلنامه اقتصاد مالی | 0 | Open | OPEN | [LINK](https://doi.org/10.71818/ecj.2025.1104492) |
 | Wide-Tuning CMOS Reconfigurable Bandpass Filter for RF and Microwave Circuits | Aymen Ben Hammadi; Hatem Garrab; Sehmi Saad | 2025 | - | - | 0 | Open | OPEN | [LINK](https://deepscienceresearch.com/dsr/catalog/download/392/1860/3510) |
 | Multi-Market Revenue Optimization for Battery Energy Storage Systems using Machi | Leo Giesen | 2026 | - | Zenodo (CERN European Organization for Nuclear Res | 0 | Open | OPEN | [LINK](https://doi.org/10.5281/zenodo.21216859) |
 | A Forex Trading System Using Evolutionary Reinforcement Learning | Yupu Song | 2017 | - | Digital WPI | 0 | Open | OPEN | [LINK](https://digitalcommons.wpi.edu/etd-theses/1240) |

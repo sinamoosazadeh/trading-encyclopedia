@@ -1,6 +1,6 @@
 # Event-Driven & News-Based Trading
 
-> Category: `F08_EventDriven_News_Trading` | Items: **2773** | Generated: 2026-10-15 15:03
+> Category: `F08_EventDriven_News_Trading` | Items: **2772** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -2025,7 +2025,6 @@
 | Domain V: Monitor and Close Risks | Klaus Nielsen | 2022 | 18 | Mastering the PMI Risk Management Professional (PM | 0 | Cros | ? | [LINK](https://doi.org/10.4324/9781003304012-8) |
 | PMI® Code of Ethics and Professional Conduct | Sumanta Boral | 2016 | 8 | Ace the PMI-ACP® exam | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-1-4842-2526-4_9) |
 | Program Risk Management ........................................... Gary Hamilto | - | 2016 | 20 | Program Management | 0 | Cros | ? | [LINK](https://doi.org/10.1201/b12812-21) |
-| Eurocentric(ism) and Folk(ism) in Edegborode Festival Performance | Blessing Adjeketa | 2023 | 16 | مجلة بيت المشورة | 0 | Cros | ? | [LINK](https://doi.org/10.33001/18355/imjct0410) |
 | The Program Management Office (PgMO) .................. Gary Hamilton, MBA, PMP, | - | 2016 | 14 | Program Management | 0 | Cros | ? | [LINK](https://doi.org/10.1201/b12812-19) |
 | Demystifying Stakeholder Management: The Science and the Art ................... | - | 2016 | 14 | Program Management | 0 | Cros | ? | [LINK](https://doi.org/10.1201/b12812-13) |
 | Figure 6. Trends of the postmortem interval (PMI) estimates. | - | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.7554/elife.01104.013) |
@@ -2697,7 +2696,7 @@
 | The increasing prevalence of multi-sided online platforms and their influence on | Hamid Etemad | 2023 | - | - | 0 | Euro | OPEN | [LINK](https://europepmc.org/article/PMC/PMC10183682) |
 | Intellectual Property Rights and Advance Purchase Agreements in a Crisis | Alison Slade; Naomi Hawkins | 2023 | - | - | 0 | Euro | ? | [LINK](https://doi.org/10.2139/ssrn.4360150) |
 | Industry updates from the field of stem cell research and regenerative medicine  | Dusko Ilic; Mirjana Liovic | - | - | - | 0 | Euro | OPEN | [LINK](https://europepmc.org/article/PMC/PMC12355675) |
-| ﻿Type specimens of recent mammals in Naturalis Biodiversity Center. Part 1 Monot | Steven van der Mije; Chris Smeenk; Pepijn Kamminga | 2025 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3897/zookeys.1242.117019) |
+| Type specimens of recent mammals in Naturalis Biodiversity Center. Part 1 Monot | Steven van der Mije; Chris Smeenk; Pepijn Kamminga | 2025 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.3897/zookeys.1242.117019) |
 | International legal approaches in combatting raidership. | Bauyrzhan N Khamitov; Yerzhan S Kemali; Sattar M Rakhmetov;  | 2022 | - | - | 0 | Euro | ? | [LINK](https://doi.org/10.1057/s41284-022-00362-1) |
 | Exploring the changing of name as a socio-cultural adaptation strategy of the Ja | Sahid Teguh Widodo; Suyatno Suyatno; Bahtiar Mohamad; Shafin | 2025 | - | - | 0 | Euro | OPEN | [LINK](https://europepmc.org/article/PMC/PMC11842391) |
 | Renting royalties: How the assetization of music copyrights contributes to inequ | D Bondy Valdovinos Kaye | 2025 | - | - | 0 | Euro | OPEN | [LINK](https://doi.org/10.1177/01634437251341715) |

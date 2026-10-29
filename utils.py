@@ -1,14 +1,21 @@
 import os, re, time, json, logging, threading, unicodedata
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler(os.path.expanduser("~/encyclopedia/run.log"), encoding="utf-8"),
-        logging.StreamHandler()
-    ]
-)
 log = logging.getLogger("encyclopedia")
+log.setLevel(os.getenv("TE_LOG_LEVEL", "INFO").upper())
+log.propagate = False
+if not log.handlers:
+    log.addHandler(logging.StreamHandler())
+
+def configure_logging():
+    """Opt in to file logging with TRADING_ENCYCLOPEDIA_LOG; never create files on import."""
+    target = os.getenv("TRADING_ENCYCLOPEDIA_LOG", "").strip()
+    if not target:
+        return
+    directory = os.path.dirname(os.path.abspath(os.path.expanduser(target)))
+    os.makedirs(directory, exist_ok=True)
+    if not any(isinstance(handler, logging.FileHandler) for handler in log.handlers):
+        log.addHandler(logging.FileHandler(os.path.expanduser(target), encoding="utf-8"))
+
 cache_lock = threading.Lock()
 
 def normalize(text):
@@ -33,13 +40,22 @@ def is_english(text):
         return ratio > 0.85
 
 def is_valid_url(url):
-    if not url or not isinstance(url, str): return False
-    url = url.strip()
-    if not (url.startswith("http://") or url.startswith("https://")):
+    """Validate an absolute HTTP(S) URL without accepting malformed hostnames."""
+    from urllib.parse import urlsplit
+    if not isinstance(url, str) or len(url.strip()) < 10:
         return False
-    if len(url) < 15: return False
-    if "." not in url[8:]: return False
-    return True
+    try:
+        parsed = urlsplit(url.strip())
+        _ = parsed.port  # Reject malformed numeric ports.
+        return (
+            parsed.scheme.lower() in ("http", "https")
+            and bool(parsed.hostname)
+            and "." in parsed.hostname
+            and parsed.username is None
+            and parsed.password is None
+        )
+    except (TypeError, ValueError):
+        return False
 
 def clean_title(text):
     if not text: return ""
@@ -85,27 +101,104 @@ def parse_pages(item):
     return "-"
 
 def get_access_level(item):
+    """Return a conservative access label based on explicit evidence and exact hosts."""
+    from urllib.parse import urlsplit
     from config import OPEN_DOMAINS, PAYWALL_DOMAINS
-    url = str(item.get("url","")).lower()
-    oa  = item.get("open_access", False)
-    if oa: return "OPEN"
-    for d in OPEN_DOMAINS:
-        if d in url: return "OPEN"
-    for d in PAYWALL_DOMAINS:
-        if d in url: return "PARTIAL"
-    if item.get("unpaywall_pdf"): return "OPEN"
+    url = str(item.get("url", "") or "").strip()
+    if item.get("open_access") is True or item.get("unpaywall_pdf"):
+        return "OPEN"
+    try:
+        host = (urlsplit(url).hostname or "").lower().rstrip(".")
+    except (TypeError, ValueError):
+        host = ""
+    if not host:
+        return "UNKNOWN"
+    def matches_domain(domain):
+        domain = domain.lower().strip(".")
+        if host == domain or host.endswith("." + domain):
+            return True
+        # A few registries use a provider name without a full registrable domain.
+        return domain == "onlinelibrary" and host.startswith("onlinelibrary.")
+    if any(matches_domain(d) for d in OPEN_DOMAINS):
+        return "OPEN"
+    if any(matches_domain(d) for d in PAYWALL_DOMAINS):
+        return "PARTIAL"
     return "UNKNOWN"
 
+def _normalise_doi(value):
+    value = str(value or "").strip().lower()
+    value = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", value)
+    value = re.sub(r"^doi:\s*", "", value)
+    return value.strip().rstrip(" .;/)")
+
+
+def _normalise_title(value):
+    value = unicodedata.normalize("NFKC", str(value or "")).casefold()
+    value = re.sub(r"<[^>]+>", " ", value)
+    value = re.sub(r"[^\w]+", " ", value, flags=re.UNICODE)
+    return " ".join(value.split())
+
+
+def _normalise_authors(value):
+    if isinstance(value, (list, tuple)):
+        value = ";".join(str(v) for v in value)
+    return " ".join(re.sub(r"[^\w]+", " ", str(value or "")).casefold().split())
+
+
+def _record_identity(item):
+    """Prefer stable identifiers; otherwise use complete bibliographic identity.
+
+    Do not truncate titles and do not automatically merge records with distinct DOIs.
+    Fuzzy-title matching is intentionally left to a separately reviewable workflow.
+    """
+    doi = _normalise_doi(item.get("doi"))
+    if doi:
+        return ("doi", doi)
+    title = _normalise_title(item.get("title"))
+    if not title:
+        return None
+    authors = _normalise_authors(item.get("authors"))
+    year = str(item.get("year") or "").strip()
+    venue = _normalise_title(item.get("venue"))
+    if authors and year:
+        return ("bibliographic", title, authors, year)
+    if year and venue:
+        return ("bibliographic", title, year, venue)
+    # Title-only matching is too aggressive for a research catalogue.
+    return None
+
+
 def deduplicate(items):
-    seen_doi, seen_title, unique = set(), set(), []
-    for item in items:
-        doi = re.sub(r"https?://doi\.org/","", str(item.get("doi",""))).lower().strip()
-        title_norm = re.sub(r"\W+","", str(item.get("title","")).lower())[:80]
-        if doi and doi in seen_doi: continue
-        if title_norm and title_norm in seen_title: continue
-        if doi: seen_doi.add(doi)
-        if title_norm: seen_title.add(title_norm)
-        unique.append(item)
+    """Conservatively merge exact identities while preserving complementary fields."""
+    unique = []
+    positions = {}
+    for original in items:
+        if not isinstance(original, dict):
+            continue
+        item = dict(original)
+        identity = _record_identity(item)
+        if identity is None or identity not in positions:
+            if identity is not None:
+                positions[identity] = len(unique)
+            unique.append(item)
+            continue
+
+        target = unique[positions[identity]]
+        # Preserve the original record but fill missing values from the duplicate.
+        for key, value in item.items():
+            if key.startswith("_"):
+                if key not in target or not target[key]:
+                    target[key] = value
+                continue
+            if target.get(key) in (None, "", [], {}, "-") and value not in (None, "", [], {}, "-"):
+                target[key] = value
+        # Preserve source provenance without changing the legacy display field.
+        provenance = target.setdefault("source_provenance", [])
+        for source in (target.get("source"), item.get("source")):
+            if source and source not in provenance:
+                provenance.append(source)
+        if identity[0] == "doi" and target.get("doi"):
+            target["doi"] = _normalise_doi(target["doi"])
     return unique
 
 def save_json(data, path):

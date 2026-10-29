@@ -1,6 +1,6 @@
 # NLP Sentiment & Alternative Data
 
-> Category: `B04_NLP_Sentiment_Alternative_Data` | Items: **6482** | Generated: 2026-10-15 15:03
+> Category: `B04_NLP_Sentiment_Alternative_Data` | Items: **6481** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -1553,7 +1553,6 @@
 | The effect of annual report readability on financial analysts behaviour | Aymen Ajina; Sourour Ben Saad; Badreddine Msolli | 2018 | 12 | Pressacademia | 14 | Open | OPEN | [LINK](https://doi.org/10.17261/pressacademia.2018.782) |
 | A Chinese Event Relation Extraction Model Based on BERT | Can Tian; Yawei Zhao; Liang Ren | 2019 | 6 | International Conference on Artificial Intelligenc | 14 | Open | ? | [LINK](https://doi.org/10.1109/icaibd.2019.8837002) |
 | Specialized document embeddings for aspect-based similarity of research papers | Malte Ostendorff; Till Blume; Terry Ruas; Béla Gipp; Georg R | 2022 | 12 | ACM/IEEE Joint Conference on Digital Libraries | 14 | Open | OPEN | [LINK](https://arxiv.org/pdf/2203.14541) |
-| A novel AI-driven approach to greenwashing: breakthroughs in the future fit betw | حسن حیدری | 2025 | - | Future Business Journal | 14 | Open | OPEN | [LINK](https://fbj.springeropen.com/counter/pdf/10.1186/s43093-025-00497-8) |
 | RainBench: Towards Data-Driven Global Precipitation Forecasting from Satellite I | Christian Schroeder de Witt; Catherine Tong; Valentina Zante | 2021 | 9 | Proceedings of the AAAI Conference on Artificial I | 14 | Open | OPEN | [LINK](https://ojs.aaai.org/index.php/AAAI/article/download/17749/17556) |
 | Hands-On Machine Learning for Algorithmic Trading | Stefan Jansen | 2018 | - | - | 14 | Open | ? | [LINK](https://openalex.org/W3192434902) |
 | The Dynamic Relationship between Investor Attention and Stock Market Volatility: | Imene Ben El Hadj Said; Skander Slim | 2022 | 1 | Journal of risk and financial management | 14 | Open | OPEN | [LINK](https://www.mdpi.com/1911-8074/15/2/66/pdf?version=1645493246) |

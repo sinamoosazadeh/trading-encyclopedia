@@ -1,6 +1,6 @@
 # Factor Investing Alpha & Anomalies
 
-> Category: `D05_Factor_Investing_Alpha_Anomalies` | Items: **5550** | Generated: 2026-10-15 15:03
+> Category: `D05_Factor_Investing_Alpha_Anomalies` | Items: **5548** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -4470,7 +4470,6 @@
 | Accruals, Earnings Quality and Research Methodology | B. Brian Lee; Alfreda Dobiyanski; Marianna Sviland; Limin “P | 2020 | - | Journal of Applied Business and Economics | 0 | Cros | ? | [LINK](https://doi.org/10.33423/jabe.v22i1.2717) |
 | Managerial Ownership and Accruals Earnings Management | - | 2022 | - | Central European Management Journal | 0 | Cros | ? | [LINK](https://doi.org/10.57030/23364890.cemj.30.4.214) |
 | Assessing Earnings Quality Using Accruals and Sustainability Metrics | Louissia Mia Aulia Farasthy Kusnadi; Kusuma Indawati Halim | 2026 | 18 | JAS (Jurnal Akuntansi Syariah) | 0 | Cros | ? | [LINK](https://doi.org/10.46367/jas.v10i1.2781) |
-| Evaluating Earnings Quality Using The Performance Adjusted Discretionary Accrual | Amina Feddaoui | 2024 | 1106 | مجلة الواحات للبحوث والدراسات | 0 | Cros | ? | [LINK](https://doi.org/10.54246/1548-017-001-060) |
 | Market Anomaly Of Audit Quality, Conservatism and Accounting Accruals | 김태완; Kwon,Young-Do; Chun,Ha-Sung | 2011 | 28 | Korea International Accounting Review | 0 | Cros | ? | [LINK](https://doi.org/10.21073/kiar.2011..36.006) |
 | Earnings Accruals and Real Activities Management around Initial Public Offerings | Peter Ising | 2014 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-658-03794-9) |
 | Managerial Foresight and Choice of Accruals in Earnings Management | Hwee Cheng Tan | 2007 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.993002) |
@@ -4711,7 +4710,6 @@
 | Indoor Dust/Air Partitioning: Evidence for Kinetic Delay in Equilibration for Lo | - | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.1021/acs.est.0c00632.s001) |
 | Time-Varying Volatility Spillover Dynamics Across Crises: Evidence from Australi | Shietal Ramesh; Rand Kwong Yew Low | 2026 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.6178795) |
 | Investor Sentiment and the Low Volatility Anomaly | Benjamin M. Blau; Brad Cannon; Ryan J. Whitby | 2026 | 21 | Journal of Behavioral Finance | 0 | Cros | ? | [LINK](https://doi.org/10.1080/15427560.2026.2731566) |
-| The Low Volatility Puzzle:, Evidence From Amman Stock Exchange | حنا وليد حنا الربضى | 2019 | 169 | المجلة الأردنية في إدارة الأعمال | 0 | Cros | ? | [LINK](https://doi.org/10.35516/0338-015-002-001) |
 | A cultural finance perspective on the low volatility anomaly | Kamini Solanki; Yudhvir Seetharam; Daniel Page | 2026 | 103562 | Research in International Business and Finance | 0 | Cros | ? | [LINK](https://doi.org/10.1016/j.ribaf.2026.103562) |
 | Predictive Ability of Low-Frequency Volatility Measures: Evidence from the Hong  | Christopher Gan; Gilbert Nartea; Ji (George) Wu | 2015 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.2558280) |
 | Risk Spillovers between Industries - New Evidence from Two Periods of High and L | Xiu Zhang; Shan Lu; Yueshan Li; Shoudong Chen | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.4583189) |

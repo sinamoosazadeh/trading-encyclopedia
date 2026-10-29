@@ -1,59 +1,88 @@
 #!/usr/bin/env python3
-"""
-Trading Encyclopedia — Git Sync
-Pushes output files to GitHub repository.
-Usage: python git_sync.py
-"""
-import os, subprocess, sys, time
+"""Commit and push generated catalogue artifacts without shell interpolation."""
+from __future__ import annotations
 
-OUTPUT_DIR = os.path.expanduser("~/encyclopedia/output")
-BASE_DIR   = os.path.expanduser("~/encyclopedia")
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
 
-def run_cmd(cmd, cwd=BASE_DIR):
-    result = subprocess.run(cmd, shell=True, cwd=cwd,
-                            capture_output=True, text=True)
+BASE_DIR = Path(__file__).resolve().parent
+OUTPUT_DIR = BASE_DIR / "output"
+
+
+def run_cmd(args: list[str], *, check: bool = False) -> subprocess.CompletedProcess:
+    result = subprocess.run(
+        args,
+        cwd=BASE_DIR,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
     if result.stdout.strip():
-        print("  " + result.stdout.strip())
-    if result.stderr.strip() and "warning" not in result.stderr.lower():
-        print("  STDERR: " + result.stderr.strip()[:200])
-    return result.returncode
+        print(result.stdout.strip())
+    if result.stderr.strip():
+        print(result.stderr.strip(), file=sys.stderr)
+    if check and result.returncode != 0:
+        raise subprocess.CalledProcessError(
+            result.returncode, args, output=result.stdout, stderr=result.stderr
+        )
+    return result
 
-def sync():
-    print("\n" + "="*55)
-    print("  TRADING ENCYCLOPEDIA — GIT SYNC")
-    print("="*55 + "\n")
 
-    # Check git init
-    if not os.path.exists(os.path.join(BASE_DIR, ".git")):
-        print("  Git not initialized. Run setup_git.sh first.")
-        sys.exit(1)
+def sync() -> int:
+    if not (BASE_DIR / ".git").exists():
+        print("Git is not initialized in the repository directory.", file=sys.stderr)
+        print("Run setup_git.sh from the repository root first.", file=sys.stderr)
+        return 2
+    if not OUTPUT_DIR.is_dir():
+        print("The generated output directory does not exist.", file=sys.stderr)
+        print("Run merge.py or merge_light.py first.", file=sys.stderr)
+        return 2
 
-    # Copy output to root for git
-    import shutil
-    for fname in os.listdir(OUTPUT_DIR):
-        src = os.path.join(OUTPUT_DIR, fname)
-        if os.path.isfile(src):
-            shutil.copy(src, os.path.join(BASE_DIR, fname))
+    branch_result = run_cmd(["git", "branch", "--show-current"])
+    branch = branch_result.stdout.strip()
+    if branch_result.returncode != 0 or not branch:
+        print("Cannot determine the current branch; refusing to push from detached HEAD.", file=sys.stderr)
+        return 2
 
-    cats_src = os.path.join(OUTPUT_DIR, "categories")
-    cats_dst = os.path.join(BASE_DIR, "categories")
-    if os.path.isdir(cats_src):
-        os.makedirs(cats_dst, exist_ok=True)
-        for fname in os.listdir(cats_src):
-            shutil.copy(os.path.join(cats_src, fname), os.path.join(cats_dst, fname))
+    print(f"Staging generated artifacts under: {OUTPUT_DIR.relative_to(BASE_DIR)}")
+    add_result = run_cmd(["git", "add", "--all", "--", "output"])
+    if add_result.returncode != 0:
+        return add_result.returncode
 
-    # Git operations
-    timestamp = time.strftime("%Y-%m-%d %H:%M")
-    run_cmd("git add README.md INDEX.md STATISTICS.md AUTHORS_INDEX.md VENUES_INDEX.md DOMAINS_GUIDE.md categories/ *.py .gitignore 2>/dev/null || true")
-    run_cmd("git commit -m \"Encyclopedia update: " + timestamp + "\"")
-    ret = run_cmd("git push origin main")
-    if ret != 0:
-        ret = run_cmd("git push origin master")
-    if ret == 0:
-        print("\n  Successfully pushed to GitHub")
-    else:
-        print("\n  Push failed — check token and try again")
-        print("  Tip: git push origin main")
+    diff_result = run_cmd(["git", "diff", "--cached", "--quiet", "--", "output"])
+    if diff_result.returncode == 0:
+        print("No generated-output changes to commit.")
+        return 0
+    if diff_result.returncode != 1:
+        print("Unable to inspect staged changes; refusing to commit.", file=sys.stderr)
+        return diff_result.returncode
+
+    unrelated_result = run_cmd(["git", "diff", "--cached", "--quiet", "--", ".", ":(exclude)output"])
+    if unrelated_result.returncode == 1:
+        print("Unrelated staged changes exist outside output/. Refusing to include them in the generated-output commit.", file=sys.stderr)
+        print("Review or unstage those changes before running this script again.", file=sys.stderr)
+        return 2
+    if unrelated_result.returncode != 0:
+        print("Unable to check staged changes outside output/; refusing to commit.", file=sys.stderr)
+        return unrelated_result.returncode
+
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    commit_result = run_cmd(["git", "commit", "-m", f"Update generated catalogue: {timestamp}"])
+    if commit_result.returncode != 0:
+        print("Commit failed. Review the Git output above; nothing was pushed.", file=sys.stderr)
+        return commit_result.returncode
+
+    push_result = run_cmd(["git", "push", "--set-upstream", "origin", branch])
+    if push_result.returncode != 0:
+        print("Push failed. Verify origin and authenticate with GitHub CLI.", file=sys.stderr)
+        print("Suggested command: gh auth setup-git --hostname github.com", file=sys.stderr)
+        return push_result.returncode
+
+    print(f"Generated catalogue pushed successfully from branch {branch}.")
+    return 0
+
 
 if __name__ == "__main__":
-    sync()
+    raise SystemExit(sync())

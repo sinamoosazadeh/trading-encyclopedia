@@ -1,0 +1,1236 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Curated Resource Discovery Registry",
+  "purpose": "A maintained seed collection of resource entry points for quantitative finance, trading-system design, implementation, validation, and operations.",
+  "coverage_note": "This registry is intentionally curated and is not an exhaustive index of the Internet. URLs and provider terms may change; verify important sources before production use.",
+  "lifecycle_stages": [
+    "problem-definition",
+    "architecture",
+    "design-freeze",
+    "handoff",
+    "research",
+    "data-acquisition",
+    "data-engineering",
+    "signal-design",
+    "model-development",
+    "training",
+    "backtesting",
+    "validation",
+    "optimization",
+    "risk-management",
+    "execution",
+    "exchange-integration",
+    "testing",
+    "deployment",
+    "observability",
+    "security",
+    "operations",
+    "governance",
+    "market-making",
+    "quantitative-modeling"
+  ],
+  "resources": [
+    {
+      "id": "research-openalex",
+      "name": "OpenAlex API",
+      "url": "https://help.openalex.org/api/",
+      "type": "research-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition",
+        "validation"
+      ],
+      "tags": [
+        "scholarly-metadata",
+        "citations",
+        "works"
+      ],
+      "description": "Cross-disciplinary scholarly metadata, works, authors, institutions, and citation-related discovery.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-crossref",
+      "name": "Crossref REST API",
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "type": "research-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition"
+      ],
+      "tags": [
+        "doi",
+        "bibliographic-metadata",
+        "publications"
+      ],
+      "description": "DOI and publication metadata discovery. Interpret coverage and fields according to provider documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-arxiv",
+      "name": "arXiv API Manual",
+      "url": "https://info.arxiv.org/help/api/index.html",
+      "type": "preprint-server",
+      "lifecycle_stages": [
+        "research",
+        "model-development",
+        "validation"
+      ],
+      "tags": [
+        "preprints",
+        "machine-learning",
+        "quantitative-finance"
+      ],
+      "description": "Search and retrieve preprint metadata in supported arXiv categories.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-s2",
+      "name": "Semantic Scholar API",
+      "url": "https://api.semanticscholar.org/api-docs/graph",
+      "type": "research-index",
+      "lifecycle_stages": [
+        "research",
+        "validation"
+      ],
+      "tags": [
+        "citations",
+        "papers",
+        "authors"
+      ],
+      "description": "Scholarly graph and paper metadata; availability and rate limits depend on current API policy.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-core",
+      "name": "CORE API",
+      "url": "https://api.core.ac.uk/docs/v3",
+      "type": "open-access-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition"
+      ],
+      "tags": [
+        "open-access",
+        "repositories",
+        "papers"
+      ],
+      "description": "Search open-access research records and repository links.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-europepmc",
+      "name": "Europe PMC REST API",
+      "url": "https://europepmc.org/RestfulWebService",
+      "type": "open-access-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition"
+      ],
+      "tags": [
+        "open-access",
+        "metadata",
+        "papers"
+      ],
+      "description": "Search and retrieve publication metadata from the Europe PMC service.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-doaj",
+      "name": "DOAJ API",
+      "url": "https://doaj.org/api/v2/docs",
+      "type": "open-access-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition"
+      ],
+      "tags": [
+        "open-access",
+        "journals",
+        "articles"
+      ],
+      "description": "Search directory records for open-access journals and articles.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-springer",
+      "name": "Springer Nature APIs",
+      "url": "https://dev.springernature.com/",
+      "type": "research-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition"
+      ],
+      "tags": [
+        "publisher-metadata",
+        "articles",
+        "books"
+      ],
+      "description": "Publisher metadata and open-access services; keys and service terms may apply.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-repec",
+      "name": "RePEc / IDEAS",
+      "url": "https://ideas.repec.org/",
+      "type": "research-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition"
+      ],
+      "tags": [
+        "economics",
+        "finance",
+        "working-papers"
+      ],
+      "description": "Economics and finance research discovery and working-paper links.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-zenodo",
+      "name": "Zenodo",
+      "url": "https://developers.zenodo.org/",
+      "type": "research-index",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition",
+        "validation"
+      ],
+      "tags": [
+        "datasets",
+        "software",
+        "research-artifacts"
+      ],
+      "description": "Discover versioned research artifacts, datasets, and software records.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-github-search",
+      "name": "GitHub REST Search",
+      "url": "https://docs.github.com/en/rest/search/search#search-repositories",
+      "type": "official-api-docs",
+      "lifecycle_stages": [
+        "research",
+        "architecture",
+        "model-development"
+      ],
+      "tags": [
+        "source-code",
+        "repositories",
+        "examples"
+      ],
+      "description": "Discover public repositories and implementation examples. Search quotas and ranking limit coverage.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-huggingface",
+      "name": "Hugging Face Hub API",
+      "url": "https://huggingface.co/docs/hub/en/api",
+      "type": "ml-platform",
+      "lifecycle_stages": [
+        "research",
+        "model-development",
+        "validation"
+      ],
+      "tags": [
+        "models",
+        "datasets",
+        "machine-learning"
+      ],
+      "description": "Discover hosted models, datasets, and research artifacts.",
+      "review_status": "seed"
+    },
+    {
+      "id": "research-pwc",
+      "name": "Papers with Code",
+      "url": "https://paperswithcode.com/",
+      "type": "research-index",
+      "lifecycle_stages": [
+        "research",
+        "model-development",
+        "validation"
+      ],
+      "tags": [
+        "papers",
+        "benchmarks",
+        "code"
+      ],
+      "description": "A discovery portal relating machine-learning papers, code, tasks, and benchmarks.",
+      "review_status": "seed"
+    },
+    {
+      "id": "exchange-toobit",
+      "name": "Toobit API Documentation",
+      "url": "https://api-docs.toobit.com/",
+      "type": "market-data-docs",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "execution",
+        "exchange-integration",
+        "operations"
+      ],
+      "tags": [
+        "crypto",
+        "rest",
+        "websocket",
+        "futures"
+      ],
+      "description": "Official Toobit API entry point for documented market-data, account, order, and streaming interfaces.",
+      "review_status": "seed"
+    },
+    {
+      "id": "exchange-binance",
+      "name": "Binance Developer Documentation",
+      "url": "https://developers.binance.com/en/docs/introduction",
+      "type": "market-data-docs",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "execution",
+        "exchange-integration",
+        "operations"
+      ],
+      "tags": [
+        "crypto",
+        "rest",
+        "websocket",
+        "trading"
+      ],
+      "description": "Official Binance API documentation. Verify current product-specific rules and geographic eligibility independently.",
+      "review_status": "seed"
+    },
+    {
+      "id": "exchange-bybit",
+      "name": "Bybit V5 API Documentation",
+      "url": "https://bybit-exchange.github.io/docs/v5/intro",
+      "type": "market-data-docs",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "execution",
+        "exchange-integration",
+        "operations"
+      ],
+      "tags": [
+        "crypto",
+        "rest",
+        "websocket",
+        "trading"
+      ],
+      "description": "Official API reference for Bybit V5 interfaces.",
+      "review_status": "seed"
+    },
+    {
+      "id": "exchange-okx",
+      "name": "OKX API Documentation",
+      "url": "https://www.okx.com/docs-v5/en/",
+      "type": "market-data-docs",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "execution",
+        "exchange-integration",
+        "operations"
+      ],
+      "tags": [
+        "crypto",
+        "rest",
+        "websocket",
+        "trading"
+      ],
+      "description": "Official OKX API documentation covering market data and account/trading interfaces.",
+      "review_status": "seed"
+    },
+    {
+      "id": "exchange-coinbase",
+      "name": "Coinbase Advanced Trade API",
+      "url": "https://docs.cdp.coinbase.com/advanced-trade/docs/welcome",
+      "type": "market-data-docs",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "execution",
+        "exchange-integration"
+      ],
+      "tags": [
+        "crypto",
+        "rest",
+        "websocket"
+      ],
+      "description": "Official Coinbase Advanced Trade API documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "exchange-deribit",
+      "name": "Deribit API Documentation",
+      "url": "https://docs.deribit.com/",
+      "type": "market-data-docs",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "execution",
+        "exchange-integration"
+      ],
+      "tags": [
+        "crypto-derivatives",
+        "options",
+        "futures",
+        "websocket"
+      ],
+      "description": "Official Deribit API documentation for derivatives and market-data interfaces.",
+      "review_status": "seed"
+    },
+    {
+      "id": "exchange-ccxt",
+      "name": "CCXT Documentation",
+      "url": "https://docs.ccxt.com/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "execution",
+        "exchange-integration",
+        "testing"
+      ],
+      "tags": [
+        "exchange-adapters",
+        "rest",
+        "crypto"
+      ],
+      "description": "Unified exchange-library documentation. Exchange features, semantics, and edge cases still require verification.",
+      "review_status": "seed"
+    },
+    {
+      "id": "data-fred",
+      "name": "FRED API Documentation",
+      "url": "https://fred.stlouisfed.org/docs/api/fred/",
+      "type": "data-platform",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering",
+        "research"
+      ],
+      "tags": [
+        "macroeconomics",
+        "economic-data",
+        "time-series"
+      ],
+      "description": "Official Federal Reserve Bank of St. Louis API docs for macroeconomic time series.",
+      "review_status": "seed"
+    },
+    {
+      "id": "data-nasdaq",
+      "name": "Nasdaq Data Link API",
+      "url": "https://docs.data.nasdaq.com/",
+      "type": "data-platform",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering",
+        "research"
+      ],
+      "tags": [
+        "datasets",
+        "financial-data",
+        "time-series"
+      ],
+      "description": "API documentation for datasets distributed through Nasdaq Data Link; dataset-specific access terms vary.",
+      "review_status": "seed"
+    },
+    {
+      "id": "data-coingecko",
+      "name": "CoinGecko API Documentation",
+      "url": "https://docs.coingecko.com/",
+      "type": "data-platform",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering"
+      ],
+      "tags": [
+        "crypto-market-data",
+        "prices",
+        "metadata"
+      ],
+      "description": "Crypto market-data and asset metadata API documentation. Plan and rate limits may apply.",
+      "review_status": "seed"
+    },
+    {
+      "id": "data-cmc",
+      "name": "CoinMarketCap API Documentation",
+      "url": "https://coinmarketcap.com/api/documentation/v1/",
+      "type": "data-platform",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering"
+      ],
+      "tags": [
+        "crypto-market-data",
+        "prices",
+        "metadata"
+      ],
+      "description": "Crypto market-data API documentation; check current plans, terms, and limits.",
+      "review_status": "seed"
+    },
+    {
+      "id": "data-huggingface-datasets",
+      "name": "Hugging Face Datasets",
+      "url": "https://huggingface.co/docs/datasets/",
+      "type": "data-platform",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering",
+        "model-development"
+      ],
+      "tags": [
+        "datasets",
+        "data-processing",
+        "machine-learning"
+      ],
+      "description": "Tools and documentation for loading, processing, and sharing datasets.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-quantconnect",
+      "name": "QuantConnect Documentation",
+      "url": "https://www.quantconnect.com/docs/v2/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "architecture",
+        "signal-design",
+        "backtesting",
+        "deployment",
+        "operations"
+      ],
+      "tags": [
+        "lean",
+        "research",
+        "backtesting",
+        "live-trading"
+      ],
+      "description": "Documentation for a research and algorithmic trading platform and its LEAN engine.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-lean",
+      "name": "LEAN Engine",
+      "url": "https://github.com/QuantConnect/Lean",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "architecture",
+        "backtesting",
+        "testing",
+        "deployment"
+      ],
+      "tags": [
+        "trading-engine",
+        "source-code",
+        "multi-asset"
+      ],
+      "description": "Open-source algorithmic trading engine repository and implementation reference.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-backtrader",
+      "name": "Backtrader Documentation",
+      "url": "https://www.backtrader.com/docu/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "signal-design",
+        "backtesting",
+        "validation"
+      ],
+      "tags": [
+        "python",
+        "backtesting",
+        "strategy"
+      ],
+      "description": "Python backtesting and trading framework documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-vectorbt",
+      "name": "vectorbt Documentation",
+      "url": "https://vectorbt.dev/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "signal-design",
+        "backtesting",
+        "optimization",
+        "validation"
+      ],
+      "tags": [
+        "python",
+        "vectorization",
+        "backtesting"
+      ],
+      "description": "Vectorized quantitative research and backtesting documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-nautilus",
+      "name": "NautilusTrader Documentation",
+      "url": "https://nautilustrader.io/docs/latest/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "architecture",
+        "backtesting",
+        "execution",
+        "exchange-integration",
+        "operations"
+      ],
+      "tags": [
+        "event-driven",
+        "backtesting",
+        "live-trading"
+      ],
+      "description": "Trading system framework documentation; review current release behavior before relying on specifics.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-freqtrade",
+      "name": "Freqtrade Documentation",
+      "url": "https://www.freqtrade.io/en/stable/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "signal-design",
+        "backtesting",
+        "optimization",
+        "execution",
+        "operations"
+      ],
+      "tags": [
+        "crypto",
+        "bot",
+        "backtesting"
+      ],
+      "description": "Open-source crypto trading bot documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-hummingbot",
+      "name": "Hummingbot Documentation",
+      "url": "https://hummingbot.org/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "execution",
+        "market-making",
+        "exchange-integration",
+        "operations"
+      ],
+      "tags": [
+        "crypto",
+        "market-making",
+        "connectors"
+      ],
+      "description": "Open-source framework and documentation focused on automated market-making and exchange connectivity.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-backtestingpy",
+      "name": "backtesting.py",
+      "url": "https://kernc.github.io/backtesting.py/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "signal-design",
+        "backtesting",
+        "validation"
+      ],
+      "tags": [
+        "python",
+        "backtesting",
+        "research"
+      ],
+      "description": "Lightweight Python framework for backtesting trading strategies.",
+      "review_status": "seed"
+    },
+    {
+      "id": "engine-quantlib",
+      "name": "QuantLib",
+      "url": "https://www.quantlib.org/",
+      "type": "open-source-framework",
+      "lifecycle_stages": [
+        "quantitative-modeling",
+        "risk-management",
+        "validation"
+      ],
+      "tags": [
+        "derivatives",
+        "pricing",
+        "fixed-income"
+      ],
+      "description": "Open-source quantitative-finance modeling library and documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "lang-python",
+      "name": "Python Documentation",
+      "url": "https://docs.python.org/3/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "architecture",
+        "model-development",
+        "testing",
+        "deployment"
+      ],
+      "tags": [
+        "python",
+        "language",
+        "runtime"
+      ],
+      "description": "Official Python language and standard-library reference.",
+      "review_status": "seed"
+    },
+    {
+      "id": "lang-numpy",
+      "name": "NumPy Documentation",
+      "url": "https://numpy.org/doc/stable/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-engineering",
+        "model-development",
+        "optimization"
+      ],
+      "tags": [
+        "arrays",
+        "numerical-computing"
+      ],
+      "description": "Numerical computing reference.",
+      "review_status": "seed"
+    },
+    {
+      "id": "lang-pandas",
+      "name": "pandas Documentation",
+      "url": "https://pandas.pydata.org/docs/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-acquisition",
+        "data-engineering",
+        "research"
+      ],
+      "tags": [
+        "tabular-data",
+        "time-series"
+      ],
+      "description": "Data-frame and time-series data handling documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "lang-polars",
+      "name": "Polars Documentation",
+      "url": "https://docs.pola.rs/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-engineering",
+        "backtesting"
+      ],
+      "tags": [
+        "columnar",
+        "dataframes",
+        "performance"
+      ],
+      "description": "Columnar data-frame library documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "storage-duckdb",
+      "name": "DuckDB Documentation",
+      "url": "https://duckdb.org/docs/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-engineering",
+        "research",
+        "validation"
+      ],
+      "tags": [
+        "olap",
+        "sql",
+        "analytics"
+      ],
+      "description": "Embedded analytical database documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "storage-sqlite",
+      "name": "SQLite Documentation",
+      "url": "https://sqlite.org/docs.html",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-engineering",
+        "operations"
+      ],
+      "tags": [
+        "embedded-database",
+        "storage"
+      ],
+      "description": "Official SQLite reference; useful for portable local research databases.",
+      "review_status": "seed"
+    },
+    {
+      "id": "storage-postgres",
+      "name": "PostgreSQL Documentation",
+      "url": "https://www.postgresql.org/docs/current/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-engineering",
+        "deployment",
+        "operations"
+      ],
+      "tags": [
+        "database",
+        "sql",
+        "transactions"
+      ],
+      "description": "Official PostgreSQL documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "storage-arrow",
+      "name": "Apache Arrow Documentation",
+      "url": "https://arrow.apache.org/docs/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-engineering",
+        "data-acquisition"
+      ],
+      "tags": [
+        "columnar",
+        "interchange",
+        "memory"
+      ],
+      "description": "Columnar in-memory data interchange and tooling documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "storage-parquet",
+      "name": "Apache Parquet Documentation",
+      "url": "https://parquet.apache.org/docs/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "data-engineering",
+        "research"
+      ],
+      "tags": [
+        "columnar",
+        "file-format",
+        "analytics"
+      ],
+      "description": "Columnar storage format documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "ml-pytorch",
+      "name": "PyTorch Documentation",
+      "url": "https://pytorch.org/docs/stable/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "model-development",
+        "training",
+        "validation"
+      ],
+      "tags": [
+        "deep-learning",
+        "gpu",
+        "autograd"
+      ],
+      "description": "Deep-learning framework documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "ml-tensorflow",
+      "name": "TensorFlow Guides",
+      "url": "https://www.tensorflow.org/guide",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "model-development",
+        "training",
+        "validation"
+      ],
+      "tags": [
+        "deep-learning",
+        "training"
+      ],
+      "description": "Machine-learning platform guides.",
+      "review_status": "seed"
+    },
+    {
+      "id": "ml-sklearn",
+      "name": "scikit-learn Documentation",
+      "url": "https://scikit-learn.org/stable/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "model-development",
+        "validation",
+        "optimization"
+      ],
+      "tags": [
+        "classical-ml",
+        "pipelines",
+        "metrics"
+      ],
+      "description": "Machine-learning estimators, model selection, and evaluation documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "ml-xgboost",
+      "name": "XGBoost Documentation",
+      "url": "https://xgboost.readthedocs.io/en/stable/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "model-development",
+        "optimization",
+        "validation"
+      ],
+      "tags": [
+        "gradient-boosting",
+        "tabular-ml"
+      ],
+      "description": "Gradient-boosting library documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "ml-optuna",
+      "name": "Optuna Documentation",
+      "url": "https://optuna.readthedocs.io/en/stable/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "optimization",
+        "model-development",
+        "validation"
+      ],
+      "tags": [
+        "hyperparameter-optimization",
+        "experiments"
+      ],
+      "description": "Hyperparameter optimization and study-management documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "ml-ray",
+      "name": "Ray Documentation",
+      "url": "https://docs.ray.io/en/latest/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "training",
+        "data-engineering",
+        "deployment"
+      ],
+      "tags": [
+        "distributed-computing",
+        "parallelism"
+      ],
+      "description": "Distributed compute and AI workload framework documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "ml-mlflow",
+      "name": "MLflow Documentation",
+      "url": "https://mlflow.org/docs/latest/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "model-development",
+        "validation",
+        "deployment",
+        "operations"
+      ],
+      "tags": [
+        "experiment-tracking",
+        "model-registry"
+      ],
+      "description": "Documentation for experiment tracking, model packaging, and model lifecycle tooling.",
+      "review_status": "seed"
+    },
+    {
+      "id": "test-pytest",
+      "name": "pytest Documentation",
+      "url": "https://docs.pytest.org/en/stable/",
+      "type": "testing-tool",
+      "lifecycle_stages": [
+        "testing",
+        "validation"
+      ],
+      "tags": [
+        "unit-tests",
+        "fixtures",
+        "test-runner"
+      ],
+      "description": "Python testing framework documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "test-hypothesis",
+      "name": "Hypothesis Documentation",
+      "url": "https://hypothesis.readthedocs.io/en/latest/",
+      "type": "testing-tool",
+      "lifecycle_stages": [
+        "testing",
+        "validation",
+        "risk-management"
+      ],
+      "tags": [
+        "property-based-testing",
+        "edge-cases"
+      ],
+      "description": "Property-based testing library useful for invariants and boundary conditions.",
+      "review_status": "seed"
+    },
+    {
+      "id": "test-ruff",
+      "name": "Ruff Documentation",
+      "url": "https://docs.astral.sh/ruff/",
+      "type": "testing-tool",
+      "lifecycle_stages": [
+        "testing",
+        "architecture"
+      ],
+      "tags": [
+        "linting",
+        "formatting",
+        "static-analysis"
+      ],
+      "description": "Python linter and formatter documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "test-actions",
+      "name": "GitHub Actions Documentation",
+      "url": "https://docs.github.com/en/actions",
+      "type": "testing-tool",
+      "lifecycle_stages": [
+        "testing",
+        "deployment",
+        "operations"
+      ],
+      "tags": [
+        "ci",
+        "automation",
+        "release"
+      ],
+      "description": "Official CI/CD automation documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "test-docker",
+      "name": "Docker Documentation",
+      "url": "https://docs.docker.com/",
+      "type": "testing-tool",
+      "lifecycle_stages": [
+        "testing",
+        "deployment",
+        "operations"
+      ],
+      "tags": [
+        "containers",
+        "reproducibility"
+      ],
+      "description": "Container build and runtime documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "obs-otel",
+      "name": "OpenTelemetry Documentation",
+      "url": "https://opentelemetry.io/docs/",
+      "type": "observability-tool",
+      "lifecycle_stages": [
+        "deployment",
+        "observability",
+        "operations"
+      ],
+      "tags": [
+        "traces",
+        "metrics",
+        "logs"
+      ],
+      "description": "Vendor-neutral telemetry instrumentation and data model documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "obs-prometheus",
+      "name": "Prometheus Documentation",
+      "url": "https://prometheus.io/docs/introduction/overview/",
+      "type": "observability-tool",
+      "lifecycle_stages": [
+        "deployment",
+        "observability",
+        "operations"
+      ],
+      "tags": [
+        "metrics",
+        "alerting"
+      ],
+      "description": "Metrics collection and alerting documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "obs-grafana",
+      "name": "Grafana Documentation",
+      "url": "https://grafana.com/docs/",
+      "type": "observability-tool",
+      "lifecycle_stages": [
+        "observability",
+        "operations",
+        "risk-management"
+      ],
+      "tags": [
+        "dashboards",
+        "alerts",
+        "metrics"
+      ],
+      "description": "Observability and dashboard documentation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "arch-c4",
+      "name": "C4 Model",
+      "url": "https://c4model.com/",
+      "type": "documentation",
+      "lifecycle_stages": [
+        "problem-definition",
+        "architecture",
+        "design-freeze"
+      ],
+      "tags": [
+        "architecture-diagrams",
+        "context",
+        "containers"
+      ],
+      "description": "A visual notation and set of abstractions for describing software architecture.",
+      "review_status": "seed"
+    },
+    {
+      "id": "arch-adr",
+      "name": "Architecture Decision Records",
+      "url": "https://adr.github.io/",
+      "type": "documentation",
+      "lifecycle_stages": [
+        "architecture",
+        "design-freeze",
+        "handoff"
+      ],
+      "tags": [
+        "decisions",
+        "traceability"
+      ],
+      "description": "Guidance and examples for recording architectural decisions.",
+      "review_status": "seed"
+    },
+    {
+      "id": "arch-12factor",
+      "name": "The Twelve-Factor App",
+      "url": "https://12factor.net/",
+      "type": "documentation",
+      "lifecycle_stages": [
+        "architecture",
+        "deployment",
+        "operations"
+      ],
+      "tags": [
+        "configuration",
+        "deployment",
+        "processes"
+      ],
+      "description": "A set of principles for building deployable software services; adapt selectively to trading-system requirements.",
+      "review_status": "seed"
+    },
+    {
+      "id": "security-owasp",
+      "name": "OWASP API Security",
+      "url": "https://owasp.org/www-project-api-security/",
+      "type": "security-guidance",
+      "lifecycle_stages": [
+        "architecture",
+        "exchange-integration",
+        "testing",
+        "operations"
+      ],
+      "tags": [
+        "api-security",
+        "authentication",
+        "authorization"
+      ],
+      "description": "Security guidance for API design and implementation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "security-nist-csf",
+      "name": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework",
+      "type": "security-guidance",
+      "lifecycle_stages": [
+        "architecture",
+        "deployment",
+        "operations",
+        "governance"
+      ],
+      "tags": [
+        "cybersecurity",
+        "risk-management"
+      ],
+      "description": "Cybersecurity risk management framework.",
+      "review_status": "seed"
+    },
+    {
+      "id": "governance-nist-ai",
+      "name": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "type": "security-guidance",
+      "lifecycle_stages": [
+        "model-development",
+        "validation",
+        "deployment",
+        "governance"
+      ],
+      "tags": [
+        "ai-risk",
+        "model-governance",
+        "measurement"
+      ],
+      "description": "AI risk-management framework; not a substitute for domain-specific validation.",
+      "review_status": "seed"
+    },
+    {
+      "id": "standard-fix",
+      "name": "FIX Trading Community Standards",
+      "url": "https://www.fixtrading.org/standards/",
+      "type": "official-standard",
+      "lifecycle_stages": [
+        "exchange-integration",
+        "execution",
+        "testing"
+      ],
+      "tags": [
+        "fix-protocol",
+        "order-routing",
+        "messaging"
+      ],
+      "description": "Official standards entry point for FIX financial-messaging specifications.",
+      "review_status": "seed"
+    },
+    {
+      "id": "fundamental-fred",
+      "name": "FRED Economic Data",
+      "url": "https://fred.stlouisfed.org/",
+      "type": "data-platform",
+      "lifecycle_stages": [
+        "research",
+        "data-acquisition",
+        "validation"
+      ],
+      "tags": [
+        "macroeconomics",
+        "economic-data"
+      ],
+      "description": "Economic data portal; check series definitions, release calendars, and revision policies.",
+      "review_status": "seed"
+    },
+    {
+      "id": "source-python-packaging",
+      "name": "Python Packaging User Guide",
+      "url": "https://packaging.python.org/",
+      "type": "programming-docs",
+      "lifecycle_stages": [
+        "architecture",
+        "testing",
+        "deployment"
+      ],
+      "tags": [
+        "packaging",
+        "dependencies",
+        "reproducibility"
+      ],
+      "description": "Guidance for packaging and distributing Python projects.",
+      "review_status": "seed"
+    }
+  ]
+}

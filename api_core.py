@@ -1,6 +1,6 @@
 import requests, time
 from utils import retry_get, clean_title, clean_authors, is_english, is_valid_url, get_access_level, log
-from config import API_KEYS, RESULTS_PER_QUERY, REQUEST_DELAY
+from config import API_KEYS, RESULTS_PER_QUERY, REQUEST_DELAY, MAX_RETRIES, TIMEOUT
 
 BASE = "https://api.core.ac.uk/v3/search/works"
 
@@ -12,15 +12,31 @@ def search(query, limit=RESULTS_PER_QUERY):
     results = []
     offset = 0
     batch = min(limit, 100)
+    rate_limit_retries = 0
     while len(results) < limit:
         payload = {
             "q": query, "limit": batch, "offset": offset,
             "fields": ["title","authors","doi","downloadUrl","links","yearPublished","journals","citationCount","abstract"]
         }
         try:
-            r = session.post(BASE, json=payload, timeout=45)
-            if r.status_code == 429: time.sleep(30); continue
-            if r.status_code != 200: break
+            r = session.post(BASE, json=payload, timeout=TIMEOUT)
+            if r.status_code == 429:
+                rate_limit_retries += 1
+                if rate_limit_retries > MAX_RETRIES:
+                    log.warning("CORE rate limit retry budget exhausted; stopping this query.")
+                    break
+                retry_after = r.headers.get("Retry-After", "")
+                try:
+                    wait_seconds = min(max(float(retry_after), 1.0), 120.0) if retry_after else min(5.0 * (2 ** (rate_limit_retries - 1)), 120.0)
+                except (TypeError, ValueError):
+                    wait_seconds = min(5.0 * (2 ** (rate_limit_retries - 1)), 120.0)
+                log.warning("CORE rate limited; retry %s/%s after %.1f seconds.", rate_limit_retries, MAX_RETRIES, wait_seconds)
+                time.sleep(wait_seconds)
+                continue
+            if r.status_code != 200:
+                log.warning("CORE request stopped with HTTP %s.", r.status_code)
+                break
+            rate_limit_retries = 0
             data = r.json()
             items = data.get("results", [])
         except Exception as e:
