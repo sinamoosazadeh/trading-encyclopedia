@@ -415,6 +415,9 @@ def build_readme():
     return "\n".join(lines)
 
 def build_all(categorized, stats):
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(CATS_DIR, exist_ok=True)
+
     # Category files
     for cat_id, label in CAT_LABELS.items():
         items = categorized.get(cat_id, [])
