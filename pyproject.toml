@@ -14,6 +14,10 @@ dependencies = [
   "python-dotenv>=1.0,<2",
 ]
 
+[project.scripts]
+trading-encyclopedia = "resource_catalog:main"
+trading-encyclopedia-collect = "web_resource_collector:main"
+
 [tool.setuptools]
 py-modules = [
   "api_arxiv",
