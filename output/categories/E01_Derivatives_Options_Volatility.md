@@ -1,6 +1,6 @@
 # Derivatives Options & Volatility
 
-> Category: `E01_Derivatives_Options_Volatility` | Items: **3956** | Generated: 2026-10-15 15:03
+> Category: `E01_Derivatives_Options_Volatility` | Items: **3955** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -2257,7 +2257,6 @@
 | Multiphase flow measurement using gamma-based techniques | Arubi, Isaac Marcus Tesi | 2011 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/19891851.pdf) |
 | Derivative-optimized empirical mode decomposition for the Hilbert-Huang transfor | Peter C. Chu; Chu, Peter C.; Chenwu Fan; Huang, Norden; Fan, | 2013 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/36728632.pdf) |
 | Surface Potential Decay of Gamma-Irradiated Low-Density Polyethylene | Chen, George | 2009 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/works/340522619) |
-| Investigation of Natural Effective Gamma Dose Rates case study: Ardabil Province | زیوری, سحر; صادقی, هادی; Sahar Zivari; Soheila Rahimzadeh; ح | 1391 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/11685580.pdf) |
 | Cover Jurnal Gamma, Vol. 7, No.2, Maret 2012 | ., Cover | 2014 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/works/319174686) |
 | Cover Jurnal Gamma Vol. 10 No.1, September 2015 | ., Cover | 2015 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/works/319174748) |
 | Cover Jurnal Gamma Vol.9, No.2, Maret 2014 | ., Cover | 2015 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/works/319174758) |

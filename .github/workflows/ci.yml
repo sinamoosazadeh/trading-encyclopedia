@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - "upgrade/**"
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Validate source and local discovery
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Compile Python source
+        run: python -m compileall -q .
+
+      - name: Build wheel and verify packaged registries
+        run: |
+          python -m pip wheel --no-deps --wheel-dir dist .
+          python -c "import glob, zipfile; wheel=glob.glob('dist/*.whl')[0]; names=set(zipfile.ZipFile(wheel).namelist()); required={'resources/catalog.json','resources/discovery_queries.json','resource_catalog.py','web_resource_collector.py'}; missing=required-names; print('Wheel:', wheel); print('Missing package files:', sorted(missing)); raise SystemExit(bool(missing))"
+
+      - name: Run offline unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate curated resource registry
+        run: python resource_catalog.py validate
+
+      - name: Validate bounded discovery query plan
+        run: python web_resource_collector.py validate-queries
+
+      - name: Verify English-only text policy
+        run: python scripts/check_english_only.py
+
+      - name: Smoke-test local resource search
+        run: |
+          python resource_catalog.py search "machine learning" --registry-only --limit 5
+          python web_resource_collector.py plan --provider github --max-queries 2
+
+      - name: Run local preflight checks
+        run: python preflight.py

@@ -1,6 +1,6 @@
 # Prediction & Forecasting
 
-> Category: `A03_Prediction_Forecasting` | Items: **17303** | Generated: 2026-10-15 15:03
+> Category: `A03_Prediction_Forecasting` | Items: **17294** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -6112,7 +6112,6 @@
 | Estimation of a stationary multivariate ARFIMA process | Kévin Stanislas MBEKE; Ouagnina Hili | 2018 | 16 | Afrika Statistika | 3 | Open | OPEN | [LINK](https://doi.org/10.16929/as/1717.130) |
 | Applying (ARFIMA) Model for Forecast the Saudi Stock Market Prices | Khalid Rahamtalla Khedir Genawi; Rugia Elbashir | 2024 | 20 | International Journal for Scientific Research | 3 | Open | OPEN | [LINK](https://vsrp.co.uk/wp-content/uploads/2-IJSR-Vol.-3-No.-8-Aug-2024-Paper1-Dr.-Rugia.pdf) |
 | Statistical modelling for forecasting volatility in potato prices using ARFIMA-F | Dipankar Mitra; Ranjit Kumar Paul; A. K. Paul | 2018 | 5 | The Indian Journal of Agricultural Sciences | 3 | Open | OPEN | [LINK](https://epubs.icar.org.in/index.php/IJAgS/article/download/79205/33244) |
-| Long Memory Analysis: An Empirical Investigation | رافیک نظریان; Esmaeil Naderi; Nadiya Gandali Alikhani; Ashka | 2013 | 11 | International Journal of Economics and Financial I | 3 | Open | OPEN | [LINK](https://econjournals.com/index.php/ijefi/article/download/606/pdf) |
 | ARFIMA Reference Forecasts for Worldwide CO2 Emissions and the Need for Large an | José Belbute; ALFREDO MARVÃO PEREIRA | 2020 | p41-p41 | Journal of Economics and Public Finance | 3 | Open | OPEN | [LINK](http://www.scholink.org/ojs/index.php/jepf/article/download/3405/3431) |
 | Implications of Cointegration for Forecasting: A Review and an Empirical Analysi | Seyed Mahdi Barakchian | 2012 | 32 | - | 3 | Open | ? | [LINK](https://openalex.org/W2756647106) |
 | Forecasting, Cointegration and Causality Analysis of Unemployment Using Time Ser | Muhammad Najeeb Ullah; Kim Su; Bahrawar Jan | 2016 | - | SSRN Electronic Journal | 3 | Open | OPEN | [LINK](https://doi.org/10.2139/ssrn.2863673) |
@@ -6499,7 +6498,6 @@
 | Bayesian Estimation of the GARCH(1, 1) Model with Normal Innovations | - | 2008 | 21 | Lecture Notes in Economics and Mathematical System | 2 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-540-78657-3_3) |
 | Real-time Performance Monitoring of MPC Based on Covariance Index Prediction | Xue-Min TIAN; Ya-Jie SHI; Yu-Ping CAO | 2014 | 6 | Acta Automatica Sinica | 2 | Cros | ? | [LINK](https://doi.org/10.3724/sp.j.1004.2013.00658) |
 | A Comparison of Forecasting Accuracy between Two Dynamic Conditional Correlation | Metin İLBASMIŞ | 2024 | 11 | İktisadi İdari ve Siyasal Araştırmalar Dergisi | 2 | Cros | ? | [LINK](https://doi.org/10.25204/iktisad.1388428) |
-| Using Multivariate Dynamic Conditional Correlation GARCH model to analysis finan | Fatma Alshenawy; دعاء عاشور | 2023 | 1 | مجلة البحوث التجارية | 2 | Cros | ? | [LINK](https://doi.org/10.21608/zcom.2023.213791.1258) |
 | Inference and Testing on the Boundary in Extended Constant Conditional Correlati | Rasmus Pedersen | 2015 | - | - | 2 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.2664026) |
 | A multivariate prediction of spatial process with non-stationary covariance for  | F. A. Al-Awadhi | 2009 | 21 | Environmental and Ecological Statistics | 2 | Cros | ? | [LINK](https://doi.org/10.1007/s10651-009-0120-5) |
 | Comparing the predictive efficiency of Fama-French Three-Factor Model and Carhar | Bui Thanh Khoa; Tran Trong Huynh | 2023 | 5 | 2023 IEEE 8th International Conference for Converg | 2 | Cros | ? | [LINK](https://doi.org/10.1109/i2ct57861.2023.10126181) |
@@ -14264,7 +14262,6 @@
 | Figure 3: Out-of-sample validation (forecast) metrics for competing models. | - | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.7717/peerj.18929/fig-3) |
 | Out-of-Sample Performance of Factor Return Predictors | Du Nguyen | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.4488506) |
 | PredictorSelect: Out-of-Sample Predictability in Predictive Regressions with Man | Rong Peng | 2024 | - | CRAN: Contributed Packages | 0 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.predictorselect) |
-| Forecasting Pharmaceutical Imports "Increase Or Decrease" In Algerian Between 19 | Djamel Ouared; Adda Mellah | 2025 | 310 | مجلة البشائر الاقتصادية | 0 | Cros | ? | [LINK](https://doi.org/10.33704/1748-011-002-034) |
 | Correction to “The Big BIT maize experiment: A large multi‐location, multi‐year, | - | 2026 | - | The Plant Genome | 0 | Cros | ? | [LINK](https://doi.org/10.1002/tpg2.70249) |
 | Hedge Fund Equity Ownership and Trading and Its Predictive Power Toward Equity M | Biying Song | 2022 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.32920/19078370.v1) |
 | Trading volumes in stock markets : Forecasts, Trading Strategies, Market Impact, | Béatrice Sagna | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.70675/f89ef6beza27bz4120zbd69z5c5e866df1a9) |
@@ -15117,7 +15114,6 @@
 | DCC-GARCH Model for Market and Firm-Level Dynamic Correlation in S&amp;P 500 | Peimin Chen; Chunchi Wu; Ying Zhang | 2025 | 20 | Handbook of Financial Econometrics, Statistics, Te | 0 | Cros | ? | [LINK](https://doi.org/10.1142/9789819809950_0129) |
 | Apple, Microsoft, Amazon and Google - A Correlation Analysis: Evidence from a DC | Christoph Koser; Juergen Klaus | 2020 | - | SSRN Electronic Journal | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.3718788) |
 | Application of Bayesian methods in the analysis of dynamic conditional correlati | Dechassa Obsi Gudeta | 2025 | 31 | International Journal of Multivariate Data Analysi | 0 | Cros | ? | [LINK](https://doi.org/10.1504/ijmda.2025.10069869) |
-| Modeling Asymmetric Volatility Spillover between Exchange Rates and Stock Market | عبدالله سيد مسلم الشافعي | 2026 | 1 | مجلة البحوث التجارية | 0 | Cros | ? | [LINK](https://doi.org/10.21608/zcom.2026.443136.1525) |
 | The Study on Dynamic Conditional Correlation-GARCH Model and its Application | Ziyu Li; Atsuyuki Naka | 2015 | 7 | Communications in Computer and Information Science | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-662-49014-3_22) |
 | An Option-Implied Benchmark for Prediction-Market Binaries | Fedor Tolmatskiy; Aleksei Demin | 2026 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.7542982) |
 | Option-Implied Equity Premia and the Predictability of Stock Market Returns | Mehdi Karoui | 2011 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.1933617) |
@@ -16366,7 +16362,6 @@
 | Pairs Trading Based on Empirical Mode Decomposition (EMD) | Bahareh Zarintaj; Saeed Aghasi; Forozan Baktash | 2023 | 25 | Iranian Journal of Finance | 0 | Open | OPEN | [LINK](https://www.ijfifsa.ir/article_180152_b8dbdac7cf20db8ba8242a034bd998bd.pdf) |
 | Financial Time Series Prediction Based on EMD-SVM | Kai Tang | 2022 | 10 | BCP Business & Management | 0 | Open | OPEN | [LINK](https://bcpublication.org/index.php/BM/article/download/2435/2412) |
 | De-Noising Corrupted ECG Signals By Empirical Mode Decomposition (EMD) With Appl | - | 2013 | 6 | IOSR Journal of Applied Physics | 0 | Open | OPEN | [LINK](https://doi.org/10.9790/4861-0414752) |
-| Forecasting Volatility Dynamics of Libyan GDP Using EMD-GARCH and EMD-NGARCH Mod | Abobaker M. Jaber; Ahmed M. Mami; Naeima N. Abd Elati; Salma | 2025 | - | مجلة شمال إفريقيا للنشر العلمي (NAJSP) | 0 | Open | OPEN | [LINK](https://najsp.com/index.php/home/article/download/647/565) |
 | Deep hybrid models for bitcoin forecasting: EMD, CEEMDAN,and LSTM in comparison | Ayoub Aarabi; Maryem Ait Moulay; Issam Bouganssa; Abdelali L | 2026 | 1 | IAES International Journal of Artificial Intellige | 0 | Open | OPEN | [LINK](https://ijai.iaescore.com/index.php/IJAI/article/download/29873/15247) |
 | GPU-Accelerated Empirical Mode Decomposition (EMD) for Python: A Toolchain-Free, | Matin Mahzad | 2026 | - | SSRN Electronic Journal | 0 | Open | OPEN | [LINK](https://doi.org/10.2139/ssrn.7291637) |
 | Adaptive Filtering Method Based on EMD | Yan Rong; Shuqiang Gao | 2018 | - | Proceedings of the 2018 International Conference o | 0 | Open | OPEN | [LINK](https://download.atlantis-press.com/article/25896588.pdf) |
@@ -16569,7 +16564,6 @@
 | SeasonFuser: A Parallel Hybrid Network With Differentiable Seasonal Decompositio | Zhao Bisha; Shahrul Azman Mohd Noah | 2026 | 12 | IEEE Access | 0 | Open | OPEN | [LINK](https://doi.org/10.1109/access.2026.3725334) |
 | The net impact of corporate seasonality on the accuracy of earnings forecasts pu | Suzanne M. Luttman; Peter A. Silhan | 1989 | - | Illinois Digital Environment for Access to Learnin | 0 | Open | OPEN | [LINK](https://www.ideals.illinois.edu/items/30123/bitstreams/100977/data.pdf) |
 | Forecasting Financial and Economic Indicators of Enterprise Performance based on | V. Ya. Trofimets; Aleks; Kamil Narzavatovich Mingaliev r Mik | 2019 | 13 | - | 0 | Open | ? | [LINK](https://openalex.org/W2972575437) |
-| On Holt Winters Algorithm with Decomposition for Forecasting Financial Time Seri | منى نزيه على عبد البارى | 2024 | 17 | مجلة البحوث المالیة والتجاریة | 0 | Open | OPEN | [LINK](https://jsst.journals.ekb.eg/article_379420_8c28a293f0a5a2ffb6db261d83ab34ff.pdf) |
 | Forecasting realized volatility with long memory time series models using high f | Rohit Deo; Clifford M. Hurvich; Yi Lu | 2005 | - | - | 0 | Open | ? | [LINK](https://openalex.org/W2206277215) |
 | Seasonal ARIMA Model for Forecasting Microsoft's Revenues | Haifa Taha  Abd; Aseel Abdulrazzak Rasheed; Nazik J. Sadik | 2025 | 8 | Iraqi statisticians journal. | 0 | Open | OPEN | [LINK](https://doi.org/10.62933/584bx581) |
 | Framework for Adaptable Drift Detection for Financial Forecasting | Radhika V. Kulkarni; Isha Raghvani; Haider Hirkani; Inderdee | 2026 | 14 | Lecture notes in networks and systems | 0 | Open | ? | [LINK](https://doi.org/10.1007/978-3-032-24926-5_9) |
@@ -16610,7 +16604,6 @@
 | COMPARATIVE ANALYSIS OF FORECASTING MODELS OF THE AIR CONDITION INDICATOR | Д. О. Шмундяк | 2024 | - | - | 0 | Open | OPEN | [LINK](https://conferences.vntu.edu.ua/index.php/mccs/mccs2024/paper/download/22120/19007) |
 | OPTIMIZING STOCK MARKET FORECASTING: A ROBUST PREDICTION SYSTEM USING XGBOOST | Ipseeta Nanda; Akankshya Swain; Stuti Porwal; Dhruv Singhal; | 2026 | 14 | Iterative International Publishers eBooks | 0 | Open | ? | [LINK](https://doi.org/10.58532/nbennurasitb2p2c1) |
 | Enhancing Portfolio Analysis and Stock Prediction Through LSTM and XGBoost Integ | Rajeshree Khande; Sachin A. Naik; Akshay Tayade; Amar Kale;  | 2025 | 13 | Lecture notes in networks and systems | 0 | Open | ? | [LINK](https://doi.org/10.1007/978-981-96-7511-1_16) |
-| Stock Price Prediction with Combination of XGBoost and Binary Gray Wolf Optimize | Hadi Esmaeili; Shahab جهانگیری; Ali Rezazadeh | 2024 | - | Financial Economics   فصلنامه اقتصاد مالی | 0 | Open | OPEN | [LINK](https://doi.org/10.71818/ecj.2025.1104492) |
 | Stock Price Prediction of TLKM and BBCA Using SVR, Random Forest, and LSTM | Mhd Adi Setiawan Aritonang; Maradona Jonas Simanullang; Sasa | 2026 | e262273- | ASEAN Journal of Scientific and Technological Repo | 0 | Open | OPEN | [LINK](https://ph02.tci-thaijo.org/index.php/tsujournal/article/download/262273/173868) |
 | Bank Mandiri Stock Performance Prediction Via SVM, LSTM, and Random Forest | Rahmat Rambe; Hanif Fakhrurroja; Lukman Abdurrahman | 2026 | 7 | Jurnal Sisfokom (Sistem Informasi dan Komputer) | 0 | Open | OPEN | [LINK](https://jurnal.atmaluhur.ac.id/index.php/sisfokom/article/download/2589/1416) |
 | Stock Market Index Prediction Using Random Forest and Extra Tree Regression | Dommeti Sriram Gopal; Parnandi SrinuVasarao; TulasiRaju Neth | 2026 | 9 | Smart innovation, systems and technologies | 0 | Open | ? | [LINK](https://doi.org/10.1007/978-981-95-9101-5_12) |
@@ -17233,8 +17226,6 @@
 | Alternative GARCH Specifications and Autoencoder-Based Shrinkage for the DCC-NL  | Hermann Chung | 2026 | - | Zenodo (CERN European Organization for Nuclear Res | 0 | Open | OPEN | [LINK](https://doi.org/10.5281/zenodo.19248041) |
 | Comparing Forecasts of Extremely Large Conditional Covariance Matrices | Guilherme V. Moura; Esther Ruiz; André Alves Portela Santos | 2019 | - | e-Archivo (Carlos III University of Madrid) | 0 | Open | OPEN | [LINK](http://hdl.handle.net/10016/29291) |
 | Forecasting the South African rand 's variance and covariance using conditional  | Christopher Sumter | 2013 | - | Open University of Cape Town (University of Cape T | 0 | Open | OPEN | [LINK](https://open.uct.ac.za/bitstreams/f26948c0-a0a9-4cba-9bd1-e131c4852110/download) |
-| Using Multivariate GARCH Models CCC (Constant Conditional Correlation) and DCC(D | فارس طاهر حسن; لمياء طه عبد الله | 2018 | - | Journal of Economics and Administrative Sciences | 0 | Open | OPEN | [LINK](https://www.iasj.net/iasj/article/146620) |
-| Investigating Systematic Risk Spillover Between Capital Market and Money Market  | Soheila Lashgarara; Seyede Zahra Mirashrafi; Freshte Saadatb | 2026 | - | Judgment and Decision Making in Accounting    فصلن | 0 | Open | OPEN | [LINK](https://doi.org/10.71960/jdaa.2026.1237119) |
 | Comparison of Correlation for Asian Shariah Indices Using DCC-GARCH and Rolling  | Hafizah Bahaludin; Nurul Najihah Mohamad; Muhammad Farhan Mo | 2021 | - | The International Islamic University Malaysia Repo | 0 | Open | OPEN | [LINK](http://irep.iium.edu.my/92241/8/SKSM28_CamReady_223.pdf) |
 | DCC-GARCH Model for Market and Firm-Level Dynamic Correlation in S&P 500 | Peimin Chen; Chunchi Wu; Ying Zhang | 2020 | 20 | WORLD SCIENTIFIC eBooks | 0 | Open | ? | [LINK](https://doi.org/10.1142/9789811202391_0129) |
 | DCC-HEAVY: A multivariate GARCH model based on realized variances and correlatio | Luc Bauwens; Yongdeng Xu | 2019 | - | RePEc: Research Papers in Economics | 0 | Open | ? | [LINK](https://openalex.org/W2931764779) |

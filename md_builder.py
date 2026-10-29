@@ -4,7 +4,12 @@ Trading Encyclopedia — Markdown Builder
 Builds all output files from classified data.
 """
 import os, time, shutil
+from datetime import datetime, timezone
 from config import OUTPUT_DIR, CATS_DIR, SDCARD_DIR, CATEGORIES, ACCESS
+
+def _utc_now():
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
 
 CAT_LABELS = {
     "A01_Optimization":                   "Optimization & Calibration",
@@ -120,20 +125,21 @@ def _item_line(item):
     )
 
 TABLE_HEADER = (
-    "| Title | Authors | Year | Pages | Venue | Type"
-    " | Cited | Src | Access | Keywords | Abstract | Link |\n"
-    "|-------|---------|------|-------|-------|------"
-    "|-------|-----|--------|---------|----------|------|"
+    "| Title | Authors | Year | Pages | Venue | Type | Cited | Src | Access | Keywords | Abstract | Link |\n"
+    "|-------|---------|------|-------|-------|------|------:|-----|--------|----------|----------|------|"
 )
 
 def _write(path, content):
-    with open(path, "w", encoding="utf-8") as f:
+    """Write UTF-8 output and create the destination directory when necessary."""
+    parent = os.path.dirname(os.path.abspath(path))
+    os.makedirs(parent, exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(content)
 
 def build_category_file(cat_id, label, items):
     block = cat_id[0]
     block_label = BLOCK_LABELS.get(block, "")
-    now = time.strftime("%Y-%m-%d %H:%M")
+    now = _utc_now()
     lines = []
     lines.append("# " + label)
     lines.append("")
@@ -161,15 +167,20 @@ def build_category_file(cat_id, label, items):
     return "\n".join(lines)
 
 def build_index(categorized, stats):
-    now = time.strftime("%Y-%m-%d %H:%M")
+    now = _utc_now()
     total = stats.get("total", 0)
+    unique_records = stats.get("unique_records", sum(stats.get("source_stats", {}).values()))
+    category_assignments = stats.get("category_assignments", total)
+    unclassified_records = stats.get("unclassified_records", 0)
     src_stats = stats.get("source_stats", {})
     lines = []
     lines.append("# Trading & Financial Markets Encyclopedia")
     lines.append("## Comprehensive Knowledge Base for Quantitative Finance & Trading")
     lines.append("")
-    lines.append("> **Generated:** " + now + "  ")
-    lines.append("> **Total Items:** " + str(total) + "  ")
+    lines.append("> **Generated (UTC):** " + now + "  ")
+    lines.append("> **Unique Documents:** " + str(unique_records) + "  ")
+    lines.append("> **Category Assignments:** " + str(category_assignments) + "  ")
+    lines.append("> **Unclassified Documents:** " + str(unclassified_records) + "  ")
     lines.append("> **Categories:** 50  ")
     lines.append("> **Blocks:** 8  ")
     lines.append("> **Sources:** CrossRef · OpenAlex · SemanticScholar · Springer · arXiv · CORE · EuropePMC · DOAJ · RePEC")
@@ -209,10 +220,23 @@ def build_statistics(categorized, stats):
     now = time.strftime("%Y-%m-%d %H:%M")
     src_stats = stats.get("source_stats", {})
     total = stats.get("total", 0)
+    unique_records = stats.get("unique_records", sum(stats.get("source_stats", {}).values()))
+    category_assignments = stats.get("category_assignments", total)
+    unclassified_records = stats.get("unclassified_records", 0)
     lines = []
     lines.append("# Statistics")
     lines.append("")
     lines.append("> Generated: " + now)
+    lines.append("")
+    lines.append("## Collection Counts")
+    lines.append("")
+    lines.append("| Metric | Count |")
+    lines.append("|--------|------:|")
+    lines.append("| Unique documents | " + str(unique_records) + " |")
+    lines.append("| Category assignments | " + str(category_assignments) + " |")
+    lines.append("| Unclassified documents | " + str(unclassified_records) + " |")
+    lines.append("")
+    lines.append("A document may be assigned to multiple categories. Unique-document counts and category assignments are different measures.")
     lines.append("")
     lines.append("## By Source API")
     lines.append("")
@@ -220,7 +244,7 @@ def build_statistics(categorized, stats):
     lines.append("|--------|------:|")
     for src, cnt in sorted(src_stats.items(), key=lambda x: -x[1]):
         lines.append("| " + src + " | " + str(cnt) + " |")
-    lines.append("| **TOTAL** | **" + str(total) + "** |")
+    lines.append("| **UNIQUE SOURCE RECORDS** | **" + str(unique_records) + "** |")
     lines.append("")
     lines.append("## By Category")
     lines.append("")
@@ -230,7 +254,7 @@ def build_statistics(categorized, stats):
         cnt = len(categorized.get(cat_id,[]))
         lines.append("| " + label + " | " + str(cnt) + " |")
     lines.append("")
-    lines.append("## Access Level Distribution")
+    lines.append("## Access Level Distribution (Across Category Assignments)")
     lines.append("")
     acc_counts = {}
     for items in categorized.values():
@@ -359,6 +383,7 @@ def build_readme():
         "2. Each category file contains a searchable table of items",
         "3. Check [STATISTICS.md](STATISTICS.md) for top-cited papers",
         "4. Check [DOMAINS_GUIDE.md](DOMAINS_GUIDE.md) for access info",
+        "5. Open [RESOURCE_INDEX.md](RESOURCE_INDEX.md) for curated research, API, data, framework, testing, and operations resources",
         "",
         "## Column Guide",
         "",
@@ -393,6 +418,9 @@ def build_readme():
     return "\n".join(lines)
 
 def build_all(categorized, stats):
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(CATS_DIR, exist_ok=True)
+
     # Category files
     for cat_id, label in CAT_LABELS.items():
         items = categorized.get(cat_id, [])
@@ -408,11 +436,19 @@ def build_all(categorized, stats):
     _write(os.path.join(OUTPUT_DIR, "VENUES_INDEX.md"), build_venues_index(categorized))
     _write(os.path.join(OUTPUT_DIR, "DOMAINS_GUIDE.md"), build_domains_guide())
     _write(os.path.join(OUTPUT_DIR, "README.md"), build_readme())
-    print("  Index files: 6 written")
 
-    # Copy to sdcard
+    # Rebuild the curated resource index on every export so the generated README
+    # never points to a stale or manually maintained copy.
+    from resource_catalog import load_catalog, export_markdown
+    from pathlib import Path
+    catalog = load_catalog()
+    export_markdown(catalog, Path(OUTPUT_DIR) / "RESOURCE_INDEX.md")
+    print("  Index files: 7 written (including RESOURCE_INDEX.md)")
+
+    # Copy to the optional external export directory, if it is available.
     try:
         import shutil
+        os.makedirs(SDCARD_DIR, exist_ok=True)
         for fname in os.listdir(OUTPUT_DIR):
             src = os.path.join(OUTPUT_DIR, fname)
             if os.path.isfile(src):

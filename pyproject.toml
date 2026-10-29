@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-encyclopedia"
+version = "2.1.0"
+description = "A searchable, multi-source discovery index for quantitative finance and trading-system engineering resources."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31,<3",
+  "langdetect>=1.0.9,<2",
+  "python-dotenv>=1.0,<2",
+]
+
+[project.scripts]
+trading-encyclopedia = "resource_catalog:main"
+trading-encyclopedia-collect = "web_resource_collector:main"
+
+[tool.setuptools]
+py-modules = [
+  "api_arxiv",
+  "api_core",
+  "api_crossref",
+  "api_doaj",
+  "api_europepmc",
+  "api_openalex",
+  "api_repec",
+  "api_semanticscholar",
+  "api_springer",
+  "classifier",
+  "config",
+  "git_sync",
+  "master",
+  "md_builder",
+  "merge",
+  "merge_light",
+  "preflight",
+  "resource_catalog",
+  "web_resource_collector",
+  "utils",
+]
+packages = ["resources"]
+
+[tool.setuptools.package-data]
+resources = ["catalog.json", "discovery_queries.json"]

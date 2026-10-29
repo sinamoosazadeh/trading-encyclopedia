@@ -1494,7 +1494,7 @@
 | Hexagon Test | - | 2009 | - | Hexagon Test | 0 | Cros | ? | [LINK](https://doi.org/10.5040/9781350960138) |
 | Why is a Square Square and a Cube Cubical? | - | 2007 | 6 | Hands on History | 0 | Cros | ? | [LINK](https://doi.org/10.5948/upo9780883859766.015) |
 | Figure 2: The comparison of power (W/kg) for female (hexagon) and male (square)  | - | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.7717/peerj.15671/fig-2) |
-| Figure 11 from: Zhi Y, Yang L, Chen X-S (2023) ﻿Taxonomic study of the genus Kuv | Yan Zhi; Lin Yang; Xiang-Sheng Chen | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.3897/zookeys.1141.84211.figure11) |
+| Figure 11 from: Zhi Y, Yang L, Chen X-S (2023) Taxonomic study of the genus Kuv | Yan Zhi; Lin Yang; Xiang-Sheng Chen | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.3897/zookeys.1141.84211.figure11) |
 | Modified Hexagon Test | - | 2009 | - | Modified Hexagon Test | 0 | Cros | ? | [LINK](https://doi.org/10.5040/9781350960145) |
 | Chapter Seven. The Centripetal Role of the Courthouse Square | - | 2000 | 31 | The Courthouse Square in Texas | 0 | Cros | ? | [LINK](https://doi.org/10.7560/787353-010) |
 | Local statistics and shuffling for dimers on a square-hexagon lattice | Matthew Nicoletti | 2025 | 28 | Annales de l'Institut Henri Poincaré, Probabilités | 0 | Cros | ? | [LINK](https://doi.org/10.1214/24-aihp1507) |

@@ -1,6 +1,6 @@
 # Forex Commodities & Cross-Asset
 
-> Category: `E03_Forex_Commodities_CrossAsset` | Items: **4670** | Generated: 2026-10-15 15:03
+> Category: `E03_Forex_Commodities_CrossAsset` | Items: **4669** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -3349,7 +3349,6 @@
 | Information Transmitting Efficiency in China Gold Spot Market: A Random Walk Tes | xiaozhou li; Wang Yunfei | 2013 | - | SSRN Electronic Journal | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.2265859) |
 | Cross-currency Derivatives | Marek Musiela; Marek Rutkowski | 1997 | 34 | Martingale Methods in Financial Modelling | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-662-22132-7_17) |
 | Does Oil Price Shocks, Economic Policy Uncertainty and Financial Stress Influenc | Shekhar Mishra; sibanjan mishra; Arshian Sharif | 2023 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.4534279) |
-| Modelling the Relationship Between Gold Returns and Financial Risks: A Quantile  | أميرة عقل أحمد; ممدوح محمد عبد المولى عبد السلام; دعاء عقل أ | 2025 | 38 | مجلة الدراسات السياسية والاقتصادية | 0 | Cros | ? | [LINK](https://doi.org/10.21608/psej.2025.379103.1192) |
 | Gold Price Relative Return Prediction with Machine Learning Models | Runjie Zhang | 2024 | 6 | Proceedings of the 2nd International Conference on | 0 | Cros | ? | [LINK](https://doi.org/10.5220/0013528700004619) |
 | Clustering Commodity Markets in Space and Time: Clarifying Returns, Volatility,  | James Ming Chen; Mobeen Ur Rehman; Xuan Vinh Vo | 2021 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.3791138) |
 | Construction of Virtual Currency and Stock Market Trend Prediction Model Based o | Yuanyang Qiu; Xuxin Zhang; Xujian Zeng; Jiaxuan Lai | 2025 | 5 | 2025 International Conference on Digital Analysis  | 0 | Cros | ? | [LINK](https://doi.org/10.1109/dapic66097.2025.00132) |

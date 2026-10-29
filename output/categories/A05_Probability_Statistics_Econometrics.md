@@ -1,6 +1,6 @@
 # Probability Statistics & Econometrics
 
-> Category: `A05_Probability_Statistics_Econometrics` | Items: **16167** | Generated: 2026-10-15 15:03
+> Category: `A05_Probability_Statistics_Econometrics` | Items: **16155** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -5274,7 +5274,6 @@
 | Mathematical properties, application and simulation for the exponentiated genera | Thiago A. N. De Andrade; Frank S. Gomes-Silva; Luz Milena Ze | 2019 | 1 | Acta Scientiarum. Technology/Acta scientiarum. Tec | 4 | Open | OPEN | [LINK](http://periodicos.uem.br/ojs/index.php/ActaSciTechnol/article/download/39867/pdf) |
 | Reliability Study of Magnesium Oxychloride-Coated Reinforced Concrete Based on G | Yuanke Li; Hongxia Qiao; An Yang | 2023 | 1 | Materials | 4 | Open | OPEN | [LINK](https://www.mdpi.com/1996-1944/16/6/2521/pdf?version=1679468365) |
 | A note on the Gumbel convergence for the Lee and Mykland jump tests | João Pedro Vidal Nunes; João Pedro Ruas | 2023 | 1 | Finance research letters | 4 | Open | OPEN | [LINK](https://www.sciencedirect.com/science/article/pii/S1544612323011868) |
-| New Estimators for Weibull Distribution Parameters: Comprehensive Comparative St | Sahar Sadani; گلستان; Kamel Abdollahnezhad; Mahdi Teimouri;  | 2019 | 25 | Journal of Statistical Research of Iran | 4 | Open | OPEN | [LINK](http://jsri.srtc.ac.ir/files/site1/user_files_7b5cd7/adolati-A-10-73-16-1e9148e.pdf) |
 | Omori law after a financial market crash | Fabrizio Lillo; Rosario N. Mantegna | 2001 | - | arXiv (Cornell University) | 4 | Open | OPEN | [LINK](https://arxiv.org/abs/cond-mat/0111257v1) |
 | Credit Bubble and Percolation of Financial Markets | A. Smirnov | 2008 | 28 | Voprosy Ekonomiki | 4 | Open | ? | [LINK](https://doi.org/10.32609/0042-8736-2008-10-4-31) |
 | Remembering Benoit Mandelbrot on his centennial – His fractal geometry changed o | István Hargittai | 2024 | 5 | Structural Chemistry | 4 | Open | OPEN | [LINK](https://link.springer.com/content/pdf/10.1007/s11224-024-02290-9.pdf) |
@@ -5898,7 +5897,6 @@
 | Investing in Portfolio With Grains or Softs?—Extreme Risk Analysis With Non‐Norm | Dejan Živkov | 2025 | - | Agribusiness | 2 | Cros | ? | [LINK](https://doi.org/10.1002/agr.70022) |
 | Spectral statistics of high dimensional sample covariance matrix with unbounded  | Yanqing Yin | 2022 | 28 | Bernoulli | 2 | Cros | ? | [LINK](https://doi.org/10.3150/21-bej1391) |
 | Spectral distribution of the exponentially windowed sample covariance matrix | Ehsan Yazdian; Mohammad Hassan Bastani; Saeed Gazor | 2012 | 4 | 2012 IEEE International Conference on Acoustics, S | 2 | Cros | ? | [LINK](https://doi.org/10.1109/icassp.2012.6288678) |
-| Using Multivariate Dynamic Conditional Correlation GARCH model to analysis finan | Fatma Alshenawy; دعاء عاشور | 2023 | 1 | مجلة البحوث التجارية | 2 | Cros | ? | [LINK](https://doi.org/10.21608/zcom.2023.213791.1258) |
 | Inference and Testing on the Boundary in Extended Constant Conditional Correlati | Rasmus Pedersen | 2015 | - | - | 2 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.2664026) |
 | Basket Option Pricing and Implied Correlation in a LLvy Copula Model | Daniil Linders; Wim Schoutens | 2014 | - | SSRN Electronic Journal | 2 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.2468778) |
 | 3D-PCA: High-Dimensional Factor Models with Restrictions | Martin Lettau | 2024 | - | - | 2 | Cros | ? | [LINK](https://doi.org/10.3386/w32261) |
@@ -7053,7 +7051,6 @@
 | A REINTERPRETATION OF PRINCIPAL COMPONENT ANALYSIS CONNECTED WITH LINEAR MANIFOL | Pierpaolo Angelini | 2020 | - | International Journal of Apllied Mathematics | 1 | Open | OPEN | [LINK](http://diogenes.bg/ijam/contents/2020-33-4/14/14.pdf) |
 | Factor Analysis and Principal Components Analysis | Frank J. Fabozzi; Sergio M. Focardi; Svetlozar T. Rachev; Ba | 2014 | 30 | - | 1 | Open | ? | [LINK](https://doi.org/10.1002/9781118856406.ch12) |
 | Estimation for Conditional Higher Moments Risk Based on Independent Component An | Qifa Xu; Cuixia Jiang | 2006 | 5 | International Conference on Machine Learning and C | 1 | Open | ? | [LINK](https://doi.org/10.1109/icmlc.2006.258725) |
-| Rank based Least-squares Independent Component Analysis | Jafar Rahmanishamsi; Ali Dolati; یزد | 2018 | 20 | Journal of Statistical Research of Iran | 1 | Open | OPEN | [LINK](http://jsri.srtc.ac.ir/files/site1/user_files_7b5cd7/adolati-A-10-73-2-ceadd0c.pdf) |
 | Role of independent component analysis in intelligent ECG signal processing | Mohammad Sarfraz | 2014 | - | University of Salford Institutional Repository (Un | 1 | Open | OPEN | [LINK](http://usir.salford.ac.uk/id/eprint/33200/1/Thesis_M_Sarfraz_B-W.pdf) |
 | Instability of Factor Strength in Asset Returns | Daniele Massacci | 2024 | 16 | Journal of Business and Economic Statistics | 1 | Open | OPEN | [LINK](https://www.tandfonline.com/doi/pdf/10.1080/07350015.2024.2444344?download=true) |
 | Impact of Financial Market Uncertainty on Market Returns: A Global Analysis | Maryam Abid; Danish Ahmed Siddique | 2020 | 1 | Business and Economic Research | 1 | Open | OPEN | [LINK](http://www.macrothink.org/journal/index.php/ber/article/download/17276/13502) |
@@ -11916,7 +11913,6 @@
 | Extreme Risk and Fat-tails Distribution Model:Empirical Analysis | Ibrahim Onour | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6310441.pdf) |
 | Global liquidity glut or global savings glut? A structural VAR approach | Fidora, Michael; Bracke, Thierry | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6956732.pdf) |
 | VaR and Liquidity Risk.Impact on Market Behaviour and Measurement Issues. | Luca Erzegovesi | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6381891.pdf) |
-| Liquidity-adjusted Value-at-Risk (L-VAR) estimation: a case study of the Externa | أيمن, فريد; باهي, نوال | 2022 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/710643954.pdf) |
 | Nominal Rigidities and The Real Effects of Monetary Policy in a Structural VAR M | Pham The Anh | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6598685.pdf) |
 | Forward-Looking Information in VAR Models and the Price Puzzle | Sophocles N. Brissimis; Nicholas S. Magginas | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6780663.pdf) |
 | Monetary policy shocks and transmission in Italy: A VAR analysis | Giuseppe De Arcangelis; Giorgio Di Giorgio | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6475316.pdf) |
@@ -12357,7 +12353,6 @@
 | Gibbs sampling for ordinary, robust and logistic regression with Laplace priors | Robert B Gramacy | 2013 | 17 | Bayesian Theory and Applications | 0 | Cros | ? | [LINK](https://doi.org/10.1093/acprof:oso/9780199695607.003.0023) |
 | sams: Merge-Split Samplers for Conjugate Bayesian Nonparametric Models | Spencer Newcomb | 2020 | - | CRAN: Contributed Packages | 0 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.sams) |
 | Using WinBUGS for Bayesian Estimation | Eric A. Suess; Bruce E. Trumbo | 2010 | 26 | Introduction to Probability Simulation and Gibbs S | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-0-387-68765-0_10) |
-| The Bayesian Design Of Kaplan Meier Estimation Using Gibbs Sampling:, Applicatio | Ahmed Hamimes; Rachid Benamirouche | 2020 | 150 | مجلة اقتصاديات المال والأعمال | 0 | Cros | ? | [LINK](https://doi.org/10.37170/1986-004-004-007) |
 | Derivation of Linear Models for Quantitative Traits by Bayesian Estimation with  | Akihiro Nakaya; Sachiko Isobe | 2017 | 31 | Genomic Selection for Crop Improvement | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-319-63170-7_3) |
 | EBMAforecast: Estimate Ensemble Bayesian Model Averaging Forecasts using Gibbs S | Florian M. Hollenbach; Jacob M. Montgomery; Michael D. Ward | 2012 | - | CRAN: Contributed Packages | 0 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.ebmaforecast) |
 | Mean Reversion Tests of Put-Call Parity for Equity Index Options with Randomizat | Anthony Tu; Doris Chin | 2004 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.499604) |
@@ -13820,7 +13815,6 @@
 | Salience and Its Asymmetric Effect on Stock Returns: A Quantile Regression Analy | Chenguang Wang; Kai Yao; Jinpeng Liu | 2025 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.5132913) |
 | Essays in quantile regression models and their applications to financial time se | Li Sun | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.26481/dis.20210225ls) |
 | Decision letter for "Regional heterogeneities in returns to education in Zambia: | - | 2024 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.1108/ijse-03-2024-0262/v1/decision1) |
-| Modelling the Relationship Between Gold Returns and Financial Risks: A Quantile  | أميرة عقل أحمد; ممدوح محمد عبد المولى عبد السلام; دعاء عقل أ | 2025 | 38 | مجلة الدراسات السياسية والاقتصادية | 0 | Cros | ? | [LINK](https://doi.org/10.21608/psej.2025.379103.1192) |
 | IDIOSYNCRATIC RISK AND STOCK RETURNS: A QUANTILE REGRESSION APPROACH | Tariq Aziz; Valeed Ahmad Ansari | 2016 | - | Proceedings of the 5th Economic &amp; Finance Conf | 0 | Cros | ? | [LINK](https://doi.org/10.20472/efc.2016.005.002) |
 | Revisiting the Spanning Puzzle of Bond Returns: A Unified Econometric Inference  | Wei Long; Xiaohui Liu; Xinyi Wei | 2025 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.5327788) |
 | The Dynamic Nexus between Physical Climate Risk and Stock Returns: An Instrument | Shashank P. Srivastav; M. Kannadhasan | 2024 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.4900493) |
@@ -14198,7 +14192,6 @@
 | DCC-GARCH Model for Market and Firm-Level Dynamic Correlation in S&amp;P 500 | Peimin Chen; Chunchi Wu; Ying Zhang | 2025 | 20 | Handbook of Financial Econometrics, Statistics, Te | 0 | Cros | ? | [LINK](https://doi.org/10.1142/9789819809950_0129) |
 | Apple, Microsoft, Amazon and Google - A Correlation Analysis: Evidence from a DC | Christoph Koser; Juergen Klaus | 2020 | - | SSRN Electronic Journal | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.3718788) |
 | Application of Bayesian methods in the analysis of dynamic conditional correlati | Dechassa Obsi Gudeta | 2025 | 31 | International Journal of Multivariate Data Analysi | 0 | Cros | ? | [LINK](https://doi.org/10.1504/ijmda.2025.10069869) |
-| Modeling Asymmetric Volatility Spillover between Exchange Rates and Stock Market | عبدالله سيد مسلم الشافعي | 2026 | 1 | مجلة البحوث التجارية | 0 | Cros | ? | [LINK](https://doi.org/10.21608/zcom.2026.443136.1525) |
 | The Study on Dynamic Conditional Correlation-GARCH Model and its Application | Ziyu Li; Atsuyuki Naka | 2015 | 7 | Communications in Computer and Information Science | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-662-49014-3_22) |
 | Robust Multivariate Statistical Process Control for Portland Composite Cement Ma | Sabina Aisha Fidela; Muhammad Ahsan | 2026 | 16 | Lecture Notes on Data Engineering and Communicatio | 0 | Cros | ? | [LINK](https://doi.org/10.1007/978-3-032-23407-0_9) |
 | Beyond Forward-Looking: Enhancing Market Timing with Option-Implied Probability  | Shaocong Peng; Yun Shi | 2025 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.5272463) |
@@ -15232,7 +15225,6 @@
 | APPLICATION OF WAVELET REGRESSION WITH LOCAL LINEAR QUANTILE REGRESSION IN FINAN | MA Ghazal; W Alabeid; Ghadeer Alshreef | 2017 | 5 | International Journal of Advanced Research | 0 | Open | OPEN | [LINK](http://www.journalijar.com/uploads/408_IJAR-18162.pdf) |
 | Hilbert spectrum support vector regression for public companies’ sales forecast | Ivan Georgievich Legenchuk | 2026 | 24 | Бизнес-информатика | 0 | Open | OPEN | [LINK](https://bijournal.hse.ru/article/download/38881/31336) |
 | De-Noising Corrupted ECG Signals By Empirical Mode Decomposition (EMD) With Appl | - | 2013 | 6 | IOSR Journal of Applied Physics | 0 | Open | OPEN | [LINK](https://doi.org/10.9790/4861-0414752) |
-| Forecasting Volatility Dynamics of Libyan GDP Using EMD-GARCH and EMD-NGARCH Mod | Abobaker M. Jaber; Ahmed M. Mami; Naeima N. Abd Elati; Salma | 2025 | - | مجلة شمال إفريقيا للنشر العلمي (NAJSP) | 0 | Open | OPEN | [LINK](https://najsp.com/index.php/home/article/download/647/565) |
 | Gold futures price forecast research----A combinatorial prediction method based  | Simin Chen | 2023 | 10 | Highlights in Business Economics and Management | 0 | Open | OPEN | [LINK](https://drpress.org/ojs/index.php/HBEM/article/download/11355/11054) |
 | Research on PCA-entropy model for financial crisis early warning of Chinese list | Wenwen Pan; Fengping Wu; Jixin Cheng | 2011 | 4 | - | 0 | Open | ? | [LINK](https://doi.org/10.1109/iceeem.2011.6137810) |
 | Prediction of Stock Option Prices Using Volatility (Garch (1, 1)) Adjusted Black | G. Pradeep Kumar; S. Saravanan | 2013 | - | Indian Journal of Finance | 0 | Open | ? | [LINK](https://openalex.org/W7221230820) |
@@ -15694,7 +15686,6 @@
 | The Marshall-Olkin Weibull-Lomax distribution: properties and applications | Amel ahmad talaat elghannam | 2025 | 22 | L Egypte Contemporaine | 0 | Open | OPEN | [LINK](https://espesl.journals.ekb.eg/article_451707_dc466491f9e00221f05d38fbce51b921.pdf) |
 | Comparative Evaluation of Gamma, Exponentiated Gamma, Weibull, and Exponentiated | Nsikan A. Bassey; Uchenna Petronilla Ogoke; Ethelbeth C. Ndu | 2026 | 17 | - | 0 | Open | OPEN | [LINK](https://journals.ipsintelligentsia.com/int/index.php/ijgtr/article/download/26/22) |
 | Robust Value-at-Risk estimation methods for Weibull distribution | Derya Karagöz; Uğur Karabey | 2022 | - | Research Square | 0 | Open | OPEN | [LINK](https://www.researchsquare.com/article/rs-1407497/latest.pdf) |
-| Generalized Weibull Distribution Revisited | Eman .M Sewilanl | 2008 | 18 | المجلة العلمية للبحوث التجارية (جامعة المنوفية) | 0 | Open | OPEN | [LINK](https://sjsc.journals.ekb.eg/article_118642_cf842b6b3789dd542a1f629cc5502dda.pdf) |
 | Bivariate Conditional Weibull-Lognormal Distribution Model and Its Application | Opeyemi Femi Ojo; Paul Olawole Otaru; Akano .o Rafiu; Benson | 2026 | 8 | FUDMA Journal of Sciences | 0 | Open | OPEN | [LINK](https://fjs.fudutsinma.edu.ng/index.php/fjs/article/download/5880/3891) |
 | ANALYZING TOP-20 INDEX RETURNS USING THE WEIBULL DISTRIBUTION | Sanaser Sodnomdorj; Khuslen Batbold; Ankhbayar Chuluunbaatar | 2026 | - | Journal of Business and Innovation | 0 | Open | OPEN | [LINK](https://journal.num.edu.mn/BusinessAndInnovation/article/download/11056/9567) |
 | Comparison of Estimation Methods for the Weibull Distribution in Indonesian Life | Terra Dei Alibazah; Agung Prabowo | 2025 | 18 | Indonesian Actuarial Journal | 0 | Open | OPEN | [LINK](https://iaj.aktuaris.or.id/index.php/iaj/article/download/44/16) |
@@ -16102,8 +16093,6 @@
 | Comparative Performance Evaluation of Hermitian Covariance Matrix Estimators und | Çelik Şenol | 2026 | - | Zenodo (CERN European Organization for Nuclear Res | 0 | Open | OPEN | [LINK](https://doi.org/10.5281/zenodo.21978971) |
 | Alternative GARCH Specifications and Autoencoder-Based Shrinkage for the DCC-NL  | Hermann Chung | 2026 | - | Zenodo (CERN European Organization for Nuclear Res | 0 | Open | OPEN | [LINK](https://doi.org/10.5281/zenodo.19248041) |
 | Enhancing CVaR portfolio optimisation performance with GAM factor models | Lauria, Davide; W. Brent Lindquist; Svetlozar T. Rachev | 2023 | - | RePEc: Research Papers in Economics | 0 | Open | OPEN | [LINK](http://arxiv.org/pdf/2401.00188) |
-| Using Multivariate GARCH Models CCC (Constant Conditional Correlation) and DCC(D | فارس طاهر حسن; لمياء طه عبد الله | 2018 | - | Journal of Economics and Administrative Sciences | 0 | Open | OPEN | [LINK](https://www.iasj.net/iasj/article/146620) |
-| Investigating Systematic Risk Spillover Between Capital Market and Money Market  | Soheila Lashgarara; Seyede Zahra Mirashrafi; Freshte Saadatb | 2026 | - | Judgment and Decision Making in Accounting    فصلن | 0 | Open | OPEN | [LINK](https://doi.org/10.71960/jdaa.2026.1237119) |
 | Comparison of Correlation for Asian Shariah Indices Using DCC-GARCH and Rolling  | Hafizah Bahaludin; Nurul Najihah Mohamad; Muhammad Farhan Mo | 2021 | - | The International Islamic University Malaysia Repo | 0 | Open | OPEN | [LINK](http://irep.iium.edu.my/92241/8/SKSM28_CamReady_223.pdf) |
 | DCC-GARCH Model for Market and Firm-Level Dynamic Correlation in S&P 500 | Peimin Chen; Chunchi Wu; Ying Zhang | 2020 | 20 | WORLD SCIENTIFIC eBooks | 0 | Open | ? | [LINK](https://doi.org/10.1142/9789811202391_0129) |
 | DCC-HEAVY: A multivariate GARCH model based on realized variances and correlatio | Luc Bauwens; Yongdeng Xu | 2019 | - | RePEc: Research Papers in Economics | 0 | Open | ? | [LINK](https://openalex.org/W2931764779) |
@@ -16124,7 +16113,6 @@
 | Bayesian Methodology for Adaptive Sparsity and Shrinkage in Regression | Ziqian Yang; Kshitij Khare; George C. Michailidis | 2026 | 14 | Journal of Business and Economic Statistics | 0 | Open | OPEN | [LINK](https://www.tandfonline.com/doi/pdf/10.1080/07350015.2025.2592349?needAccess=true) |
 | Bayesian Shrinkage in High-Dimensional VAR Models: A Comparative Study | Harrison Katz; Robert E. Weiss | 2025 | 1 | International Journal of Statistics and Probabilit | 0 | Open | OPEN | [LINK](https://ccsenet.org/journal/index.php/ijsp/article/download/0/0/52129/56759) |
 | Bayesian Generalized Network Autoregressive Model with Structured Shrinkage and  | 김성민; K.Y. Kim | 2026 | - | arXiv (Cornell University) | 0 | Open | OPEN | [LINK](https://arxiv.org/pdf/2609.07257) |
-| The Evolution of Shrinkage Estimators between Statistical Theory and Modern Inte | Aisha Mohamed Abutartour | 2026 | 14 | مجلة البحوث الأكاديمية | 0 | Open | OPEN | [LINK](https://lam-journal.ly/index.php/jar/article/download/1402/1122) |
 | Covariance-Corrected WAIC for Bayesian Sequential Data Models | Safaa K. Kadhem | 2025 | - | arXiv (Cornell University) | 0 | Open | OPEN | [LINK](https://arxiv.org/pdf/2509.17980) |
 | Budgeting of VaR Limits to Businesses or Trading Desks | Mohsen Mazaheri | 2010 | - | SSRN Electronic Journal | 0 | Open | OPEN | [LINK](https://doi.org/10.2139/ssrn.1670274) |
 | The Value of Value at Risk: Statistical, Financial, and Regulatory Consideration | Jón Danı́elsson; Bjørn N. Jorgensen; Casper G. de Vries | 1998 | - | - | 0 | Open | ? | [LINK](https://openalex.org/W2132597552) |

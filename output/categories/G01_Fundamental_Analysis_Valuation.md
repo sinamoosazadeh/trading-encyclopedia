@@ -1,6 +1,6 @@
 # Fundamental Analysis & Valuation
 
-> Category: `G01_Fundamental_Analysis_Valuation` | Items: **3274** | Generated: 2026-10-15 15:03
+> Category: `G01_Fundamental_Analysis_Valuation` | Items: **3273** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -501,7 +501,6 @@
 | European Private Equity Funds - a Cash Flow Based Performance Analysis | Christoph Kaserer; Christian Diller | 2004 | - | - | 14 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.547142) |
 | Is Capital Asset Pricing Model (CAPM) the best way to estimate cost‐of‐equity fo | Seoki Lee; Arun Upneja | 2008 | 14 | International Journal of Contemporary Hospitality  | 14 | Cros | ? | [LINK](https://doi.org/10.1108/09596110810852159) |
 | Drug pricing models, no 'one-size-fits-all' approach: a systematic review and cr | Evert A Manders; Sibren van den Berg; Saco J de Visser; Carl | 2025 | - | - | 14 | Euro | OPEN | [LINK](https://doi.org/10.1007/s10198-024-01731-w) |
-| A novel AI-driven approach to greenwashing: breakthroughs in the future fit betw | حسن حیدری | 2025 | - | Future Business Journal | 14 | Open | OPEN | [LINK](https://fbj.springeropen.com/counter/pdf/10.1186/s43093-025-00497-8) |
 | Valuation of European-style vulnerable options under the non-affine stochastic v | Shoude Huang; Xunxiang Guo | 2022 | 112003 | Chaos, Solitons &amp; Fractals | 13 | Cros | ? | [LINK](https://doi.org/10.1016/j.chaos.2022.112003) |
 | Budgeting in Healthcare Systems and Organizations: A Systematic Review. | Abbas Homauni; Nader Markazi-Moghaddam; Ali Mosadeghkhah; Ma | 2023 | - | - | 13 | Euro | OPEN | [LINK](https://doi.org/10.18502/ijph.v52i9.13571) |
 | Studying the System of Monetary Sanctions. | Alexes Harris; Mary Pattillo; Bryan L Sykes | 2022 | - | - | 13 | Euro | OPEN | [LINK](https://doi.org/10.7758/rsf.2022.8.1.01) |

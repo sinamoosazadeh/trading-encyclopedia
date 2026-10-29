@@ -1,6 +1,6 @@
 # Regulation Compliance & Market Integrity
 
-> Category: `H03_Regulation_Compliance_Integrity` | Items: **3952** | Generated: 2026-10-15 15:03
+> Category: `H03_Regulation_Compliance_Integrity` | Items: **3951** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -3206,7 +3206,6 @@
 | Best Execution in Mortgage Secondary Markets | Chung-Jui Wang; Stanislav P. Uryasev | 2005 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.2139/ssrn.797126) |
 | On the main purpose of the kinds of the security of the obligation execution | Ірина Пучковська | 2020 | 9 | Problems of Legality | 0 | Cros | ? | [LINK](https://doi.org/10.21564/2414-990x.148.195125) |
 | 7. Kapitel: Business Process Outsourcing – BPO | - | - | - | Die «Best Execution» im deutschen Wertpapierhandel | 0 | Cros | ? | [LINK](https://doi.org/10.3726/978-3-653-02584-2/15) |
-| Effect of Forced Execution Procedures on the Obligation to Bank Secrecy | YASSER AL-SABAWEE; Seebil Haji Omar | 2021 | 43 | الرافدین للحقوق | 0 | Cros | ? | [LINK](https://doi.org/10.33899/alaw.2021.130124.1152) |
 | Execution—Best Practice Use of Strategic Resources | - | 2012 | 2 | Strategy and Business Process Management | 0 | Cros | ? | [LINK](https://doi.org/10.1201/b11781-8) |
 | Upper Extremity Surgery - Evidence to Execution [Working Title] | - | 2026 | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.5772/intechopen.1012122) |
 | Classic Reflection in Best Evidence in Chinese Education | Editorial Office Best Evidence in Chinese Education | 2021 | 2 | Best Evidence in Chinese Education | 0 | Cros | ? | [LINK](https://doi.org/10.15354/bece.21.e026) |

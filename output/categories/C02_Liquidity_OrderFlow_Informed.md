@@ -1,6 +1,6 @@
 # Liquidity Order Flow & Informed Trading
 
-> Category: `C02_Liquidity_OrderFlow_Informed` | Items: **6270** | Generated: 2026-10-15 15:03
+> Category: `C02_Liquidity_OrderFlow_Informed` | Items: **6267** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -1855,7 +1855,6 @@
 | Learning to Predict Short-Term Volatility with Order Flow Image Representation | Artem Lensky; Mingyu Hao | 2024 | 6 | IEEE Conference on Artificial Intelligence (CAI) | 2 | Open | OPEN | [LINK](https://arxiv.org/pdf/2304.02472) |
 | Tick Size and Commonality in Liquidity | Su‐Wen Kuo; Chia-Cheng Chen; Chun-Fan You | 2017 | 17 | Asian Economic and Financial Review | 2 | Open | OPEN | [LINK](https://doi.org/10.18488/journal.aefr/2017.7.4/102.4.431.447) |
 | Impact of MiFID II on Romanian Stock Market Liquidity—Comparative Analysis with  | Marius Cristian Miloș; Laura Raisa Miloş; Flavia Barna; Clau | 2021 | 1 | International Journal of Financial Studies | 2 | Open | OPEN | [LINK](https://www.mdpi.com/2227-7072/9/4/69/pdf?version=1638964648) |
-| The Effect of Liquidity Risk on Stock Returns: The Case of Amman Stock Exchange  | Mohamad Bataineh; Dima Waleed Hanna Alrabadi | 2017 | 20 | المجلة العربیة للإدارة | 2 | Open | OPEN | [LINK](https://aja.journals.ekb.eg/article_17486_41804ffbb3a6616703dd171bf97cc2aa.pdf) |
 | Illiquidity, Investor Sentiment and Stock Returns: Evidence from Malaysia | Chandana Gunathilaka; Mohamad Jais; Sophee Sulong Balia | 2017 | 10 | International Journal of Economics and Financial I | 2 | Open | OPEN | [LINK](https://econjournals.com/index.php/ijefi/article/download/5102/pdf) |
 | New evidence on the impact of implicit trading costs on asset prices in the Russ | Тамара Викторовна Теплова; Sergei Gurov | 2022 | 13 | Applied Economics | 2 | Open | ? | [LINK](https://doi.org/10.1080/00036846.2022.2055743) |
 | Stock market liquidity and returns on the Warsaw Stock Exchange: An introductory | Szymon Stereńczak | 2017 | 12 | Zeszyty Naukowe Uniwersytetu Szczecińskiego. Finan | 2 | Open | OPEN | [LINK](https://wnus.edu.pl/frfu/file/article/view/1454.pdf) |
@@ -4439,7 +4438,6 @@
 | The Liquidity Effect in Bank-Based and Market-Based Financial Systems | Johann Scharler | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/7210263.pdf) |
 | VaR and Liquidity Risk.Impact on Market Behaviour and Measurement Issues. | Luca Erzegovesi | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6381891.pdf) |
 | Does global liquidity matter for monetary policy in the Euro area? | Harjes, Thomas; Berger, Helge | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6547861.pdf) |
-| Liquidity-adjusted Value-at-Risk (L-VAR) estimation: a case study of the Externa | أيمن, فريد; باهي, نوال | 2022 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/710643954.pdf) |
 | What is global excess liquidity, and does it matter? | Stracca, Livio; Rüffer, Rasmus | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6956567.pdf) |
 | Market liquidity and its incorporation into risk management. | Bervas, A. | - | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/download/6612255.pdf) |
 | The paradox of Margin Requirements : Systemic liquidity risk and procyclicality | Cugno, Dario | 2018 | - | - | 0 | CORE | OPEN | [LINK](https://core.ac.uk/works/363921424) |
@@ -5936,7 +5934,6 @@
 | THE POLITICAL INSTABILITY IN PAKISTAN: IMPACT ON RIGHTS, ECONOMY, EDUCATION, HEA | Danial Babar; M Ihsan Qadir and Saif ur Rehman; Hafiz Muhamm | 2024 | 13 | Journal of Social Research Development | 0 | Open | OPEN | [LINK](https://jsrd.org.pk/index.php/jsrd/article/download/397/226) |
 | Universal basic income: some theoretical aspects | Maitreesh Ghatak; François Maniquet | 2019 | - | RePEc: Research Papers in Economics | 0 | Open | OPEN | [LINK](http://hdl.handle.net/2078.1/219324) |
 | More than Educational Documents: African Refugees’ Reflections on the Values of  | Juhar Yasin Abamosa | 2026 | 13 | Cultural and Pedagogical Inquiry | 0 | Open | OPEN | [LINK](https://journals.library.ualberta.ca/cpi/index.php/cpi/article/download/29820/21842) |
-| From Structural Fragility to Systemic Weakness: Modeling Depositor Confidence an | Dolly Wajih Mikhael | 2026 | 53 | مجلة مؤشر للدراسات الاستطلاعية | 0 | Open | OPEN | [LINK](https://jiesjournal.de/index.php/JIES/article/download/84/02.pdf) |
 | The green finance apparatus. How ideology and planning steer sustainable capital | Alessandro Maresca | 2023 | - | AMS Dottorato Institutional Doctoral Theses Reposi | 0 | Open | OPEN | [LINK](https://amsdottorato.unibo.it/id/eprint/10882/1/Tesi_fin_1.pdf) |
 | The Politics of Moral Hazard in International Finance | William O&apos;Connell | 2024 | - | TSpace (University of Toronto) | 0 | Open | OPEN | [LINK](https://utoronto.scholaris.ca/bitstreams/8035499d-9702-4f17-9cbb-18de7aec566f/download) |
 | APPLICATION OF BANKRUPTCY PROVISIONS TO TROUBLED BANKERS | Fredy | 2024 | - | International Journal of Law and Constitution Stud | 0 | Open | OPEN | [LINK](https://jurnal.asrypersadaquality.com/index.php/ijlacos/article/download/236/295) |

@@ -1,6 +1,6 @@
 # Machine Learning in Finance
 
-> Category: `B01_Machine_Learning_Finance` | Items: **10406** | Generated: 2026-10-15 15:03
+> Category: `B01_Machine_Learning_Finance` | Items: **10404** | Generated: 2026-10-15 15:03
 
 ---
 
@@ -8080,7 +8080,6 @@
 | Supplemental Information 4: K-M plots of LASSO, Elastic Net and Ridge models in  | - | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.7717/peerj.8827/supp-4) |
 | Supplemental Information 1: K–M plots of LASSO, Elastic Net and Ridge models in  | - | - | - | - | 0 | Cros | ? | [LINK](https://doi.org/10.7717/peerj.8827/supp-1) |
 | Ridge, Lasso, and Elastic-Net — Regularization Explained | Carsten Lange | 2024 | 28 | Practical Machine Learning with R | 0 | Cros | ? | [LINK](https://doi.org/10.1201/9781003367147-7) |
-| Determinants Of The Algerian Tourism Demand 1991-2023:, Regularization Approache | Ihssane Bouhali; Brahim Djemaci | 2025 | 378 | مجلة أبعاد اقتصادية | 0 | Cros | ? | [LINK](https://doi.org/10.36539/1427-015-001-017) |
 | starnet: Stacked Elastic Net | Armin Rauschenberger | 2020 | - | CRAN: Contributed Packages | 0 | Cros | ? | [LINK](https://doi.org/10.32614/cran.package.starnet) |
 | Ridge Regression, Lasso, Elastic Net | - | 2020 | 37 | Linear Algebra and Optimization with Applications  | 0 | Cros | ? | [LINK](https://doi.org/10.1142/9789811216572_0019) |
 | Prediction of Experience Status Based on Human Resources Data: A Comparison of L | Samet Kaya; Esin Köksal Babacan | 2026 | 21 | Artificial Intelligence and Machine Learning Model | 0 | Cros | ? | [LINK](https://doi.org/10.58830/ozgur.pub1403.c5644) |
@@ -9662,7 +9661,6 @@
 | Modelling stock prices using XGBoost, Prophet, and ARIMA: a comprehensive evalua | K.B. Vaisshnavi; A Padmavathi | 2025 | 6 | CRC Press eBooks | 0 | Open | ? | [LINK](https://doi.org/10.1201/9781003675235-33) |
 | OPTIMIZING STOCK MARKET FORECASTING: A ROBUST PREDICTION SYSTEM USING XGBOOST | Ipseeta Nanda; Akankshya Swain; Stuti Porwal; Dhruv Singhal; | 2026 | 14 | Iterative International Publishers eBooks | 0 | Open | ? | [LINK](https://doi.org/10.58532/nbennurasitb2p2c1) |
 | Enhancing Portfolio Analysis and Stock Prediction Through LSTM and XGBoost Integ | Rajeshree Khande; Sachin A. Naik; Akshay Tayade; Amar Kale;  | 2025 | 13 | Lecture notes in networks and systems | 0 | Open | ? | [LINK](https://doi.org/10.1007/978-981-96-7511-1_16) |
-| Stock Price Prediction with Combination of XGBoost and Binary Gray Wolf Optimize | Hadi Esmaeili; Shahab جهانگیری; Ali Rezazadeh | 2024 | - | Financial Economics   فصلنامه اقتصاد مالی | 0 | Open | OPEN | [LINK](https://doi.org/10.71818/ecj.2025.1104492) |
 | Stock Price Prediction of TLKM and BBCA Using SVR, Random Forest, and LSTM | Mhd Adi Setiawan Aritonang; Maradona Jonas Simanullang; Sasa | 2026 | e262273- | ASEAN Journal of Scientific and Technological Repo | 0 | Open | OPEN | [LINK](https://ph02.tci-thaijo.org/index.php/tsujournal/article/download/262273/173868) |
 | Bank Mandiri Stock Performance Prediction Via SVM, LSTM, and Random Forest | Rahmat Rambe; Hanif Fakhrurroja; Lukman Abdurrahman | 2026 | 7 | Jurnal Sisfokom (Sistem Informasi dan Komputer) | 0 | Open | OPEN | [LINK](https://jurnal.atmaluhur.ac.id/index.php/sisfokom/article/download/2589/1416) |
 | Stock Market Index Prediction Using Random Forest and Extra Tree Regression | Dommeti Sriram Gopal; Parnandi SrinuVasarao; TulasiRaju Neth | 2026 | 9 | Smart innovation, systems and technologies | 0 | Open | ? | [LINK](https://doi.org/10.1007/978-981-95-9101-5_12) |
