@@ -130,7 +130,10 @@ TABLE_HEADER = (
 )
 
 def _write(path, content):
-    with open(path, "w", encoding="utf-8") as f:
+    """Write UTF-8 output and create the destination directory when necessary."""
+    parent = os.path.dirname(os.path.abspath(path))
+    os.makedirs(parent, exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(content)
 
 def build_category_file(cat_id, label, items):
