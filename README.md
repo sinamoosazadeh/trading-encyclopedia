@@ -53,6 +53,8 @@ Requires Python 3.10 or newer.
    python -m pip install -r requirements.txt
    ```
 
+   To install the project and its console commands in the active environment instead, use `python -m pip install -e .`. This provides `trading-encyclopedia` for local search and `trading-encyclopedia-collect` for metadata collection.
+
 3. Create local configuration from the empty template:
 
    ```bash
@@ -83,6 +85,8 @@ Requires Python 3.10 or newer.
    python resource_catalog.py search "exchange websocket" --registry-only
    python resource_catalog.py list --stage exchange-integration
    python resource_catalog.py export --output output/RESOURCE_INDEX.md
+   # Or use the installed console command:
+   trading-encyclopedia search "market microstructure"
    ```
 
 8. Preview the bounded public resource-discovery plan without making any network requests:
