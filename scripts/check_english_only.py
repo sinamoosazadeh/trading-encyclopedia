@@ -8,21 +8,16 @@ archives without executing or extracting archive contents to disk.
 """
 from __future__ import annotations
 
-import io
+import re
 import subprocess
 import sys
 import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ARABIC_SCRIPT_RANGES = (
-    (0x0600, 0x06FF),
-    (0x0750, 0x077F),
-    (0x08A0, 0x08FF),
-    (0xFB50, 0xFDFF),
-    (0xFE70, 0xFEFF),
-    (0x10E60, 0x10E7F),
-    (0x1EE00, 0x1EEFF),
+ARABIC_SCRIPT_PATTERN = re.compile(
+    r"[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF"
+    r"\uFE70-\uFEFE\U00010E60-\U00010E7F\U0001EE00-\U0001EEFF]"
 )
 KNOWN_TEXT_SUFFIXES = {
     ".md", ".py", ".json", ".jsonl", ".yml", ".yaml", ".toml", ".sh",
@@ -32,26 +27,24 @@ KNOWN_TEXT_SUFFIXES = {
 KNOWN_TEXT_NAMES = {".gitignore", ".env.example", "Dockerfile", "Makefile"}
 
 
-def is_arabic_script(character: str) -> bool:
-    codepoint = ord(character)
-    return any(start <= codepoint <= end for start, end in ARABIC_SCRIPT_RANGES)
-
-
 def inspect_text(path_label: str, raw: bytes) -> list[str]:
+    """Scan UTF-8 text efficiently and report precise, bounded character locations."""
     if b"\x00" in raw:
         return []
     try:
-        content = raw.decode("utf-8")
+        content = raw.decode("utf-8-sig")
     except UnicodeDecodeError:
         return []
     issues = []
     for line_number, line in enumerate(content.splitlines(), start=1):
-        for column, character in enumerate(line, start=1):
-            if is_arabic_script(character):
-                issues.append(
-                    f"{path_label}:{line_number}:{column}: "
-                    f"Arabic-script character U+{ord(character):04X}"
-                )
+        for match in ARABIC_SCRIPT_PATTERN.finditer(line):
+            character = match.group(0)
+            issues.append(
+                f"{path_label}:{line_number}:{match.start() + 1}: "
+                f"Arabic-script character U+{ord(character):04X}"
+            )
+            if len(issues) >= 100:
+                return issues
     return issues
 
 
